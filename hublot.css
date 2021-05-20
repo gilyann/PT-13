@@ -172,8 +172,8 @@ nav a:hover {
 }
 
 .logo {
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 50%;
 }
 
 .cache {
@@ -181,4 +181,16 @@ nav a:hover {
     margin-top: -100vh;
 }
 
-@media screen and (width:"") {}
+@media screen and (max-width:1024px) {
+    .fiche p {
+        font-size: 0.8rem;
+    }
+
+    .fiche {
+        width: 20vw;
+    }
+
+    .nav {
+        font-size: 1rem;
+    }
+}
