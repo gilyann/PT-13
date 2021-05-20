@@ -88,6 +88,11 @@ nav a {
     background-size: cover;
 }
 
+.ptt-image img {
+
+    max-width: 100%;
+}
+
 /* Main des 4 cartes */
 main {
     border: 1px solid pink;
