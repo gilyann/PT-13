@@ -39,6 +39,7 @@ body {
 
 .domaine.deux {
     left: 100vw;
+    background-image: url("medias/img/bg1.jpg");
 }
 
 .domaine.trois {
