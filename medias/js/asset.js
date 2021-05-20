@@ -20,37 +20,30 @@ $( document ).ready(function(){
 var numberimage=1;
 //les différents slides possibles 
     $('.arrow-right').on('click',function(){            
-       $('.hublot-slide').animate({'left':(parseInt($('.hublot-slide').css('left'))-window.innerWidth)+'px'},function (){
+       $('.domaine-slide').animate({'left':(parseInt($('.domaine-slide').css('left'))-window.innerWidth)+'px'},function (){
          numberimage++;
-        $('.paysage').attr('src','image/bg'+ numberimage +'.jpg');
-         $('.hublot-slide').animate({'left':(parseInt($('.hublot-slide').css('left'))-window.innerWidth)+'px'});
-        console.log($('.hublot-slide').css('left'))
-       
-       });
-       console.log($('.hublot-slide').css('left'))
-    
+        $('.paysage').attr('src','medias/img/bg'+ numberimage +'.jpg');   
  
     })
 
 
     $('.arrow-left').on('click',function(){            
-      $('.hublot-slide').animate({'left':(parseInt($('.hublot-slide').css('left'))+window.innerWidth)+'px'},function (){
+      $('.domaine-slide').animate({'left':(parseInt($('.domaine-slide').css('left'))+window.innerWidth)+'px'},function (){
         numberimage--;
-       $('.paysage').attr('src','image/bg' + numberimage +'.jpg');
-        $('.hublot-slide').animate({'left':(parseInt($('.hublot-slide').css('left'))+window.innerWidth)+'px'});
-       console.log($('.hublot-slide').css('left'))
-      
-      });
-      console.log($('.hublot-slide').css('left'))
+       $('.paysage').attr('src','medias/img/bg' + numberimage +'.jpg');
+      })
    })
 
-//positioner l'image avec valeurs négative - animate 
-$('.hublot .img-hublot').on('click',function(){
-  $(this).animate({'margin-top':'-269px','width':'624px','height':'807px'})
-  console.log('salut!');
 })
+})
+
+// //positioner l'image avec valeurs négative - animate 
+// $('.hublot .img-hublot').on('click',function(){
+//   $(this).animate({'margin-top':'-269px','width':'624px','height':'807px'})
+//   console.log('salut!');
+// })
  
 
-   })
+//    })
 
    
