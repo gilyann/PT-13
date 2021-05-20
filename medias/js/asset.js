@@ -22,7 +22,7 @@ var numberimage=1;
     $('.arrow-right').on('click',function(){            
        $('.hublot-slide').animate({'left':(parseInt($('.hublot-slide').css('left'))-window.innerWidth)+'px'},function (){
          numberimage++;
-        $('.paysage').attr('src','image/bg'+ numberimage +'.jpg');
+        $('.paysage').attr('src','medias/img/bg'+ numberimage +'.jpg');
          $('.hublot-slide').animate({'left':(parseInt($('.hublot-slide').css('left'))-window.innerWidth)+'px'});
         console.log($('.hublot-slide').css('left'))
        
@@ -36,7 +36,7 @@ var numberimage=1;
     $('.arrow-left').on('click',function(){            
       $('.hublot-slide').animate({'left':(parseInt($('.hublot-slide').css('left'))+window.innerWidth)+'px'},function (){
         numberimage--;
-       $('.paysage').attr('src','image/bg' + numberimage +'.jpg');
+       $('.paysage').attr('src','medias/img/bg' + numberimage +'.jpg');
         $('.hublot-slide').animate({'left':(parseInt($('.hublot-slide').css('left'))+window.innerWidth)+'px'});
        console.log($('.hublot-slide').css('left'))
       
