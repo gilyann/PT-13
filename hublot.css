@@ -121,7 +121,7 @@ body {
     height: 50%;
     width: 30vw;
     background-color: white;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -45%);
     padding: 10px;
     z-index: 60;
 }
