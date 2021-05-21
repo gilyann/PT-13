@@ -6,16 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
     <title>Page accueil</title>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav>
-        <a href="##" class="logo">logo</a>
-        <a href="##">Poursuite d'études</a>
-        <a href="##">BUT MMI</a>
-        <a href="##">A propos</a>
+    <nav class="navbar">
+        <div class="left">
+            <img src="medias/img/LOGOBLEU.svg" alt=" " class="logo">
+        </div>
+
+        <div class="right">
+            <a href="#" class="etude">Poursuite d'études</a>
+            <a href="#" class="but">BUT MMI</a>
+            <a href="#">À propos</a>
+        </div>
+
     </nav>
     <header class="bigheader">
 
@@ -40,7 +47,7 @@
 
             <div class="container">
                 <div class="boardingPass">
-                    <div class="littleheader">
+                    <div class="littleheader lh1">
 
                         <h1>Poursuite <br> d'études</h1>
 
@@ -78,11 +85,7 @@
                             <h3>heheheh</h3>
                         </div>
                     </div>
-                    <div class="footer">
 
-                        <img src="medias/img/barcode.png" alt="">
-
-                    </div>
 
                 </div>
             </div>
@@ -95,7 +98,7 @@
 
             <div class="container">
                 <div class="boardingPass">
-                    <div class="littleheader2">
+                    <div class="littleheader lh2">
 
                         <h1>BUT<br>MMI</h1>
 
@@ -131,11 +134,7 @@
                             <h3>heheheh</h3>
                         </div>
                     </div>
-                    <div class="footer">
 
-                        <img src="medias/img/barcode.png" alt="">
-
-                    </div>
 
                 </div>
             </div>
@@ -148,7 +147,7 @@
 
             <div class="container">
                 <div class="boardingPass">
-                    <div class="littleheader3">
+                    <div class="littleheader lh3">
 
                         <h1>L'équipage </h1>
 
@@ -185,11 +184,7 @@
                             <h3>heheheh</h3>
                         </div>
                     </div>
-                    <div class="footer">
 
-                        <img src="medias/img/barcode.png" alt="">
-
-                    </div>
 
                 </div>
             </div>
@@ -202,7 +197,7 @@
 
             <div class="container">
                 <div class="boardingPass">
-                    <div class="littleheader4">
+                    <div class="littleheader lh4">
 
                         <h1>Guide <br> touristique</h1>
 
@@ -238,11 +233,7 @@
                             <h3>heheheh</h3>
                         </div>
                     </div>
-                    <div class="footer">
 
-                        <img src="medias/img/barcode.png" alt="">
-
-                    </div>
 
                 </div>
             </div>
@@ -251,9 +242,43 @@
     </main>
     <!-- formulaire -->
     <div class="formulaire">
-        <p>formulaire</p>
+        <div class="container">
+            <div class="littleheader"></div>
+            <div class="contentform">
 
+                <form>
+
+                    <div class="groupform">
+                        <input type="text" name="name" id="name" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label for="name">Nom</label>
+                    </div>
+
+                    <div class="groupform">
+                        <input type="email" name="email" id="email" required>
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="groupform">
+                        <label class="labelarea" for="msg">Message :</label>
+                        <textarea id="msg" name="user_message"></textarea>
+
+                    </div>
+
+
+                </form>
+
+
+
+            </div>
+
+        </div>
+        </form>
     </div>
+
 
 </body>
 
