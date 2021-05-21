@@ -90,6 +90,7 @@ body {
     height: 80px;
     background-color: #8de698;
     clip-path: polygon(100% 100%, 100% 0, 0 50%);
+    cursor: pointer;
 }
 
 
@@ -103,7 +104,7 @@ body {
     background-color: #e888a3;
     clip-path: polygon(0 0, 0 100%, 100% 50%);
     z-index: 20;
-
+    cursor: pointer;
 }
 
 /*.domaine2 img{
@@ -145,15 +146,19 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding-top: 20px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+}
 
+.right {
+    padding-top: 25px;
 }
 
 nav a {
     text-decoration: none;
     color: #2FA1D1;
     transition: 0.8s ease-in-out;
+
+
 }
 
 nav a:hover {
@@ -166,14 +171,13 @@ nav a:hover {
 
 .left {
     position: fixed;
-    margin-top: -6vh;
-    margin-left: -120vw;
-
+    margin-top: -3vh;
+    margin-left: -115vw;
 }
 
 .logo {
-    width: 50%;
-    height: 50%;
+    width: 40%;
+    height: 40%;
 }
 
 .cache {
