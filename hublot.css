@@ -180,10 +180,6 @@ nav a:hover {
     height: 40%;
 }
 
-.cache {
-    background-color: red;
-    margin-top: -100vh;
-}
 
 @media screen and (max-width:1024px) {
     .fiche p {

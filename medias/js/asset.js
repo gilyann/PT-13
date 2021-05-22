@@ -38,10 +38,10 @@ var numberimage=1;
 })
 
 // //positioner l'image avec valeurs négative - animate 
-// $('.hublot .img-hublot').on('click',function(){
-//   $(this).animate({'margin-top':'-269px','width':'624px','height':'807px'})
-//   console.log('salut!');
-// })
+ $('.hublot').on('click',function(){
+  $('.hublot').animate({'width':'1000px','height':'1000px'})
+   console.log('salut!');
+ })
  
 
 //    })
