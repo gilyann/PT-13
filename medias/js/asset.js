@@ -38,8 +38,8 @@ var numberimage=1;
 })
 
 // //positioner l'image avec valeurs négative - animate 
- $('.hublot').on('click',function(){
-  $('.hublot').animate({'width':'1000px','height':'1000px'})
+ $('.cache1').on('click',function(){
+  $('.').animate({'width':'1000px','height':'1000px'})
    console.log('salut!');
  })
  
