@@ -9,7 +9,6 @@ $( document ).ready(function(){
  
 //})
 
-
    //gerer l'apparition de la fiche 
 //$('.fiche').hide();                      
 //$('.essai').on('click',function(){
@@ -25,7 +24,7 @@ var numberimage=1;
         $('.paysage').attr('src','medias/img/bg'+ numberimage +'.jpg');   
  
     })
-
+   })
 
     $('.arrow-left').on('click',function(){            
       $('.domaine-slide').animate({'left':(parseInt($('.domaine-slide').css('left'))+window.innerWidth)+'px'},function (){
@@ -34,16 +33,18 @@ var numberimage=1;
       })
    })
 
-})
+
+$('.cache').on('click',function(){
+   console.log("hello")
 })
 
-// //positioner l'image avec valeurs négative - animate 
- $('.cache1').on('click',function(){
-  $('.').animate({'width':'1000px','height':'1000px'})
-   console.log('salut!');
- })
+
+
+
+
+})
+
+
  
-
-//    })
 
    
