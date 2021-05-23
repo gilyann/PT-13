@@ -243,40 +243,54 @@
     <!-- formulaire -->
     <div class="formulaire">
         <div class="container">
-            <div class="littleheader"></div>
+            <div class="littleheader formheader">
+                <h1>Une question? <br> Contacte-nous !</h1>
+            </div>
             <div class="contentform">
 
-                <form>
+                <div class="formairport">
+                    <div class="formdeparting">
+                        <h1>MMI</h1>
+                        <p>BUT MMI</p>
+                    </div>
+                    <img class="plane" src="medias/img/plane.svg" alt="">
+                    <div class="formarriving">
+                        <h1>ETU</h1>
+                        <p>poursuite d'études</p>
+                    </div>
+                </div>
 
-                    <div class="groupform">
+                <form action="envoi.php" method="post">
+
+                    <div class="groupform nom">
                         <input type="text" name="name" id="name" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
-                        <label for="name">Nom</label>
+                        <label for="name">Nom :</label>
                     </div>
 
-                    <div class="groupform">
+                    <div class="groupform mail">
                         <input type="email" name="email" id="email" required>
                         <span class="highlight"></span>
                         <span class="bar"></span>
-                        <label for="email">Email</label>
+                        <label for="email">Email :</label>
                     </div>
 
-                    <div class="groupform">
+                    <div class="groupform message">
                         <label class="labelarea" for="msg">Message :</label>
                         <textarea id="msg" name="user_message"></textarea>
 
                     </div>
-
-
+                    <div class="yomec">
+                        <input type="submit" name="envoyer" id="" value="envoyer">
+                    </div>
                 </form>
-
 
 
             </div>
 
         </div>
-        </form>
+
     </div>
 
 
