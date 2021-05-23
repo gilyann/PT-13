@@ -180,6 +180,16 @@ nav a:hover {
     height: 40%;
 }
 
+.cache1 {
+    background-color: red;
+    position: absolute;
+    top: 14vh;
+    left: 14vw;
+    width: 26.5vw;
+    height: 78vh;
+    opacity: 10%;
+
+}
 
 
 @media screen and (max-width:1300px) {
