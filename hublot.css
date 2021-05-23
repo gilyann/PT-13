@@ -181,13 +181,10 @@ nav a:hover {
 }
 
 
-@media screen and (max-width:1024px) {
-    .fiche p {
-        font-size: 0.8rem;
-    }
 
-    .fiche {
-        width: 20vw;
+@media screen and (max-width:1500px) {
+    .fiche p {
+        font-size: 0.5rem;
     }
 
     .nav {
