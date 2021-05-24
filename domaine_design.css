@@ -106,7 +106,7 @@ h1 {
 }
 
 .infolp {
-    /* border: solid 10px pink; */
+    border: solid 10px pink;
     /* display: inline-block; */
     width: 60vw;
     /* margin-right: 150px; */
@@ -124,7 +124,7 @@ main {
     opacity: 70%;
     /* filter: blur(1px); */
     border-radius: 20px;
-    margin-left: 5px;
+    margin-left: 0;
     margin-right: 20px;
 
 }
@@ -155,7 +155,7 @@ li:hover {
     text-align: center;
     padding: 15px;
     position: relative;
-    top: 30px;
+    top: 40px;
     left: 100px;
     /* margin-left: 80px; */
     transition: 0.8s ease-in-out;
