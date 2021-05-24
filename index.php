@@ -121,7 +121,9 @@
                     <div class="details">
                         <div class="date detail">
                             <h4>DATE</h4>
-                            <h3>**/**/****</h3>
+                            <h3><script>
+        document.write(new Date().toLocaleDateString());
+    </script></h3>
                         </div>
                         <div class="gate detail">
                             <h4>GATE</h4>
@@ -293,7 +295,7 @@
 
     </div>
 
-
+ate
 </body>
 
 </html>
