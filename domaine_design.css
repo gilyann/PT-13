@@ -106,7 +106,7 @@ h1 {
 }
 
 .infolp {
-    border: solid 10px pink;
+    /* border: solid 10px pink; */
     /* display: inline-block; */
     width: 60vw;
     /* margin-right: 150px; */
