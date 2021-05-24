@@ -13,58 +13,11 @@ body {
     margin: 0;
 }
 
-nav {
-    z-index: 200;
-    width: 50vw;
-    height: 5vh;
-    position: fixed;
-    top: 1vh;
-    left: 47vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 1.5rem;
-}
-
-.right {
-    padding-top: 25px;
-}
-
-nav a {
-    text-decoration: none;
-    color: #2FA1D1;
-    transition: 0.8s ease-in-out;
-    padding: 30px;
-
-
-}
-
-nav a:hover {
-    border-radius: 20px;
-    background-color: #2fa1d1;
-    color: white;
-    padding: 10px;
-
-}
 
 
 
 
 
-.left {
-    position: fixed;
-    margin-top: -3vh;
-    margin-left: -130vw;
-}
-
-.logo {
-    width: 40%;
-    height: 40%;
-}
-
-.nav {
-    font-size: 1rem;
-}
 
 /* header pour illustration */
 
@@ -118,6 +71,7 @@ nav a:hover {
 .ptt-image img {
 
     max-width: 100%;
+    min-height: 100%;
 }
 
 /* Main des 4 cartes */
@@ -500,12 +454,7 @@ label {
     -moz-transition: 0.2s ease all;
 }
 
-.labelarea {
 
-    position: relative;
-    top: -2vh;
-    left: -11vw;
-}
 
 input:focus~label,
 input:valid~label {
@@ -558,12 +507,7 @@ input:focus~.bar:after {
     opacity: 0.5;
 }
 
-textarea {
 
-    height: 15vh;
-    width: 50vw;
-
-}
 
 .formairport {
 
@@ -586,4 +530,11 @@ textarea {
     position: relative;
     margin: 0 auto;
     padding: 0px;
+}
+
+.envoi {
+
+    background-color: #025E73;
+    border-radius: 30px;
+
 }

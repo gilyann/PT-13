@@ -11,19 +11,7 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar">
-        <div class="left">
-            <img src="medias/img/LOGOBLEU.svg" alt=" " class="logo">
-        </div>
-
-        <div class="right">
-            <a href="#" class="etude">Poursuite d'études</a>
-            <a href="#" class="but">BUT MMI</a>
-            <a href="#">À propos</a>
-        </div>
-
-    </nav>
+    
     <header class="bigheader">
 
     </header>
@@ -72,7 +60,9 @@
                     <div class="details">
                         <div class="date detail">
                             <h4>DATE</h4>
-                            <h3>**/**/****</h3>
+                            <h3><script>
+        document.write(new Date().toLocaleDateString());
+    </script></h3>
                         </div>
                         <div class="gate detail">
                             <h4>GATE</h4>
@@ -173,7 +163,11 @@
                     <div class="details">
                         <div class="date detail">
                             <h4>DATE</h4>
-                            <h3>**/**/****</h3>
+                            <h3>
+                            <script>
+        document.write(new Date().toLocaleDateString());
+    </script> </h3>
+   
                         </div>
                         <div class="gate detail">
                             <h4>GATE</h4>
@@ -222,7 +216,9 @@
                     <div class="details">
                         <div class="date detail">
                             <h4>DATE</h4>
-                            <h3>**/**/****</h3>
+                            <h3><script>
+        document.write(new Date().toLocaleDateString());
+    </script></h3>
                         </div>
                         <div class="gate detail">
                             <h4>GATE</h4>
@@ -279,11 +275,11 @@
                     </div>
 
                     <div class="groupform message">
-                        <label class="labelarea" for="msg">Message :</label>
+                        <label for="msg">Message :</label>
                         <textarea id="msg" name="user_message"></textarea>
 
                     </div>
-                    <div class="yomec">
+                    <div class="envoi">
                         <input type="submit" name="envoyer" id="" value="envoyer">
                     </div>
                 </form>
@@ -295,7 +291,7 @@
 
     </div>
 
-ate
+
 </body>
 
 </html>
