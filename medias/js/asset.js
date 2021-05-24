@@ -25,26 +25,23 @@ var numberimage=1;
  
     })
    })
-
+  
     $('.arrow-left').on('click',function(){            
       $('.domaine-slide').animate({'left':(parseInt($('.domaine-slide').css('left'))+window.innerWidth)+'px'},function (){
         numberimage--;
        $('.paysage').attr('src','medias/img/bg' + numberimage +'.jpg');
       })
    })
+   $('.cache1').on('click',function(){
+      $('.hublot').animate({ right: '+=1000px',
+      height: '+=1150px',
+      width: '+=150px'
+     });
 
-
-$('.cache').on('click',function(){
-   console.log("hello")
+      console.log("hello")
+   })
 })
 
-
-
-
-
-})
-
-
- 
-
-   
+// height: '+=10px',
+// right: '-=100px',
+// width: '+=2600px'
