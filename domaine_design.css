@@ -8,6 +8,7 @@ body {
     background-color: lightcyan;
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
 
 nav {
@@ -67,7 +68,7 @@ nav a:hover {
 header {
     border: solid 1px green;
     height: 100vh;
-    width: 98.5vw;
+    width: 100vw;
     margin-bottom: 100px;
     margin: 0;
 }
@@ -99,7 +100,7 @@ h1 {
     display: flex;
     justify-content: flex-end;
     border: solid 1px blue;
-    width: 98.5vw;
+    width: 100vw;
     height: 100vh;
     margin: 0;
 }
@@ -113,8 +114,8 @@ h1 {
 
 main {
     border: solid 1px black;
-    width: 50vw;
-    margin-right: 10px;
+    width: 80vw;
+    margin-right: 85px;
     height: 70vh;
     margin-top: 140px;
     text-align: left;
@@ -149,9 +150,9 @@ li:hover {
     border-radius: 20px;
     text-align: center;
     padding: 15px;
-    margin-left: 200px;
+    margin-left: 80px;
     transition: 0.8s ease-in-out;
-    margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .lien:hover {
