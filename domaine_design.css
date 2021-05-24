@@ -75,6 +75,7 @@ header {
 header :nth-child(3) {
     font-size: 2rem;
     margin-top: 100px;
+    text-align: center;
 }
 
 header h1 {
@@ -118,8 +119,8 @@ main {
     margin-top: 100px;
     text-align: left;
     background-color: white;
-    opacity: 90%;
-    filter: blur(1px);
+    opacity: 70%;
+    /* filter: blur(1px); */
     border-radius: 20px;
 }
 
@@ -157,4 +158,10 @@ li:hover {
     color: red;
     background-color: white;
 
+}
+
+h3 {
+    font-size: 2.3rem;
+    color: green;
+    margin-left: 80px;
 }
