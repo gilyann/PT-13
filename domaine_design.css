@@ -165,3 +165,38 @@ h3 {
     color: green;
     margin-left: 80px;
 }
+
+.truc {
+    margin-left: 50px;
+    font-size: 1.3rem;
+}
+
+.type {
+    margin-left: 50px;
+    font-size: 1.3rem;
+    margin-top: 50px;
+}
+
+.deb {
+    position: relative;
+    font-size: 1.3rem;
+    top: -9%;
+    left: 26%;
+}
+
+.eta {
+    margin-left: 50px;
+    font-size: 1.3rem;
+    margin-top: 50px;
+}
+
+.url {
+    margin-left: 50px;
+    font-size: 1.3rem;
+    margin-top: 50px;
+}
+
+/* .ligne { 
+    height: 50vh;
+    background-color: red;
+}*/
