@@ -3,6 +3,7 @@ body {
     overflow: hidden;
     font-family: 'Nunito Sans', sans-serif;
     background-color: grey;
+    /* overflow: scroll; */
 }
 
 nav {
@@ -27,40 +28,36 @@ nav {
     width: 900px;
 }
 
-.clai {
-    width: 50%;
-    height: 50%;
-}
-
 .gigi {
-    border: black solid;
     width: 40%;
     position: relative;
-    left: -150px;
+    left: -110px;
     top: 30px;
 }
 
 .clai {
-    border: black solid;
     width: 40%;
     position: relative;
-    left: 200px;
-    top: -440px;
+    left: 270px;
+    top: -435px;
     /* z-index: 1; */
 }
 
 .lulu {
-    border: black solid;
     width: 40%;
     position: relative;
-    left: 600px;
-    top: -910px;
+    left: 670px;
+    top: -902px;
 }
 
 .juju {
-    border: black solid;
     width: 40%;
     position: relative;
-    left: 1010px;
-    top: -1380px;
+    left: 1050px;
+    top: -1365px;
+}
+
+.comptoire {
+    background-color: #2FA1D1;
+    width: 90vw;
 }
