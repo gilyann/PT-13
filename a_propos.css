@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: grey;
+    /* overflow: scroll; */
+}
+
+nav {
+    z-index: 200;
+    width: 50vw;
+    height: 5vh;
+    position: fixed;
+    top: 1vh;
+    left: 47vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.5rem;
+}
+
+.logo {
+    width: 10%;
+    height: 10%;
+}
+
+.right {
+    width: 900px;
+}
+
+.gigi {
+    width: 40%;
+    position: relative;
+    left: -110px;
+    top: 30px;
+}
+
+.clai {
+    width: 40%;
+    position: relative;
+    left: 270px;
+    top: -435px;
+    /* z-index: 1; */
+}
+
+.lulu {
+    width: 40%;
+    position: relative;
+    left: 670px;
+    top: -902px;
+}
+
+.juju {
+    width: 40%;
+    position: relative;
+    left: 1050px;
+    top: -1365px;
+}
+
+.comptoire {
+    background-color: #2FA1D1;
+    width: 90vw;
+}
