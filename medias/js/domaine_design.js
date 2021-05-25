@@ -13,7 +13,7 @@ $(document).ready(function () {
         })
         $("infolp li").on("click", function () {
 
-            $(".c1").removeClass("active")
+            $(".c1").toggleClass('inactive')
 
 
         })
