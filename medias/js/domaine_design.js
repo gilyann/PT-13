@@ -19,4 +19,20 @@ $(document).ready(function () {
         })
     })
 
+    $(function () {
+
+
+        $(".infolp li").on("click", function () {
+
+            $(".c2").addClass("active")
+
+        })
+        $(".exit").on("click", function () {
+
+            $(".c2").removeClass("active")
+
+
+        })
+    })
+
 })

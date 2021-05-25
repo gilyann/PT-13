@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: lightcyan;
+    background-color: rgb(120, 194, 194);
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     overflow-x: hidden;
@@ -97,16 +97,15 @@ h1 {
     color: greenyellow;
 }
 
-.lp {
+.tdf {
     display: flex;
     justify-content: flex-end;
     border: solid 1px blue;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.infolp {
+.intitule {
     border: solid 10px pink;
     /* display: inline-block; */
     width: 60vw;
@@ -120,8 +119,7 @@ main {
     height: 80vh;
     margin-top: 110px;
     text-align: left;
-    background-color: white;
-    opacity: 70%;
+    background-color: rgba(255, 255, 255, 0.753);
     /* filter: blur(1px); */
     border-radius: 20px;
     margin-left: 0;
@@ -137,6 +135,18 @@ main {
 }
 
 .c1.active {
+
+    opacity: 1;
+
+}
+
+.c2 {
+
+    opacity: 0;
+
+}
+
+.c2.active {
 
     opacity: 1;
 
@@ -215,6 +225,17 @@ h3 {
     margin-left: 50px;
     font-size: 1.3rem;
     margin-top: 50px;
+}
+
+.exit {
+    border-radius: 10px;
+    background-color: red;
+    height: 20px;
+    width: 20px;
+    pointer-events: visible;
+    position: relative;
+
+
 }
 
 /* .ligne { 
