@@ -279,8 +279,8 @@
                         <textarea id="msg" name="user_message"></textarea>
 
                     </div>
-                    <div class="envoi">
-                        <input type="submit" name="envoyer" id="" value="envoyer">
+                    <div>
+                        <input type="submit" name="envoyer" id="buttonenvoi" value="envoyer">
                     </div>
                 </form>
 

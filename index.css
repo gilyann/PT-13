@@ -532,10 +532,21 @@ input:focus~.bar:after {
     padding: 0px;
 }
 
-.envoi {
+#buttonenvoi {
 
     background-color: #025E73;
     border-radius: 30px;
+    width: 18vw;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 
+
+
+}
+
+input[type="submit"] {
+
+    color: white;
 
 }

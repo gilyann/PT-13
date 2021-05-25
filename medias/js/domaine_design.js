@@ -3,21 +3,42 @@
 $(document).ready(function () {
     // $('main').hide();
 
+
+    //Licence pro//
+
     $(function () {
 
 
-        $(".infolp li").on("click", function () {
+        $(".intitule li:nth-child(1)").on("click", function () {
 
             $(".c1").addClass("active")
 
         })
         $(".exit").on("click", function () {
 
-            $(".c1").toggleClass('inactive')
+            $(".c1").removeClass('active')
 
 
         })
     })
+
+    $(function () {
+
+
+        $(".intitule li:nth-child(2)").on("click", function () {
+
+            $(".c1").addClass("active")
+
+        })
+        $(".exit").on("click", function () {
+
+            $(".c1").removeClass('active')
+
+
+        })
+    })
+
+
 
     $(function () {
 
