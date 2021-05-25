@@ -127,6 +127,19 @@ main {
     margin-left: 0;
     margin-right: 35px;
 
+
+}
+
+.c1 {
+
+    opacity: 0;
+
+}
+
+.c1.active {
+
+    opacity: 1;
+
 }
 
 h2 {
