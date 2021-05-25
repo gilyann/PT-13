@@ -15,11 +15,12 @@ $( document ).ready(function(){
  // $('.fiche').toggle(2000, "linear");
   
 //})
+var WIDTH=window.innerWidth;
 
 var numberimage=1;
 //les différents slides possibles 
     $('.arrow-right').on('click',function(){            
-       $('.domaine-slide').animate({'left':(parseInt($('.domaine-slide').css('left'))-window.innerWidth)+'px'},function (){
+       $('.domaine-slide').animate({'left':(parseInt($('.domaine-slide').css('left'))-WIDTH)+'px'},function (){
          numberimage++;
         $('.paysage').attr('src','medias/img/bg'+ numberimage +'.jpg');   
  
@@ -27,7 +28,7 @@ var numberimage=1;
    })
   
     $('.arrow-left').on('click',function(){            
-      $('.domaine-slide').animate({'left':(parseInt($('.domaine-slide').css('left'))+window.innerWidth)+'px'},function (){
+      $('.domaine-slide').animate({'left':(parseInt($('.domaine-slide').css('left'))+WIDTH)+'px'},function (){
         numberimage--;
        $('.paysage').attr('src','medias/img/bg' + numberimage +'.jpg');
       })
@@ -40,8 +41,9 @@ var numberimage=1;
 
       console.log("hello")
    })
-  
 })
+
+
 
 // height: '+=10px',
 // right: '-=100px',
