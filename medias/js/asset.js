@@ -34,12 +34,13 @@ var numberimage=1;
    })
    $('.cache1').on('click',function(){
       $('.hublot').animate({ right: '+=1000px',
-      height: '+=1150px',
+      height: '-=1150px',
       width: '+=150px'
      });
 
       console.log("hello")
    })
+  
 })
 
 // height: '+=10px',
