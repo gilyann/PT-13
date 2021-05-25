@@ -2,6 +2,7 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: 'Nunito Sans', sans-serif;
+    background-color: grey;
 }
 
 nav {
@@ -17,30 +18,49 @@ nav {
     font-size: 1.5rem;
 }
 
+.logo {
+    width: 10%;
+    height: 10%;
+}
+
 .right {
-    padding-top: 25px;
+    width: 900px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #2FA1D1;
-    transition: 0.8s ease-in-out;
-
-
+.clai {
+    width: 50%;
+    height: 50%;
 }
 
-nav a:hover {
-    border-radius: 20px;
-    background-color: #2fa1d1;
-    color: white;
-    padding: 10px;
-
+.gigi {
+    border: black solid;
+    width: 40%;
+    position: relative;
+    left: -150px;
+    top: 30px;
 }
 
-.etude {
-    margin-right: 80px;
+.clai {
+    border: black solid;
+    width: 40%;
+    position: relative;
+    left: 200px;
+    top: -440px;
+    /* z-index: 1; */
 }
 
-.but {
-    margin-right: 80px;
+.lulu {
+    border: black solid;
+    width: 40%;
+    position: relative;
+    left: 600px;
+    top: -910px;
+}
+
+.juju {
+    border: black solid;
+    width: 40%;
+    position: relative;
+    left: 1010px;
+    top: -1380px;
 }
