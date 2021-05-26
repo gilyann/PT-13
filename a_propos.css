@@ -1,3 +1,10 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
 body {
     margin: 0;
     overflow: hidden;
@@ -28,36 +35,102 @@ nav {
     width: 900px;
 }
 
-.gigi {
-    width: 40%;
-    position: relative;
-    left: -110px;
-    top: 30px;
+.perso {
+
+    display: flex;
+    justify-content: space-around;
+    border: 1px red solid;
+    height: 50vh;
+    width: 100%;
+
 }
 
-.clai {
-    width: 40%;
+
+
+
+
+.gilyann {
+
+
     position: relative;
-    left: 270px;
-    top: -435px;
-    /* z-index: 1; */
+    border: 1px solid blue;
+    width: 400px;
+    height: 400px;
+    display: flex;
 }
 
-.lulu {
-    width: 40%;
-    position: relative;
-    left: 670px;
-    top: -902px;
+.img[src="medias/img/Gilyann.png"] {
+
+    max-height: 100%;
+    max-width: 100%;
+    width: 80px;
+
 }
 
-.juju {
-    width: 40%;
+.img[src="medias/img/Claire.png"] {
+
+    max-height: 100%;
+    max-width: 100%;
+    width: 80px;
+
+}
+
+.img[src="medias/img/Lucas.png"] {
+
+    max-height: 100%;
+    max-width: 100%;
+    width: 80px;
+
+}
+
+.img[src="medias/img/Julianne.png"] {
+
+    max-height: 100%;
+    max-width: 100%;
+    width: 80px;
+
+}
+
+.claire {
+    width: 20%;
     position: relative;
-    left: 1050px;
-    top: -1365px;
+    border: 1px solid green;
+    width: 400px;
+    height: 400px;
+    display: flex;
+}
+
+
+
+
+.lucas {
+    width: 20%;
+    position: relative;
+    border: 1px solid yellow;
+    width: 400px;
+    height: 400px;
+    display: flex;
+}
+
+
+
+.julianne {
+    width: 20%;
+    position: relative;
+    border: 1px solid purple;
+    width: 400px;
+    height: 400px;
+    display: flex;
+
+
 }
 
 .comptoire {
     background-color: #2FA1D1;
-    width: 90vw;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    height: 10vh;
+    bottom: 0;
+    position: absolute;
 }
