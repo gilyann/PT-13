@@ -546,7 +546,6 @@ input:focus~.bar:after {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    border: black solid;
 }
 
 input[type="submit"] {
