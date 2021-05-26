@@ -125,7 +125,11 @@ main {
     /* filter: blur(1px); */
     border-radius: 20px;
     margin-left: 0;
+<<<<<<< Updated upstream
     margin-right: 35px;
+=======
+    margin-right: 20px;
+>>>>>>> Stashed changes
 
 }
 
