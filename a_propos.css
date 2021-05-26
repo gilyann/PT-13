@@ -59,5 +59,8 @@ nav {
 
 .comptoire {
     background-color: #2FA1D1;
-    width: 90vw;
+    position: absolute;
+    top: 80vh;
+    z-index: 2;
+    left: 500px;
 }
