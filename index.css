@@ -603,12 +603,13 @@ input[type="submit"] {
     }
 
     .presentation p {
-        font-size: 1rem;
-        margin-left: -50px;
+        margin-left: -150px;
     }
 
     .ptt-image {
         height: 450px;
+        margin-top: 50px;
+        margin-left: 50px;
     }
 
     .low-header {
@@ -616,6 +617,7 @@ input[type="submit"] {
         flex-direction: column;
         margin-left: 25vw;
         margin-bottom: 600px;
+        margin-top: -50px;
     }
 }
 
