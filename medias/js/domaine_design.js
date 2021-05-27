@@ -27,12 +27,12 @@ $(document).ready(function () {
 
         $(".intitule li:nth-child(2)").on("click", function () {
 
-            $(".c1").addClass("active")
+            $(".c2").addClass("active")
 
         })
         $(".exit").on("click", function () {
 
-            $(".c1").removeClass('active')
+            $(".c2").removeClass('active')
 
 
         })
