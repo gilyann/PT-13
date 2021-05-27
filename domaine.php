@@ -49,10 +49,13 @@
 
           <?php
 
- $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation 
-FROM  intitule_formation 
-WHERE id_intitule  
-LIKE '1'";
+$link = new PDO('mysql:host=localhost;dbname=test', 'root', '', array
+(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+// pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
+$sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation 
+ FROM  intitule_formation, rel_domaine_int_form 
+ WHERE id_domaine =4
+ AND rel_domaine_int_form.id_intitule=intitule_formation.id_intitule";
 // On prépare la requête avant l'envoi :
 $req = $link -> prepare($sql);
 $req -> execute();
@@ -60,10 +63,10 @@ $req -> execute();
 echo '<ul>';
 while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
- echo '<li>'.$data['nom_formation'].' <b>'.$data['enseignements'].
- '</b>' .$data['alternance_initiale'] ' <b>'.$data['debouches'].
- '</b>' ' <b>'.$data['nom_etablissement'].'</b>' ' <b>'.$data['ville'].
- '</b>' ' <b>'.$data['code_postal'].'</b>' ' <b>'.$data['url_formation']  '</li>';
+ echo '<main class="card c'.$data['id_intitule'].'">'.$data['nom_formation'].' <b>'.$data['enseignements'].
+ '</b>' .$data['alternance_initiale'].' <b>'.$data['debouches'].
+ '</b>  <b>'.$data['nom_etablissement'].'</b><b>'.$data['ville'].
+ '</b>  <b>'.$data['code_postal'].'</b> <b>'.$data['url_formation']  .'</main>';
 }
 $req = null;
 echo '</ul>';
