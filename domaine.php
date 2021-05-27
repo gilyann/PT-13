@@ -47,6 +47,29 @@
         </div>
 
 
+          <?php
+
+ $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation 
+FROM  intitule_formation 
+WHERE id_intitule  
+LIKE '1'";
+// On prépare la requête avant l'envoi :
+$req = $link -> prepare($sql);
+$req -> execute();
+// On crée une liste non numérotée avec les résultats
+echo '<ul>';
+while($data = $req -> fetch()){
+ // On affiche chaque résultat sous forme d'un item de la liste
+ echo '<li>'.$data['nom_formation'].' <b>'.$data['enseignements'].
+ '</b>' .$data['alternance_initiale'] ' <b>'.$data['debouches'].
+ '</b>' ' <b>'.$data['nom_etablissement'].'</b>' ' <b>'.$data['ville'].
+ '</b>' ' <b>'.$data['code_postal'].'</b>' ' <b>'.$data['url_formation']  '</li>';
+}
+$req = null;
+echo '</ul>';
+
+?>
+
 
         <main class="card c1">
             <div class="exit"></div>
@@ -86,7 +109,7 @@
 
         <main class="card c2">
             <div class="exit"></div>
-            <h3>Cinéma</h3>
+            <h3>Cinéma et audiovisuel</h3>
             <p class="truc">Enseignements</p>
             <!-- liste avec PHP  -->
             <p class="type">Type</p>
