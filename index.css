@@ -44,6 +44,7 @@ body {
     height: 600px;
     margin-left: 174px;
     margin-top: 170px;
+    font-size: 2rem;
 }
 
 .presentation h5 {
@@ -54,14 +55,15 @@ body {
 }
 
 .presentation p {
-    text-align: left;
+    text-align: justify;
     font-size: 1.25rem;
+    margin-right: 20px;
 }
 
 .ptt-image {
-    /* border: 1px solid brown; */
+    border: 1px solid brown;
     width: 50vw;
-    height: 600px;
+    height: 560px;
     margin-right: 174px;
     margin-top: 170px;
     background-repeat: no-repeat;
@@ -70,14 +72,15 @@ body {
 
 .ptt-image img {
 
-    max-width: 100%;
+    /* max-width: 100%; */
+    width: 100%;
 
 }
 
 /* Main des 4 cartes */
 main {
     border: 1px solid pink;
-    margin-left: 50px;
+    margin-left: 100px;
     margin-right: 50px;
     width: 1300px;
 
@@ -115,7 +118,7 @@ section .container {
 
 /* Formulaire prototype */
 .formulaire {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 700px;
     margin-left: 250px;
     margin-right: 250px;
@@ -142,8 +145,8 @@ section .container {
     background-color: #FFFFFF;
     border-radius: 30px 30px 30px 30px;
     transition-duration: 0.5s;
-    border: solid black;
-    height: 650px;
+    /* border: solid black; */
+    height: 700px;
 }
 
 
@@ -562,7 +565,7 @@ input[type="submit"] {
 }
 
 .text {
-    border: pink solid;
+    /* border: pink solid; */
     margin-top: 40px;
     margin-left: 15px;
     width: 680px;
@@ -572,12 +575,47 @@ input[type="submit"] {
     .text {
         width: 500px;
     }
+
+    .formairport {
+        margin-top: -50px;
+    }
+
+    .groupform {
+        margin-top: 50px;
+    }
+
+    .container {
+        height: 800px;
+    }
+
 }
 
 @media screen and (max-width:1200px) {
     .text {
         width: 400px;
         margin-right: 500px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25vw;
+    }
+
+    .presentation p {
+        font-size: 1rem;
+        margin-left: -50px;
+    }
+
+    .ptt-image {
+        height: 450px;
+    }
+
+    .low-header {
+        display: flex;
+        flex-direction: column;
+        margin-left: 25vw;
+        margin-bottom: 600px;
     }
 }
 
