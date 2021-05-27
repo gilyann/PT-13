@@ -45,6 +45,7 @@ $(document).ready(function () {
       $('.fiche').hide();
       $('.arrow-right').hide();
       $('.arrow-left').hide();
+      $('.cache').hide();
       console.log("hello")
    })
 })
