@@ -5,18 +5,11 @@
 }
 
 body {
-<<<<<<< Updated upstream
     background-color: rgb(120, 194, 194);
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     overflow-x: hidden;
     /* overflow-y: hidden; */
-=======
-    background-color: lightcyan;
-    font-family: 'Nunito Sans', sans-serif;
-    margin: 0;
-    overflow-x: hidden;
->>>>>>> Stashed changes
 }
 
 nav {
@@ -104,7 +97,6 @@ h1 {
     color: greenyellow;
 }
 
-<<<<<<< Updated upstream
 .tdf {
     display: flex;
     justify-content: flex-end;
@@ -114,18 +106,6 @@ h1 {
 }
 
 .intitule {
-=======
-.lp {
-    display: flex;
-    justify-content: flex-end;
-    border: solid 1px blue;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-}
-
-.infolp {
->>>>>>> Stashed changes
     border: solid 10px pink;
     /* display: inline-block; */
     width: 60vw;
@@ -136,7 +116,6 @@ h1 {
 main {
     border: solid 1px black;
     width: 95vw;
-<<<<<<< Updated upstream
     height: 80vh;
     margin-top: 110px;
     text-align: left;
@@ -170,18 +149,6 @@ main {
 .c2.active {
 
     opacity: 1;
-=======
-    margin-right: 85px;
-    height: 80vh;
-    margin-top: 110px;
-    text-align: left;
-    background-color: white;
-    opacity: 70%;
-    /* filter: blur(1px); */
-    border-radius: 20px;
-    margin-left: 0;
-    margin-right: 20px;
->>>>>>> Stashed changes
 
 }
 
@@ -213,15 +180,9 @@ li:hover {
     position: relative;
     top: 30px;
     left: 160px;
-<<<<<<< Updated upstream
     margin-left: 80px;
     transition: 0.8s ease-in-out;
     margin-top: 10px;
-=======
-    /* margin-left: 80px; */
-    transition: 0.8s ease-in-out;
-    /* margin-top: 10px; */
->>>>>>> Stashed changes
 }
 
 .lien:hover {
@@ -266,7 +227,6 @@ h3 {
     margin-top: 50px;
 }
 
-<<<<<<< Updated upstream
 .exit {
     border-radius: 10px;
     background-color: red;
@@ -278,8 +238,6 @@ h3 {
 
 }
 
-=======
->>>>>>> Stashed changes
 /* .ligne { 
     height: 50vh;
     background-color: red;

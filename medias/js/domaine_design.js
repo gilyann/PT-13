@@ -1,6 +1,5 @@
 "use strict";
 
-<<<<<<< Updated upstream
 $(document).ready(function () {
     // $('main').hide();
 
@@ -57,8 +56,4 @@ $(document).ready(function () {
         })
     })
 
-=======
-$( document ).ready(function(){
-    // $('main').hide();
->>>>>>> Stashed changes
 })
