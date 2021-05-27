@@ -88,7 +88,7 @@ main {
 
 section {
     border: 1px solid orange;
-    height: 670px;
+    height: 730px;
     width: 450px;
     display: inline-block;
     margin: 50px;
@@ -146,7 +146,7 @@ section .container {
     border-radius: 30px 30px 30px 30px;
     transition-duration: 0.5s;
     /* border: solid black; */
-    height: 700px;
+    height: 680px;
 }
 
 
@@ -568,7 +568,7 @@ input[type="submit"] {
     /* border: pink solid; */
     margin-top: 40px;
     margin-left: 15px;
-    width: 680px;
+    width: 730px;
 }
 
 @media screen and (max-width:1300px) {
@@ -583,11 +583,6 @@ input[type="submit"] {
     .groupform {
         margin-top: 50px;
     }
-
-    .container {
-        height: 800px;
-    }
-
 }
 
 @media screen and (max-width:1200px) {
