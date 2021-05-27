@@ -42,7 +42,9 @@ $(document).ready(function () {
 
    $('.cache').on('click', function () {
       $(this).parent().animate({'width': (parseInt($('.hublot').css('width')) + 6*WIDTH ) + 'px','margin-left':-1.6*WIDTH + 'px'});
-      
+      $('.fiche').hide();
+      $('.arrow-right').hide();
+      $('.arrow-left').hide();
       console.log("hello")
    })
 })
