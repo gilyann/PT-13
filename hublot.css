@@ -90,10 +90,7 @@ body {
     height: 80px;
     background-color: #8de698;
     clip-path: polygon(100% 100%, 100% 0, 0 50%);
-<<<<<<< Updated upstream
     cursor: pointer;
-=======
->>>>>>> Stashed changes
 }
 
 
@@ -107,11 +104,7 @@ body {
     background-color: #e888a3;
     clip-path: polygon(0 0, 0 100%, 100% 50%);
     z-index: 20;
-<<<<<<< Updated upstream
     cursor: pointer;
-=======
-
->>>>>>> Stashed changes
 }
 
 /*.domaine2 img{
@@ -153,28 +146,19 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-<<<<<<< Updated upstream
     font-size: 1.5rem;
 }
 
 .right {
     padding-top: 25px;
-=======
-    padding-top: 20px;
-    font-size: 1.3rem;
-
->>>>>>> Stashed changes
 }
 
 nav a {
     text-decoration: none;
     color: #2FA1D1;
     transition: 0.8s ease-in-out;
-<<<<<<< Updated upstream
 
 
-=======
->>>>>>> Stashed changes
 }
 
 nav a:hover {
@@ -187,7 +171,6 @@ nav a:hover {
 
 .left {
     position: fixed;
-<<<<<<< Updated upstream
     margin-top: -3vh;
     margin-left: -115vw;
 }
@@ -197,7 +180,7 @@ nav a:hover {
     height: 40%;
 }
 
-.cache1 {
+.cache {
     background-color: red;
     position: absolute;
     top: 14vh;
@@ -211,29 +194,10 @@ nav a:hover {
 
 
 @media screen and (max-width:1300px) {
-=======
-    margin-top: -6vh;
-    margin-left: -120vw;
-
-}
-
-.logo {
-    width: 75%;
-    height: 75%;
-}
-
-.cache {
-    background-color: red;
-    margin-top: -100vh;
-}
-
-@media screen and (max-width:1024px) {
->>>>>>> Stashed changes
     .fiche p {
         font-size: 0.8rem;
     }
 
-<<<<<<< Updated upstream
     .fiche h1 {
         font-size: 1.2rem;
     }
@@ -258,13 +222,5 @@ nav a:hover {
         width: 100px;
         height: 100px;
         margin-left: -180px;
-=======
-    .fiche {
-        width: 20vw;
-    }
-
-    .nav {
-        font-size: 1rem;
->>>>>>> Stashed changes
     }
 }
