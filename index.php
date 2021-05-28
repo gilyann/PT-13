@@ -276,7 +276,7 @@
 
                     <div class="groupform message">
                         <label for="msg">Message :</label>
-                        <textarea id="msg" name="user_message" rows="8" cols="50" placeholder="Laissez-nous un messsage!" class="text"></textarea>
+                        <textarea id="msg" name="user_message" rows="8" cols="50" placeholder="Laissez-nous un message!" class="text"></textarea>
 
                     </div>
                     <div>
