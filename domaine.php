@@ -36,15 +36,15 @@
         <div class="intitule">
             <h2>Licences pros</h2>
             <ul>
-                <li>Cinéma et Audiovisuel</li>
-                <li>Cinéma</li>
-                <li>Gestion de la production audiovisuelle</li>
-                <li>Techniques et activités de l'image et du son</li>
-                <li>Techniques du son et de l'image parcours Métiers du Motion et du sound design
+                <li cat="1" lien="0">Cinéma et Audiovisuel</li> 
+                <li cat="1" lien="1">Cinéma</li>
+                <li cat="1" lien="2">Gestion de la production audiovisuelle</li>
+                <li cat="1" lien="3">Techniques et activités de l'image et du son</li>
+                <li cat="1" lien="4">Techniques du son et de l'image parcours Métiers du Motion et du sound design
                 </li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
-        </div>
+        </div> 
 
 
           <?php
@@ -52,84 +52,95 @@
 $link = new PDO('mysql:host=localhost;dbname=test', 'root', '', array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
-$sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation 
- FROM  intitule_formation, rel_domaine_int_form 
- WHERE id_domaine =4
- AND rel_domaine_int_form.id_intitule=intitule_formation.id_intitule";
+$sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
+FROM  intitule_formation, rel_domaine_int_form 
+WHERE id_domaine =3
+AND rel_domaine_int_form.id_intitule=intitule_formation.id_intitule 
+AND id_formation_type=1"; 
 // On prépare la requête avant l'envoi :
 $req = $link -> prepare($sql);
 $req -> execute();
+$i=0;
 // On crée une liste non numérotée avec les résultats
-echo '<ul>';
 while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
- echo '<main class="card c'.$data['id_intitule'].'">'.$data['nom_formation'].' <b>'.$data['enseignements'].
- '</b>' .$data['alternance_initiale'].' <b>'.$data['debouches'].
- '</b>  <b>'.$data['nom_etablissement'].'</b><b>'.$data['ville'].
- '</b>  <b>'.$data['code_postal'].'</b> <b>'.$data['url_formation']  .'</main>';
+ echo '<main class="card cat1 c'.$data['id_intitule'].' '.$i.'">
+ <div class="exit"></div>
+ <h3>'.$data['nom_formation'].'</h3>
+ <p class="truc">Enseignements</p>
+ <p>'.$data['enseignements'].'</p>
+ <p class="type">Type</p>
+ <p>'.$data['alternance_initiale'].'</p>
+ <p class="deb">Débouchés</p>
+ <p>'.$data['debouches']. '</p>
+ <p class="eta">Etablissements</p>
+ <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+ <p class="url">URL</p>
+ <p>'.$data['url_formation'].'</p>
+
+<div class="timbre"></div>
+</main>';
+$i++;
 }
 $req = null;
-echo '</ul>';
-
+echo('</section>'); 
 ?>
 
-
-        <main class="card c1">
-            <div class="exit"></div>
-            <h3>Cinéma et audiovisuel</h3>
-            <p class="truc">Enseignements</p>
-            <!-- liste avec PHP  -->
-            <p class="type">Type</p>
-            <!-- liste avec PHP  -->
-            <p class="deb">Débouchés</p>
-            <!-- liste avec PHP  -->
-            <p class="eta">Etablissements</p>
-            <!-- liste avec PHP  -->
-            <p class="url">URL</p>
-            <!-- url avec PHP  -->
-            <!-- <div class="ligne"></div> -->
-            <video src="">
-                <a href="">Vidéo 1jour1ecole</a>
-            </video>
-            <div class="timbre"></div>
-        </main>
-    </section>
+     
 
 
-
-    <section class="tdf bachelors">
+ <section class="tdf bachelors">
         <div class="intitule">
             <h2>Bachelors</h2>
             <ul>
-                <li>Monteur</li>
-                <li>Assistant de production audiovisuelle</li>
-                <li>Film making</li>
-                <li>Chef opérateur son</li>
-                <li>Cinéma Animation 3D</li>
+                <li cat="2"lien="0">Monteur</li>
+                <li cat="2" lien="1">Assistant de production audiovisuelle</li> 
+                <li cat="2" lien="2">Film making</li>
+                <li cat="2" lien="3">Chef opérateur son</li>
+                <li cat="2" lien="4">Cinéma Animation 3D</li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
-        </div>
+        </div> 
 
-        <main class="card c2">
-            <div class="exit"></div>
-            <h3>Cinéma et audiovisuel</h3>
-            <p class="truc">Enseignements</p>
-            <!-- liste avec PHP  -->
-            <p class="type">Type</p>
-            <!-- liste avec PHP  -->
-            <p class="deb">Débouchés</p>
-            <!-- liste avec PHP  -->
-            <p class="eta">Etablissements</p>
-            <!-- liste avec PHP  -->
-            <p class="url">URL</p>
-            <!-- url avec PHP  -->
-            <!-- <div class="ligne"></div> -->
-            <video src="">
-                <a href="">Vidéo 1jour1ecole</a>
-            </video>
-            <div class="timbre"></div>
-        </main>
-    </section>
+  <?php
+  $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
+  FROM  intitule_formation, rel_domaine_int_form 
+  WHERE id_domaine =3
+  AND rel_domaine_int_form.id_intitule=intitule_formation.id_intitule 
+  AND id_formation_type=2"; 
+ // On prépare la requête avant l'envoi :
+ $req = $link -> prepare($sql);
+ $req -> execute();
+ $i=0;
+ // On crée une liste non numérotée avec les résultats
+ while($data = $req -> fetch()){
+  // On affiche chaque résultat sous forme d'un item de la liste
+  echo '<main class="card cat2 c'.$data['id_intitule'].' '.$i.'"> 
+  <div class="exit"></div>
+  <h3>'.$data['nom_formation'].'</h3> 
+  <p class="truc">Enseignements</p>
+  <p>'.$data['enseignements'].'</p>
+  <p class="type">Type</p>
+  <p>'.$data['alternance_initiale'].'</p>
+  <p class="deb">Débouchés</p>
+  <p>'.$data['debouches']. '</p>
+  <p class="eta">Etablissements</p>
+  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+  <p class="url">URL</p>
+  <p>'.$data['url_formation'].'</p>
+ 
+ <div class="timbre"></div>
+ </main>';
+ $i++;
+ }
+ $req = null;
+ echo('</section>'); 
+  
+  ?>     
+
+
+
+
 
     <section class="tdf masters">
         <div class="intitule">
@@ -147,16 +158,15 @@ echo '</ul>';
         <main class="card c3">
             <h3>Cinéma et audiovisuel</h3>
             <p class="truc">Enseignements</p>
-            <!-- liste avec PHP  -->
+        
             <p class="type">Type</p>
-            <!-- liste avec PHP  -->
+         
             <p class="deb">Débouchés</p>
-            <!-- liste avec PHP  -->
+
             <p class="eta">Etablissements</p>
-            <!-- liste avec PHP  -->
+     
             <p class="url">URL</p>
-            <!-- url avec PHP  -->
-            <!-- <div class="ligne"></div> -->
+
             <video src="">
                 <a href="">Vidéo 1jour1ecole</a>
             </video>
@@ -180,22 +190,21 @@ echo '</ul>';
         <main class="card c4">
             <h3>Cinéma et audiovisuel</h3>
             <p class="truc">Enseignements</p>
-            <!-- liste avec PHP  -->
+   
             <p class="type">Type</p>
-            <!-- liste avec PHP  -->
+        
             <p class="deb">Débouchés</p>
-            <!-- liste avec PHP  -->
+   
             <p class="eta">Etablissements</p>
-            <!-- liste avec PHP  -->
+         
             <p class="url">URL</p>
-            <!-- url avec PHP  -->
-            <!-- <div class="ligne"></div> -->
+           
             <video src="">
                 <a href="">Vidéo 1jour1ecole</a>
             </video>
             <div class="timbre"></div>
         </main>
-    </section>
+    </section>-->
 
     <section class="tdf"></section>
 </body>

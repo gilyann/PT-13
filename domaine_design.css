@@ -98,8 +98,6 @@ h1 {
 }
 
 .tdf {
-    display: flex;
-    justify-content: flex-end;
     border: solid 1px blue;
     margin-left: 0;
     margin-right: 0;
@@ -107,49 +105,32 @@ h1 {
 
 .intitule {
     border: solid 10px pink;
-    /* display: inline-block; */
-    width: 60vw;
+    display: inline-block;
+    width: 40vw;
     /* margin-right: 150px; */
+    left: 4vw;
 
 }
 
 main {
     border: solid 1px black;
-    width: 95vw;
+    position: absolute;
+    width: 50vw;
     height: 80vh;
-    margin-top: 110px;
     text-align: left;
     background-color: rgba(255, 255, 255, 0.753);
     /* filter: blur(1px); */
     border-radius: 20px;
     margin-left: 0;
     margin-right: 35px;
-
-
-}
-
-.c1 {
-
+    right: 4vw;
+    display: none;
     opacity: 0;
-
 }
 
-.c1.active {
-
+main.active {
+    display: inline-block;
     opacity: 1;
-
-}
-
-.c2 {
-
-    opacity: 0;
-
-}
-
-.c2.active {
-
-    opacity: 1;
-
 }
 
 h2 {

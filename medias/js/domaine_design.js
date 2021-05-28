@@ -9,36 +9,22 @@ $(document).ready(function () {
     $(function () {
 
 
-        $(".intitule li:nth-child(1)").on("click", function () {
+        $(".intitule li").on("click", function () {
+var lien =$(this).attr('lien')
+var cat =$(this).attr('cat')
 
-            $(".c1").addClass("active")
-
+$('main.cat'+cat+'').removeClass('active')
+            $('main.cat'+cat+'.'+lien+'').addClass("active") 
         })
         $(".exit").on("click", function () {
 
-            $(".c1").removeClass('active')
-
+            $(this).parent().removeClass('active') 
 
         })
     })
 
-    $(function () {
-
-
-        $(".intitule li:nth-child(2)").on("click", function () {
-
-            $(".c2").addClass("active")
-
-        })
-        $(".exit").on("click", function () {
-
-            $(".c2").removeClass('active')
-
-
-        })
+  
     })
-
-
 
     $(function () {
 
@@ -56,4 +42,3 @@ $(document).ready(function () {
         })
     })
 
-})
