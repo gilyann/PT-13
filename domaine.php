@@ -23,12 +23,11 @@
             <a href="#" class="but">BUT MMI</a>
             <a href="#">À propos</a>
         </div>
-
     </nav>
 
     <header>
         <p>Bienvenue dans le domaine de</p>
-        <h1>Design</h1>
+        <h1>L'Audiovisuel</h1>
         <p>En visitant les différentes attractions, tu découvriras les différents types d'études possibles !</p>
     </header>
 
@@ -146,67 +145,110 @@ echo('</section>');
         <div class="intitule">
             <h2>Masters</h2>
             <ul>
-                <li>Acoustique</li>
-                <li>Audiovisuel, médias interactifs numériques, jeux</li>
-                <li>Cinéma et audiovisuel</li>
-                <li>Ingénierie de l'image et du son</li>
-                <li>Intitulé 5</li>
+                <li cat="3"lien="0">Acoustique</li>
+                <li cat="3"lien="1">Audiovisuel, médias interactifs numériques, jeux</li>
+                <li cat="3"lien="2">Cinéma et audiovisuel</li>
+                <li cat="3"lien="3">Ingénierie de l'image et du son</li>
+                <li cat="3"lien="4">Intitulé 5</li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
         </div>
 
-        <main class="card c3">
-            <h3>Cinéma et audiovisuel</h3>
-            <p class="truc">Enseignements</p>
-        
-            <p class="type">Type</p>
-         
-            <p class="deb">Débouchés</p>
 
-            <p class="eta">Etablissements</p>
-     
-            <p class="url">URL</p>
 
-            <video src="">
-                <a href="">Vidéo 1jour1ecole</a>
-            </video>
-            <div class="timbre"></div>
-        </main>
-    </section>
+        <?php
+
+$link = new PDO('mysql:host=localhost;dbname=test', 'root', '', array
+(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+// pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
+$sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
+FROM  intitule_formation, rel_domaine_int_form 
+WHERE id_domaine =3
+AND rel_domaine_int_form.id_intitule=intitule_formation.id_intitule 
+AND id_formation_type=4"; 
+// On prépare la requête avant l'envoi :
+$req = $link -> prepare($sql);
+$req -> execute();
+$i=0;
+// On crée une liste non numérotée avec les résultats
+while($data = $req -> fetch()){
+ // On affiche chaque résultat sous forme d'un item de la liste
+ echo '<main class="card cat3 c'.$data['id_intitule'].' '.$i.'">
+ <div class="exit"></div>
+ <h3>'.$data['nom_formation'].'</h3>
+ <p class="truc">Enseignements</p>
+ <p>'.$data['enseignements'].'</p>
+ <p class="type">Type</p>
+ <p>'.$data['alternance_initiale'].'</p>
+ <p class="deb">Débouchés</p>
+ <p>'.$data['debouches']. '</p>
+ <p class="eta">Etablissements</p>
+ <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+ <p class="url">URL</p>
+ <p>'.$data['url_formation'].'</p>
+
+<div class="timbre"></div>
+</main>';
+$i++;
+}
+$req = null;
+echo('</section>'); 
+?>
+
+
+
 
     <section class="tdf masteres">
         <div class="intitule">
             <h2>Mastères</h2>
             <ul>
-                <li>Intitulé 1</li>
-                <li>Intitulé 2</li>
-                <li>Intitulé 3</li>
-                <li>Intitulé 4</li>
-                <li>Intitulé 5</li>
+                <li cat="4" lien="1">Intitulé 1</li>
+                <li cat="4" lien="2">Intitulé 2</li>
+                <li cat="4" lien="3">Intitulé 3</li>
+                <li cat="4" lien="4">Intitulé 4</li>
+                <li cat="4" lien="5">Intitulé 5</li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
         </div>
+        <?php
 
-        <main class="card c4">
-            <h3>Cinéma et audiovisuel</h3>
-            <p class="truc">Enseignements</p>
-   
-            <p class="type">Type</p>
-        
-            <p class="deb">Débouchés</p>
-   
-            <p class="eta">Etablissements</p>
-         
-            <p class="url">URL</p>
-           
-            <video src="">
-                <a href="">Vidéo 1jour1ecole</a>
-            </video>
-            <div class="timbre"></div>
-        </main>
-    </section>-->
+$link = new PDO('mysql:host=localhost;dbname=test', 'root', '', array
+(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+// pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
+$sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
+FROM  intitule_formation, rel_domaine_int_form 
+WHERE id_domaine =3
+AND rel_domaine_int_form.id_intitule=intitule_formation.id_intitule 
+AND id_formation_type=5"; 
+// On prépare la requête avant l'envoi :
+$req = $link -> prepare($sql);
+$req -> execute();
+$i=0;
+// On crée une liste non numérotée avec les résultats
+while($data = $req -> fetch()){
+ // On affiche chaque résultat sous forme d'un item de la liste
+ echo '<main class="card cat3 c'.$data['id_intitule'].' '.$i.'">
+ <div class="exit"></div>
+ <h3>'.$data['nom_formation'].'</h3>
+ <p class="truc">Enseignements</p>
+ <p>'.$data['enseignements'].'</p>
+ <p class="type">Type</p>
+ <p>'.$data['alternance_initiale'].'</p>
+ <p class="deb">Débouchés</p>
+ <p>'.$data['debouches']. '</p>
+ <p class="eta">Etablissements</p>
+ <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+ <p class="url">URL</p>
+ <p>'.$data['url_formation'].'</p>
 
-    <section class="tdf"></section>
+<div class="timbre"></div>
+</main>';
+$i++;
+}
+$req = null;
+echo('</section>'); 
+?>
+  
 </body>
 
 </html>
