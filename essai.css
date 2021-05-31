@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+}
+
+.panneau {
+    border: #ECECEC solid 15px;
+    width: 75vw;
+    height: 80vh;
+    margin: auto;
+    background-color: #222C4F;
+    color: white;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #2FA1D1;
+    font-size: 4.5rem;
+    margin-left: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
+
+li {
+    margin-top: 30px;
+    font-size: 1.125rem;
+}
+
+nav {
+    /* border: black solid; */
+    width: 100vw;
+    height: 12vh;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.right {
+    /* border: solid black; */
+    width: 60vw;
+    padding-top: 20px;
+}
+
+a {
+    margin-left: 100px;
+    margin-right: 50px;
+    font-size: 1.7rem;
+    color: #2FA1D1;
+    text-decoration: none;
+    transition: 0.8s ease;
+}
+
+a:hover {
+    background-color: #2FA1D1;
+    color: white;
+    padding: 12px;
+    border-radius: 20px;
+}
+
+img {
+    margin-left: -1000px;
+    /* border: solid black; */
+    width: 10vw;
+    margin-top: -15px;
+}
