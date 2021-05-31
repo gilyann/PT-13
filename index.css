@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #e9e9e9;
+    background: #FAF8F8;
     text-align: center;
     min-width: 300px;
     font-family: sans-serif;
@@ -34,24 +34,28 @@ body {
     /* border: 1px solid blue; */
     display: flex;
     height: 730px;
-    margin-bottom: 130px;
+    margin-bottom: 150px;
+    margin-top: -50px;
+
 
 
 }
 
 .presentation {
     /* border: 1px solid brown; */
-    width: 50vw;
+    width: 40%;
     height: 600px;
-    margin-left: 174px;
+    margin-left: 100px;
     margin-top: 170px;
     font-size: 2rem;
 }
 
 .presentation h5 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #2FA1D1;
     text-align: left;
+    font-family: 'Raleway', sans-serif;
+
 
 }
 
@@ -62,13 +66,12 @@ body {
 }
 
 .ptt-image {
-    border: 1px solid brown;
+    /* border: 1px solid brown;*/
     width: 50vw;
     height: 560px;
-    margin-right: 174px;
+    margin-right: 100px;
     margin-top: 170px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding-left: 100px;
 }
 
 .ptt-image img {
@@ -80,15 +83,15 @@ body {
 
 /* Main des 4 cartes */
 main {
-    border: 1px solid pink;
-    margin-left: 100px;
-    margin-right: 50px;
+    /*border: 1px solid pink;*/
+    margin-left: 50px;
+    margin-right: 100px;
     width: 1300px;
 
 }
 
 section {
-    border: 1px solid orange;
+    /*border: 1px solid orange;*/
     height: 730px;
     width: 450px;
     display: inline-block;
@@ -109,7 +112,7 @@ section .container {
 .container:hover {
 
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
-    transform: scale(1.03);
+    transform: scale(1.01);
     transition-duration: 1s;
 }
 
