@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="medias/js/domaine_audiovisuel.js"></script>
-    <title>Page_domaine</title>
+    <title>domaine_audiovisuel</title>
 </head>
 
 <body>
