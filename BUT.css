@@ -34,12 +34,13 @@ li {
 }
 
 nav {
-    border: black solid;
+    /* border: black solid; */
     width: 100vw;
     height: 12vh;
     display: flex;
     justify-content: flex-end;
     text-align: center;
+    background-color: rgba(128, 128, 128, 0.521);
 }
 
 .right {
@@ -69,4 +70,18 @@ img {
     /* border: solid black; */
     width: 10vw;
     margin-top: -15px;
+}
+
+@media screen and (max-width:1300px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    li {
+        font-size: 1rem;
+    }
+
+    .panneau {
+        width: 50vw;
+    }
 }
