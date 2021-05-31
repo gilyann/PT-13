@@ -5,14 +5,14 @@
 }
 
 body {
-    background-color: rgb(120, 194, 194);
+    /* background-color: rgb(120, 194, 194); */
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     overflow-x: hidden;
     /* overflow-y: hidden; */
-    background-image: url(medias/img/background-audiovisuel.png);
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url(medias/img/background-audiovisuel.png);
 }
 
 nav {

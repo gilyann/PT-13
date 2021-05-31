@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="domaine_developpement">
+    <link rel="stylesheet" href="domaine_developpement.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -35,11 +35,11 @@
         <div class="infolp">
         <h2>Licences pros</h2>
         <ul>
-            <li>Cinéma et Audiovisuel</li>
-            <li>Cinéma</li>
-            <li>Gestion de la production audiovisuelle</li>
-            <li>Techniques et activités de l'image et du son</li>
-            <li>Techniques du son et de l'image parcours Métiers du Motion et du sound design
+            <li cat="1" lien="0">Cinéma et Audiovisuel</li>
+            <li cat="1" lien="1">Cinéma</li>
+            <li cat="1" lien="2">Gestion de la production audiovisuelle</li>
+            <li cat="1" lien="3">Techniques et activités de l'image et du son</li>
+            <li cat="1" lien="4">Techniques du son et de l'image parcours Métiers du Motion et du sound design
             </li>
         </ul>
 <a href="#" class="lien">Voir toutes les formations</a>        
