@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="medias/js/domaine_audiovisuel.js"></script>
+    <script src="medias/js/domaine_developpement.js"></script>
     <title>domaine_audiovisuel</title>
 </head>
 
@@ -202,11 +202,11 @@ echo('</section>');
         <div class="intitule">
             <h2>Masters</h2>
             <ul>
-                <li cat="4"lien="0">Acoustique</li>
-                <li cat="4"lien="1">Audiovisuel, médias interactifs numériques, jeux</li>
-                <li cat="4"lien="2">Cinéma et audiovisuel</li>
-                <li cat="4"lien="3">Réalisation et création</li>
-                <li cat="4"lien="4">Cinéma et audiovisuel</li>
+                <li cat="4"lien="0">Ingénieurie des systèmes complexes</li>
+                <li cat="4"lien="1">Calcule haute performnce, simulation</li>
+                <li cat="4"lien="2">Création numérique</li>
+                <li cat="4"lien="3">Ergonomie</li>
+                <li cat="4"lien="4">Ergonomie</li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
         </div>
@@ -252,6 +252,61 @@ $req = null;
 echo('</section>'); 
 ?>
 
+
+
+    <section class="tdf masters">
+        <div class="intitule">
+            <h2>Mastères</h2>
+            <ul>
+                <li cat="5"lien="1">CTO et Tech Lead</li>
+                <li cat="5"lien="2">Développement "mobile factory"</li>
+                <li cat="5"lien="3">Expert informatique - Parcours Développement Web ou Logiciel</li>
+                <li cat="5"lien="4">Data et Intelligence Artificielle</li>
+                <li cat="5"lien="5">Ergonomie</li>
+            </ul>
+            <a href="#" class="lien">Voir toutes les formations</a>
+        </div>
+
+
+
+        <?php
+
+$link = new PDO('mysql:host=localhost;dbname=mmi_airline', 'root', '', array
+(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+// pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
+$sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
+FROM  intitule_formation, rel_domaine_int_form 
+WHERE id_domaine =1
+AND rel_domaine_int_form.id_intitule=intitule_formation.id_intitule 
+AND id_formation_type=5"; 
+// On prépare la requête avant l'envoi :
+$req = $link -> prepare($sql);
+$req -> execute();
+$i=0;
+// On crée une liste non numérotée avec les résultats
+while($data = $req -> fetch()){
+ // On affiche chaque résultat sous forme d'un item de la liste
+ echo '<main class="card cat3 c'.$data['id_intitule'].' '.$i.'">
+ <div class="exit"></div>
+ <h3>'.$data['nom_formation'].'</h3>
+ <p class="truc">Enseignements</p>
+ <p>'.$data['enseignements'].'</p>
+ <p class="type">Type</p>
+ <p>'.$data['alternance_initiale'].'</p>
+ <p class="deb">Débouchés</p>
+ <p>'.$data['debouches']. '</p>
+ <p class="eta">Etablissements</p>
+ <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+ <p class="url">URL</p>
+ <p>'.$data['url_formation'].'</p>
+
+<div class="timbre"></div>
+</main>';
+$i++;
+}
+$req = null;
+echo('</section>'); 
+?>
 
 
 

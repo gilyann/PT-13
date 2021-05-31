@@ -31,6 +31,7 @@ nav {
 .right {
     padding-top: 20px;
     margin-left: 50px;
+    background-color: rgba(128, 128, 128, 0.438);
 
 }
 
@@ -106,6 +107,7 @@ h1 {
     margin-left: 0;
     margin-right: 0;
     height: 100vh;
+    margin-top: 50px;
 }
 
 .intitule {

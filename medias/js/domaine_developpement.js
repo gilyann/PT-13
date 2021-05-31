@@ -26,19 +26,19 @@ $('main.cat'+cat+'').removeClass('active')
   
     })
 
-    $(function () {
+    // $(function () {
 
 
-        $(".infolp li").on("click", function () {
+        // $(".infolp li").on("click", function () {
 
-            $(".c2").addClass("active")
+            // $(".c2").addClass("active")
 
-        })
-        $(".exit").on("click", function () {
+        // })
+        // $(".exit").on("click", function () {
 
-            $(".c2").removeClass("active")
+            // $(".c2").removeClass("active")
 
 
-        })
-    })
+        // })
+    // })
 
