@@ -34,7 +34,7 @@ li {
 }
 
 nav {
-    /* border: black solid; */
+    border: black solid;
     width: 100vw;
     height: 12vh;
     display: flex;
