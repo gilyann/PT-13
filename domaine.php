@@ -48,7 +48,7 @@
 
           <?php
 
-$link = new PDO('mysql:host=localhost;dbname=test', 'root', '', array
+$link = new PDO('mysql:host=localhost;dbname=mmi_airline', 'root', '', array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
@@ -148,8 +148,8 @@ echo('</section>');
                 <li cat="3"lien="0">Acoustique</li>
                 <li cat="3"lien="1">Audiovisuel, médias interactifs numériques, jeux</li>
                 <li cat="3"lien="2">Cinéma et audiovisuel</li>
-                <li cat="3"lien="3">Ingénierie de l'image et du son</li>
-                <li cat="3"lien="4">Intitulé 5</li>
+                <li cat="3"lien="3">Réalisation et création</li>
+                <li cat="3"lien="4">Cinéma et audiovisuel</li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
         </div>
@@ -158,7 +158,7 @@ echo('</section>');
 
         <?php
 
-$link = new PDO('mysql:host=localhost;dbname=test', 'root', '', array
+$link = new PDO('mysql:host=localhost;dbname=mmi_airline', 'root', '', array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
@@ -212,7 +212,7 @@ echo('</section>');
         </div>
         <?php
 
-$link = new PDO('mysql:host=localhost;dbname=test', 'root', '', array
+$link = new PDO('mysql:host=localhost;dbname=mmi_airline', 'root', '', array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
