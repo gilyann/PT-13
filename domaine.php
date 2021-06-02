@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="domaine_audiovisuel.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="medias/js/domaine_audiovisuel.js"></script>
     <title>domaine_audiovisuel</title>
@@ -27,7 +29,7 @@
 
     <header>
         <p>Bienvenue dans le domaine de</p>
-        <h1>L'Audiovisuel</h1>
+        <h1>L'AUDIOVISUEL</h1>
         <p>En visitant les différentes attractions, tu découvriras les différents types d'études possibles !</p>
     </header>
 

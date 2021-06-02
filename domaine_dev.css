@@ -10,7 +10,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     /* overflow-y: hidden; */
-    background-image: url(medias/img/background-audiovisuel.png);
+    background-image: url(medias/img/background-dev.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -157,6 +157,7 @@ h2 {
     text-align: center;
     margin-top: 80px;
     color: #f73549d2;
+    font-family: 'Raleway', sans-serif;
 }
 
 li {
@@ -167,6 +168,7 @@ li {
     color: white;
     margin-bottom: 10px;
     list-style-type: none;
+    text-decoration: none;
 }
 
 li:hover {

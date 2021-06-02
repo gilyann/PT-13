@@ -262,7 +262,7 @@
                     </div>
                 </div>
 
-                <form action="envoi.php" method="post">
+                <form action="envoi.php" method="Post">
 
                     <div class="groupform nom">
                         <input type="text" name="name" id="name" required>

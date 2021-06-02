@@ -22,8 +22,6 @@ $('main.cat'+cat+'').removeClass('active')
 
         })
     })
-
-  
     })
 
     // $(function () {
