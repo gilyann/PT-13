@@ -10,7 +10,7 @@ body {
     margin: 0;
     overflow-x: hidden;
     /* overflow-y: hidden; */
-    background-image: url(medias/img/background-design.png);
+    background-image: url(medias/img/background-dev.png);
     background-size: cover;
     background-repeat: no-repeat;
 }
