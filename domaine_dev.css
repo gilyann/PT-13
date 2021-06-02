@@ -199,7 +199,7 @@ h3 {
     font-size: 1.7rem;
     color: #f73549d2;
     margin-left: 80px;
-    margin-top: -30px;
+    margin-top: -20px;
 }
 
 .truc {
@@ -250,7 +250,7 @@ main :nth-child(8) {
 .eta {
     margin-left: 40px;
     font-size: 1.3rem;
-    margin-top: -60px;
+    margin-top: -80px;
     width: 10vw;
     background: linear-gradient(transparent 30%, #f73549d2);
     transform: skew(5deg);
@@ -312,17 +312,11 @@ main :nth-child(12) {
     transform: rotate(-45deg);
 }
 
-/* .ligne { 
+.ligne {
     background-color: white;
-    height: 70vh;
+    height: 50vh;
     width: 2px;
     position: absolute;
-    bottom: 30px;
+    bottom: 150px;
     left: 35vw;
-}*/
-
-
-/* .ligne { 
-    height: 50vh;
-    background-color: red;
-}*/
+}

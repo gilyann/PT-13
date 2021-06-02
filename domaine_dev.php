@@ -81,7 +81,7 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
-
+ <p class="ligne"></p>
 <div class="timbre"></div>
 </main>';
 $i++;
@@ -135,7 +135,7 @@ echo('</section>');
   <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
   <p class="url">URL</p>
   <p>'.$data['url_formation'].'</p>
- 
+  <p class="ligne"></p>
  <div class="timbre"></div>
  </main>';
  $i++;
@@ -191,7 +191,7 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
-
+ <p class="ligne"></p>
 <div class="timbre"></div>
 </main>';
 $i++;
@@ -247,7 +247,7 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
-
+ <p class="ligne"></p>
 <div class="timbre"></div>
 </main>';
 $i++;
@@ -303,7 +303,7 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
-
+ <p class="ligne"></p>
 <div class="timbre"></div>
 </main>';
 $i++;
