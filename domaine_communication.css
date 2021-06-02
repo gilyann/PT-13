@@ -196,7 +196,7 @@ h3 {
     font-size: 2rem;
     color: #f73549d2;
     margin-left: 80px;
-    margin-top: 5px;
+    margin-top: -50px;
 }
 
 .truc {
@@ -205,6 +205,7 @@ h3 {
     background: linear-gradient(transparent 40%, #f73549d2);
     width: 150px;
     transform: skew(5deg);
+    margin-top: -10px;
 }
 
 main :nth-child(4) {
@@ -247,7 +248,7 @@ main :nth-child(8) {
 .eta {
     margin-left: 40px;
     font-size: 1.3rem;
-    margin-top: -50px;
+    margin-top: -70px;
     width: 10vw;
     background: linear-gradient(transparent 30%, #f73549d2);
     transform: skew(5deg);

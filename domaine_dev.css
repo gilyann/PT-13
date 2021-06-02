@@ -196,10 +196,10 @@ li:hover {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     color: #f73549d2;
     margin-left: 80px;
-    margin-top: 5px;
+    margin-top: -30px;
 }
 
 .truc {
@@ -211,7 +211,7 @@ h3 {
 }
 
 main :nth-child(4) {
-    margin-top: -10px;
+    margin-top: -5px;
     width: 30vw;
 }
 
@@ -250,7 +250,7 @@ main :nth-child(8) {
 .eta {
     margin-left: 40px;
     font-size: 1.3rem;
-    margin-top: -50px;
+    margin-top: -60px;
     width: 10vw;
     background: linear-gradient(transparent 30%, #f73549d2);
     transform: skew(5deg);
@@ -267,13 +267,14 @@ main :nth-child(10) {
     font-size: 1.3rem;
     margin-top: 20px;
     background: linear-gradient(transparent 30%, #f73549d2);
-    width: 50px;
+    width: 70px;
     transform: skew(5deg);
 }
 
 main :nth-child(12) {
     margin-top: -10px;
-    width: 30vw;
+    width: 40vw;
+    border: solid black;
 }
 
 .exit {
@@ -311,6 +312,14 @@ main :nth-child(12) {
     transform: rotate(-45deg);
 }
 
+/* .ligne { 
+    background-color: white;
+    height: 70vh;
+    width: 2px;
+    position: absolute;
+    bottom: 30px;
+    left: 35vw;
+}*/
 
 
 /* .ligne { 
