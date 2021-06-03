@@ -24,7 +24,7 @@
     </header>
     <div class="low-header">
         <div class="presentation">
-            <h5>Avenir Incertain ?</h5>
+            <h1>Avenir Incertain ?</h1>
             <p>Avenir incertain ? Après l’obtention d’un DUT/BUT MMI, l’étudiant peut poursuivre ses études mais quel
                 cursus choisir ? <br> <br>MMi Airlines est là pour te guider et trouver la formation idéale ! Pour
                 cela, nous te donnons la possibilité de voyager à travers 4 domaines d’études. <br> <br> Ne tarde pas !

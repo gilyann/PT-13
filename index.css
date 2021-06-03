@@ -67,13 +67,12 @@ body {
     font-size: 2rem;
 }
 
-.presentation h5 {
+.presentation h1 {
     font-size: 4rem;
     color: #2FA1D1;
     text-align: left;
     font-family: 'Raleway', sans-serif;
-
-
+    margin-top: -10px;
 }
 
 .presentation p {
