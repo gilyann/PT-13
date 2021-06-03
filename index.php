@@ -9,6 +9,8 @@
     <script type="text/javascript" src="index.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <title>Page accueil</title>
 </head>
 
@@ -17,7 +19,8 @@
 
     
     <header class="bigheader">
-
+        <h2>MMI Airlines</h2>
+        <p>Envole toi vers ton avenir</p>
     </header>
     <div class="low-header">
         <div class="presentation">
@@ -76,7 +79,7 @@
                     <div class="details">
                         <div class="number detail">
                             <h4>FLIGHT NUMBER</h4>
-                            <h3>heheheh</h3>
+                            <h3>181202</h3>
                         </div>
                     </div>
 
@@ -127,7 +130,7 @@
                     <div class="details">
                         <div class="number detail">
                             <h4>FLIGHT NUMBER</h4>
-                            <h3>heheheh</h3>
+                            <h3>070602</h3>
                         </div>
                     </div>
 
@@ -181,7 +184,7 @@
                     <div class="details">
                         <div class="number detail">
                             <h4>FLIGHT NUMBER</h4>
-                            <h3>heheheh</h3>
+                            <h3>270302</h3>
                         </div>
                     </div>
 
@@ -232,7 +235,7 @@
                     <div class="details">
                         <div class="number detail">
                             <h4>FLIGHT NUMBER</h4>
-                            <h3>heheheh</h3>
+                            <h3>300602</h3>
                         </div>
                     </div>
 
