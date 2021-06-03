@@ -196,16 +196,16 @@ li:hover {
 }
 
 h3 {
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     color: #f73549d2;
     margin-left: 80px;
-    margin-top: -20px;
+    margin-top: 10px;
 }
 
 .truc {
     margin-left: 40px;
     font-size: 1.3rem;
-    background: linear-gradient(transparent 40%, #f73549d2);
+    /* background: linear-gradient(transparent 40%, #f73549d2); */
     width: 150px;
     transform: skew(5deg);
 }
@@ -265,7 +265,7 @@ main :nth-child(10) {
 .url {
     margin-left: 40px;
     font-size: 1.3rem;
-    margin-top: 20px;
+    margin-top: 30px;
     background: linear-gradient(transparent 30%, #f73549d2);
     width: 70px;
     transform: skew(5deg);
@@ -273,7 +273,7 @@ main :nth-child(10) {
 
 main :nth-child(12) {
     margin-top: -10px;
-    width: 40vw;
+    width: 30vw;
     border: solid black;
 }
 
@@ -314,10 +314,10 @@ main :nth-child(12) {
 
 .ligne {
     background-color: white;
-    height: 50vh;
+    height: 60vh;
     width: 2px;
     position: absolute;
-    bottom: 150px;
+    bottom: 90px;
     left: 35vw;
 }
 

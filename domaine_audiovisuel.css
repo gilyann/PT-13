@@ -197,7 +197,7 @@ h3 {
     font-size: 2rem;
     color: #f73549d2;
     margin-left: 80px;
-    margin-top: -30px;
+    margin-top: 10px;
 }
 
 .truc {
@@ -311,9 +311,9 @@ main :nth-child(12) {
 
 .ligne {
     background-color: white;
-    height: 72vh;
+    height: 60vh;
     width: 2px;
     position: absolute;
     left: 35vw;
-    bottom: 5vh;
+    bottom: 15vh;
 }
