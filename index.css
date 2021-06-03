@@ -67,19 +67,19 @@ body {
     font-size: 2rem;
 }
 
-.presentation h5 {
+.presentation h1 {
     font-size: 4rem;
     color: #2FA1D1;
     text-align: left;
     font-family: 'Raleway', sans-serif;
-
-
+    margin-top: 110px;
 }
 
 .presentation p {
     text-align: justify;
     font-size: 1.25rem;
     margin-right: 20px;
+    margin-top: 20px;
 }
 
 .ptt-image {

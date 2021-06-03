@@ -78,7 +78,7 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
-
+<div class="ligne"></div>
 <div class="timbre"></div>
 </main>';
 $i++;
@@ -131,7 +131,7 @@ echo('</section>');
   <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
   <p class="url">URL</p>
   <p>'.$data['url_formation'].'</p>
- 
+  <div class="ligne"></div>
  <div class="timbre"></div>
  </main>';
  $i++;
@@ -165,7 +165,7 @@ echo('</section>');
 $link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
-$sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
+$sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule,url_video
 FROM  intitule_formation, rel_domaine_int_form 
 WHERE id_domaine =3
 AND rel_domaine_int_form.id_intitule=intitule_formation.id_intitule 
@@ -190,7 +190,7 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
-
+ <div class="ligne"></div>
 <div class="timbre"></div>
 </main>';
 $i++;

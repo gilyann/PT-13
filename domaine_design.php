@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="medias/js/domaine_design.js"></script>
-    <title>domaine_audiovisuel</title>
+    <title>domaine_design</title>
 </head>
 
 <body>
@@ -75,7 +75,7 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
-
+ <div class="ligne"></div>
 <div class="timbre"></div>
 </main>';
 $i++;
@@ -128,7 +128,7 @@ echo('</section>');
   <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
   <p class="url">URL</p>
   <p>'.$data['url_formation'].'</p>
- 
+  <div class="ligne"></div>
  <div class="timbre"></div>
  </main>';
  $i++;
@@ -186,7 +186,7 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
-
+ <div class="ligne"></div>
 <div class="timbre"></div>
 </main>';
 $i++;
@@ -236,7 +236,7 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
-
+ <div class="ligne"></div>
 <div class="timbre"></div>
 </main>';
 $i++;
@@ -290,7 +290,7 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
-
+ <div class="ligne"></div>
 <div class="timbre"></div>
 </main>';
 $i++;
