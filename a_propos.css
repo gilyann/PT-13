@@ -10,7 +10,7 @@ body {
     overflow: hidden;
     font-family: 'Nunito Sans', sans-serif;
     background-color: grey;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 nav {
@@ -165,7 +165,7 @@ nav a {
 }
 
 .cl {
-    margin-left: 30px;
+    margin-left: 50px;
     border: blue solid;
 }
 
@@ -178,7 +178,7 @@ nav a {
 }
 
 .doc {
-    border: solid pink;
+    /* border: solid pink; */
     position: absolute;
     display: flex;
     /* justify-content: space-around; */
@@ -187,49 +187,52 @@ nav a {
 
 .cv_gi img {
     height: 20%;
-    border: green solid;
+    /* border: green solid; */
 }
 
 .interactif_gi img {
     height: 20%;
-    margin-left: -340px;
-    border: green solid;
+    margin-left: -320px;
+    /* border: green solid; */
 }
 
 .cv_cl img {
     height: 20%;
-    border: green solid;
-    margin-left: -300px;
+    /* border: green solid; */
+    margin-left: -250px;
+    margin-right: 50px;
 }
 
 .interactif_cl img {
     height: 20%;
-    margin-left: -330px;
-    border: green solid;
+    margin-left: -400px;
+    margin-right: 50px;
+    /* border: green solid; */
 }
 
 .cv_lu img {
     height: 20%;
-    border: green solid;
-    margin-left: -300px;
+    /* border: green solid; */
+    margin-left: -320px;
+    margin-right: 50px;
 }
 
 .interactif_lu img {
     height: 20%;
-    margin-left: -330px;
-    border: green solid;
+    margin-left: -380px;
+    /* border: green solid; */
 }
 
 .cv_ju img {
     height: 20%;
-    border: green solid;
+    /* border: green solid; */
     margin-left: -300px;
 }
 
 .interactif_ju img {
     height: 20%;
-    margin-left: -330px;
-    border: green solid;
+    margin-left: -340px;
+    /* border: green solid; */
 }
 
 /* .interactif {
