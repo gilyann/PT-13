@@ -56,7 +56,7 @@ Web Application</li>
 $link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
-$sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
+$sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule, url_video
 FROM  intitule_formation, rel_domaine_int_form 
 WHERE id_domaine =1
 AND rel_domaine_int_form.id_intitule=intitule_formation.id_intitule 
@@ -82,6 +82,8 @@ while($data = $req -> fetch()){
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
  <p class="ligne"></p>
+ <iframe width="350" height="250" src='.$data['url_video'].' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+
 <div class="timbre"></div>
 </main>';
 $i++;
@@ -90,7 +92,9 @@ $req = null;
 echo('</section>'); 
 ?>
 
-     
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1oDcd3cg_gk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 
  <section class="tdf bachelors">
@@ -110,7 +114,7 @@ echo('</section>');
   $link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
   (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
   // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
-  $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
+  $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule, url_video
   FROM  intitule_formation, rel_domaine_int_form 
   WHERE id_domaine =1
   AND rel_domaine_int_form.id_intitule=intitule_formation.id_intitule 
@@ -136,14 +140,20 @@ echo('</section>');
   <p class="url">URL</p>
   <p>'.$data['url_formation'].'</p>
   <p class="ligne"></p>
+       <iframe width="350" height="250" src='.$data['url_video'].' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>;
  <div class="timbre"></div>
  </main>';
  $i++;
  }
  $req = null;
  echo('</section>'); 
-  
+
   ?>     
+
+
+
+
+
 
 <section class="tdf masters">
         <div class="intitule">
@@ -320,3 +330,8 @@ echo('</section>');
 </body>
 
 </html>
+<!-- if ('.$data['url_video'].'=null){ 
+    echo"à découvrir plus tard";
+   }else{ 
+    echo  
+   }-->

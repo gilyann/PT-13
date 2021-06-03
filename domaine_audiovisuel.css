@@ -309,9 +309,11 @@ main :nth-child(12) {
     transform: rotate(-45deg);
 }
 
-
-
-/* .ligne { 
-    height: 50vh;
-    background-color: red;
-}*/
+.ligne {
+    background-color: white;
+    height: 72vh;
+    width: 2px;
+    position: absolute;
+    left: 35vw;
+    bottom: 5vh;
+}

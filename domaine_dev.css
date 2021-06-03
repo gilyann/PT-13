@@ -320,3 +320,10 @@ main :nth-child(12) {
     bottom: 150px;
     left: 35vw;
 }
+
+.video {
+    border: black solid;
+    position: absolute;
+    left: 40vw;
+    bottom: 30vh;
+}
