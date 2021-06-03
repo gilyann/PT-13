@@ -133,6 +133,7 @@ section .container {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, .80);
     transform: scale(1.01);
     transition-duration: 1s;
+
 }
 
 .date h3 {
