@@ -9,7 +9,7 @@ body {
     margin: 0;
     overflow: hidden;
     font-family: 'Nunito Sans', sans-serif;
-    background-color: grey;
+    background-color: #FAF8F8;
     overflow-y: scroll;
 }
 
@@ -35,32 +35,16 @@ nav {
     width: 900px;
 }
 
-/* .perso { 
-
-    display: flex;
-    justify-content: space-around;
-    border: 1px red solid;
-    height: 50vh;
-    width: 25%;
-    margin-top: 100px;
-    flex-direction: column;
-
-}*/
-
-nav a {
+/* nav a {
     color: white;
-}
+} */
 
 .personnage {
     display: flex;
     flex-direction: row;
-    border: yellow solid;
 }
 
-
-
 .gilyann {
-    border: black solid;
     display: flex;
     flex-direction: column;
     width: 25%;
@@ -70,7 +54,7 @@ nav a {
 }
 
 .perso img {
-    border: pink solid;
+    border: black solid;
     width: 57vh;
     height: 55vh;
     margin-top: 20px;
@@ -78,17 +62,17 @@ nav a {
 }
 
 .perso h2 {
-    background-color: pink;
-    margin-top: 0;
+    background-color: #D6D6D6;
+    margin-top: -10px;
     margin-bottom: 0;
-    border: solid lightblue;
+    border: solid #2FA1D1;
 }
 
 .lien {
-    background-color: #fff;
+    background-color: #2FA1D1;
     margin-top: 0;
     margin-bottom: 0;
-    height: 17vh;
+    height: 20vh;
 }
 
 .lien img {
@@ -98,127 +82,19 @@ nav a {
 }
 
 .interactif img {
-    border: green solid;
     margin-right: 10px;
 }
 
-.comptoire {
-    background: linear-gradient(grey, blue, #2FA1D1);
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
-    height: 31vh;
-    bottom: 0;
-    position: absolute;
-    display: flex;
-
-}
-
-.cv_gi img {
-    /* border: black solid; */
-    width: -10%;
-    height: 50%;
-    /* margin-left: -70px; */
-    /* margin-top: 100px; */
-    /* justify-content: flex-start; */
-    align-self: center;
-}
-
-.comptoire h3 {
-    font-size: 1.5rem;
-    margin-top: -5px;
-    /* margin-left: -20px; */
-    padding-left: 10px;
-    text-align: center;
-    /* border: black solid; */
-    width: 25vw;
-    height: 15vh;
-    align-items: space-around;
-    padding-left: 40px;
-}
-
-.cl {
-    margin-left: 50px;
-    border: blue solid;
-}
-
-.gi {
-    margin-left: -35px;
-}
-
-.lu {
-    margin-left: 60px;
-}
-
-.doc {
-    /* border: solid pink; */
-    position: absolute;
-    display: flex;
-    /* justify-content: space-around; */
-    top: 90px;
-}
-
-.cv_gi img {
-    height: 20%;
-    /* border: green solid; */
-}
-
-.interactif_gi img {
-    height: 20%;
-    margin-left: -320px;
-    /* border: green solid; */
-}
-
-.cv_cl img {
-    height: 20%;
-    /* border: green solid; */
-    margin-left: -250px;
-    margin-right: 50px;
-}
-
-.interactif_cl img {
-    height: 20%;
-    margin-left: -400px;
-    margin-right: 50px;
-    /* border: green solid; */
-}
-
-.cv_lu img {
-    height: 20%;
-    /* border: green solid; */
-    margin-left: -320px;
-    margin-right: 50px;
-}
-
-.interactif_lu img {
-    height: 20%;
-    margin-left: -380px;
-    /* border: green solid; */
-}
-
-.cv_ju img {
-    height: 20%;
-    /* border: green solid; */
-    margin-left: -300px;
-}
-
-.interactif_ju img {
-    height: 20%;
-    margin-left: -340px;
-    /* border: green solid; */
-}
-
 .remerciement {
-    background-color: #fff;
+    background-color: #046893;
     margin-top: -15px;
     height: 50vh;
+    color: white;
+
 }
 
-/* .interactif {
-    background-color: pink;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-top: 100px;
-    margin-left: 200px;
-} */
+.remerciement p {
+    width: 80vw;
+    margin-left: 50px;
+    padding-top: 80px;
+}

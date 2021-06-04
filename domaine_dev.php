@@ -80,7 +80,7 @@ while($data = $req -> fetch()){
  <p class="eta">Etablissements</p>
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
- <p><a href="'.$data['url_formation'].'">url</a></p>
+ <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
 
  <p class="ligne"></p>';
 
@@ -100,9 +100,6 @@ echo('</section>');
 ?>
 
 
-
-    <!-- '' -->
-<!-- <iframe width="350" height="250" src="https://www.youtube.com/watch?v=8xTWTOnOQeM&t=591s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="video"></iframe> -->
 
  <section class="tdf bachelors">
         <div class="intitule">
@@ -145,7 +142,7 @@ echo('</section>');
   <p class="eta">Etablissements</p>
   <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
   <p class="url">URL</p>
-  <p>'.$data['url_formation'].'</p>
+ <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
   <p class="ligne"></p>';
 
   if(isset($data['url_video']) AND !empty($data['url_video'])){
@@ -213,7 +210,7 @@ while($data = $req -> fetch()){
  <p class="eta">Etablissements</p>
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
- <p>'.$data['url_formation'].'</p>
+ <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
  <p class="ligne"></p>';
 
  if(isset($data['url_video']) AND !empty($data['url_video'])){
@@ -276,7 +273,7 @@ while($data = $req -> fetch()){
  <p class="eta">Etablissements</p>
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
- <p>'.$data['url_formation'].'</p>
+ <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
  <p class="ligne"></p>';
 
  if(isset($data['url_video']) AND !empty($data['url_video'])){
@@ -339,7 +336,7 @@ while($data = $req -> fetch()){
  <p class="eta">Etablissements</p>
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
- <p>'.$data['url_formation'].'</p>
+ <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
  <p class="ligne"></p>';
 
  if(isset($data['url_video']) AND !empty($data['url_video'])){

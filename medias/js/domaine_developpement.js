@@ -1,10 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
-    // $('main').hide();
 
-
-    //Licence pro//
 
     $(function () {
 
@@ -23,20 +20,3 @@ $('main.cat'+cat+'').removeClass('active')
         })
     })
     })
-
-    // $(function () {
-
-
-        // $(".infolp li").on("click", function () {
-
-            // $(".c2").addClass("active")
-
-        // })
-        // $(".exit").on("click", function () {
-
-            // $(".c2").removeClass("active")
-
-
-        // })
-    // })
-
