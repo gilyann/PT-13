@@ -193,10 +193,11 @@ li:hover {
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     color: #f73549d2;
     margin-left: 80px;
     margin-top: 10px;
+    width: 50vw;
 }
 
 .truc {
@@ -316,4 +317,61 @@ main :nth-child(12) {
     position: absolute;
     left: 35vw;
     bottom: 15vh;
+}
+
+.video {
+    position: absolute;
+    left: 38vw;
+    bottom: 30vh;
+}
+
+.sans_video {
+    position: absolute;
+    left: 37vw;
+    bottom: 30vh;
+    border: black solid;
+    padding-top: 78px;
+    background-color: rgba(255, 255, 255, 0.267);
+    color: black;
+    font-size: 1.5rem;
+    height: 15vh;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.link {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.link_text {
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+}
+
+.timbre img {
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    left: 85%;
+    bottom: 80%;
+}
+
+@media screen and (max-width:1300px) {
+    h1 {
+        font-size: 8rem;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    h1 {
+        font-size: 6rem;
+    }
+}
+
+@media screen and (max-width:900px) {
+    h1 {
+        font-size: 4rem;
+    }
 }

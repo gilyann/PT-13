@@ -76,9 +76,18 @@ while($data = $req -> fetch()){
  <p class="eta">Etablissements</p>
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
- <p>'.$data['url_formation'].'</p>
- <p class="ligne"></p>
-<div class="timbre"></div>
+ <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
+ <p class="ligne"></p>';
+
+ if(isset($data['url_video']) AND !empty($data['url_video'])){
+   echo '<iframe width="350" height="250" src="'.$data['url_video'].'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>'; 
+
+}elseif(empty($data['url_video'])){
+    echo '<div class="sans_video">A découvrir plus tard!</div>';
+}
+
+echo '<div class="timbre"><img src="medias/img/timbre/timbre-com.svg" alt=" ">
+</div>
 </main>';
 $i++;
 }
@@ -127,9 +136,18 @@ echo('</section>');
   <p class="eta">Etablissements</p>
   <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
   <p class="url">URL</p>
-  <p>'.$data['url_formation'].'</p>
-  <p class="ligne"></p>
- <div class="timbre"></div>
+  <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
+  <p class="ligne"></p>';
+
+  if(isset($data['url_video']) AND !empty($data['url_video'])){
+    echo '<iframe width="350" height="250" src="'.$data['url_video'].'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>'; 
+ 
+ }elseif(empty($data['url_video'])){
+     echo '<div class="sans_video">A découvrir plus tard!</div>';
+ }
+ 
+ echo '<div class="timbre"><img src="medias/img/timbre/timbre-com.svg" alt=" ">
+ </div>
  </main>';
  $i++;
  }
@@ -187,9 +205,18 @@ while($data = $req -> fetch()){
  <p class="eta">Etablissements</p>
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
- <p>'.$data['url_formation'].'</p>
- <p class="ligne"></p>
-<div class="timbre"></div>
+ <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
+ <p class="ligne"></p>';
+
+ if(isset($data['url_video']) AND !empty($data['url_video'])){
+   echo '<iframe width="350" height="250" src="'.$data['url_video'].'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>'; 
+
+}elseif(empty($data['url_video'])){
+    echo '<div class="sans_video">A découvrir plus tard!</div>';
+}
+
+echo '<div class="timbre"><img src="medias/img/timbre/timbre-com.svg" alt=" ">
+</div>
 </main>';
 $i++;
 }
@@ -201,8 +228,8 @@ echo('</section>');
         <div class="intitule">
             <h2>Cycles d'ingénieur</h2>
             <ul>
-                <li cat="3"lien="0">Formation IMAC</li>
-                <li cat="3"lien="1">Programme grande école</li>
+                <li cat="4"lien="0">Formation IMAC</li>
+                <li cat="4"lien="1">Programme grande école</li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
         </div>
@@ -223,7 +250,7 @@ $i=0;
 // On crée une liste non numérotée avec les résultats
 while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
- echo '<main class="card cat3 c'.$data['id_intitule'].' '.$i.'">
+ echo '<main class="card cat4 c'.$data['id_intitule'].' '.$i.'">
  <div class="exit"></div>
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
@@ -235,9 +262,18 @@ while($data = $req -> fetch()){
  <p class="eta">Etablissements</p>
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
- <p>'.$data['url_formation'].'</p>
- <p class="ligne"></p>
-<div class="timbre"></div>
+ <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
+ <p class="ligne"></p>';
+
+ if(isset($data['url_video']) AND !empty($data['url_video'])){
+   echo '<iframe width="350" height="250" src="'.$data['url_video'].'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>'; 
+
+}elseif(empty($data['url_video'])){
+    echo '<div class="sans_video">A découvrir plus tard!</div>';
+}
+
+echo '<div class="timbre"><img src="medias/img/timbre/timbre-com.svg" alt=" ">
+</div>
 </main>';
 $i++;
 }
@@ -249,11 +285,11 @@ echo('</section>');
         <div class="intitule">
             <h2>Mastères</h2>
             <ul>
-                <li cat="3"lien="0">Communication spé digitale</li>
-                <li cat="3"lien="1">E-commerce</li>
-                <li cat="3"lien="2">Management et Conseil en Systèmes d'Information</li>
-                <li cat="3"lien="3">Communication & culture</li>
-                <li cat="3"lien="4">Communication et stratégie social média</li>
+                <li cat="5"lien="0">Communication spé digitale</li>
+                <li cat="5"lien="1">E-commerce</li>
+                <li cat="5"lien="2">Management et Conseil en Systèmes d'Information</li>
+                <li cat="5"lien="3">Communication & culture</li>
+                <li cat="5"lien="4">Communication et stratégie social média</li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
         </div>
@@ -274,7 +310,7 @@ $i=0;
 // On crée une liste non numérotée avec les résultats
 while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
- echo '<main class="card cat3 c'.$data['id_intitule'].' '.$i.'">
+ echo '<main class="card cat5 c'.$data['id_intitule'].' '.$i.'">
  <div class="exit"></div>
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
@@ -286,9 +322,18 @@ while($data = $req -> fetch()){
  <p class="eta">Etablissements</p>
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
- <p>'.$data['url_formation'].'</p>
- <p class="ligne"></p>
-<div class="timbre"></div>
+ <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
+ <p class="ligne"></p>';
+
+ if(isset($data['url_video']) AND !empty($data['url_video'])){
+   echo '<iframe width="350" height="250" src="'.$data['url_video'].'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>'; 
+
+}elseif(empty($data['url_video'])){
+    echo '<div class="sans_video">A découvrir plus tard!</div>';
+}
+
+echo '<div class="timbre"><img src="medias/img/timbre/timbre-com.svg" alt=" ">
+</div>
 </main>';
 $i++;
 }
