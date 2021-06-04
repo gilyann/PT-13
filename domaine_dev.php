@@ -345,18 +345,14 @@ while($data = $req -> fetch()){
       echo'<div class="sans_video">A découvrir plus tard !</div>';
 }
 
-echo '<div class="timbre"></div>
+echo '<div class="timbre"><img src="medias/img/timbre/timbre-dev.svg" alt=" ">
+</div>
 </main>';
 $i++;
 }
 $req = null;
 echo('</section>'); 
 ?>
-
-
-
-    <section class="tdf masteres">
-</section>
   
 </body>
 
