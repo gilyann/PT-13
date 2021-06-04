@@ -10,7 +10,7 @@ body {
     overflow: hidden;
     font-family: 'Nunito Sans', sans-serif;
     background-color: grey;
-    /* overflow-y: scroll; */
+    overflow-y: scroll;
 }
 
 nav {
@@ -35,104 +35,71 @@ nav {
     width: 900px;
 }
 
-.perso {
+/* .perso { 
 
     display: flex;
     justify-content: space-around;
     border: 1px red solid;
     height: 50vh;
-    width: 100%;
+    width: 25%;
     margin-top: 100px;
+    flex-direction: column;
 
-}
+}*/
 
 nav a {
     color: white;
 }
 
+.personnage {
+    display: flex;
+    flex-direction: row;
+    border: yellow solid;
+}
 
 
 
 .gilyann {
-
-
-    position: relative;
-    border: 1px solid blue;
-    width: 400px;
-    height: 400px;
+    border: black solid;
     display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 50%;
+    text-align: center;
+    margin-top: 100px;
 }
 
 .perso img {
-
-    width: 100%;
-    object-fit: contain;
+    border: pink solid;
+    width: 57vh;
+    height: 55vh;
+    margin-top: 20px;
+    margin-left: -15px;
 }
 
-/* .img[src="medias/img/Gilyann.png"] { 
-
-    max-height: 100%;
-    max-width: 100%;
-    width: 80px;
-
+.perso h2 {
+    background-color: pink;
+    margin-top: 0;
+    margin-bottom: 0;
+    border: solid lightblue;
 }
 
-.img[src="medias/img/Claire.png"] {
-
-    max-height: 100%;
-    max-width: 100%;
-    width: 80px;
-
+.lien {
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 17vh;
 }
 
-.img[src="medias/img/Lucas.png"] {
-
-    max-height: 100%;
-    max-width: 100%;
-    width: 80px;
-
-}
-
-.img[src="medias/img/Julianne.png"] {
-
-    max-height: 100%;
-    max-width: 100%;
-    width: 80px;
-
-}*/
-
-.claire {
+.lien img {
     width: 20%;
-    position: relative;
-    border: 1px solid green;
-    width: 400px;
-    height: 400px;
-    display: flex;
+    margin-right: 50px;
+    margin-top: 25px;
 }
 
-
-
-
-.lucas {
-    width: 20%;
-    position: relative;
-    border: 1px solid yellow;
-    width: 400px;
-    height: 400px;
-    display: flex;
-}
-
-
-
-.julianne {
-    width: 20%;
-    position: relative;
-    border: 1px solid purple;
-    width: 400px;
-    height: 400px;
-    display: flex;
-
-
+.interactif img {
+    border: green solid;
+    margin-right: 10px;
 }
 
 .comptoire {
@@ -239,6 +206,12 @@ nav a {
     height: 20%;
     margin-left: -340px;
     /* border: green solid; */
+}
+
+.remerciement {
+    background-color: #fff;
+    margin-top: -15px;
+    height: 50vh;
 }
 
 /* .interactif {
