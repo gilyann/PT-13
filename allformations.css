@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("Raleway-Black_1.woff") format("woff");
+  font-weight: 900;
+}
+@font-face {
+  font-family: "Nunito Sans";
+  src: url("NunitoSans-Black_1.woff") format("woff");
+  src: url("NunitoSans-Regular.woff") format("woff");
+  font-weight: 400 900;
+}
+
+body {
+  background-color: #FAF8F8;
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+}
+
+/*INTRO*/
+section {
+  text-align: center;
+  color: #767777;
+}
+
+section h1{
+  font-family: 'Raleway';
+  font-size: 3rem;
+  color: #2FA1D1;
+}
+
+/* MENU-TAB */
+#menu-tab {
+  color: #767777;
+  width: 95vw;
+  margin: auto;
+}
+
+/* ONGLETS */
+
+.tabs {
+  position: relative;
+  height: 100vh;
+  margin: 10% 0;
+}
+
+.tab {
+  float: left;
+}
+
+.tab label {
+  color: white;
+  padding: 15px;
+  position: relative;
+  top: -1px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+.tab [type=radio] {
+  display: none;
+}
+
+/*COULEUR ONGLETS*/
+
+.tab label[for=tab-1] {
+  background-color: #7F5FC3;
+}
+
+.tab label[for=tab-2] {
+  background-color: #FCCA4A;
+}
+
+.tab label[for=tab-3] {
+  background-color: #C35F83;
+}
+
+.tab label[for=tab-4] {
+  background-color: #64A9BF;
+}
+
+/* CONTENU ONGLET */
+
+.content {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 6px solid #7F5FC3;
+  border-radius: 0px 20px 20px 20px;
+  overflow: scroll;
+  overflow-y: auto;
+  margin: auto;
+}
+
+.content a {
+  color: #767777;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.content h1 {
+  color: #7F5FC3;
+  font-family: 'Raleway';
+}
+
+hr {
+  width: 250px;
+  border: 2px solid;
+}
+
+/*TABLEAU*/
+table {
+  border-radius: 20px;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+table,
+td {
+  padding: 30px;
+}
+
+table, th {
+  padding: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+.content>* {
+  opacity: 0;
+}
+
+
+/* ONGLET ACTIF */
+
+[type=radio]:checked~label {
+  z-index: 2;
+}
+
+
+[type=radio]:checked~label~.content {
+  z-index: 1;
+}
+
+[type=radio]:checked~label~.content>* {
+  opacity: 1;
+}
+
+
+  /*Changement couleur CONTENT (bordure) au clic*/
+  [type=radio]:checked~label[for=tab-1]~.content {
+    border: 6px solid #7F5FC3;
+  }
+
+  [type=radio]:checked~label[for=tab-2]~.content {
+    border: 6px solid #FCCA4A;
+  }
+
+  [type=radio]:checked~label[for=tab-3]~.content {
+    border: 6px solid #C35F83;
+  }
+
+  [type=radio]:checked~label[for=tab-4]~.content {
+    border: 6px solid #64A9BF;
+  }
+
+
+
+  /* Changement couleur h1 */
+  [type=radio]:checked~label[for=tab-2]~.content h1 {
+    color: #FCCA4A;
+  }
+
+  [type=radio]:checked~label[for=tab-3]~.content h1 {
+    color: #C35F83;
+  }
+
+  [type=radio]:checked~label[for=tab-4]~.content h1 {
+    color: #64A9BF;
+  }
+
+
+
+  /* Changement couleur du hr */
+  [type=radio]:checked~label[for=tab-1]~.content hr {
+    color: #7F5FC3;
+  }
+
+  [type=radio]:checked~label[for=tab-2]~.content hr {
+    color: #FCCA4A;
+  }
+
+  [type=radio]:checked~label[for=tab-3]~.content hr {
+    color: #C35F83;
+  }
+
+  [type=radio]:checked~label[for=tab-4]~.content hr {
+    color: #64A9BF;
+  }
+
+
+  
+  /*Changement de couleur du TABLEAU */
+    /*HEADER*/
+    [type=radio]:checked~label[for=tab-1]~.content th {
+      background-color: #7F5FC3;
+      color: white;
+    }
+
+    [type=radio]:checked~label[for=tab-2]~.content th {
+      background-color: #FCCA4A;
+      color: white;
+    }
+
+    [type=radio]:checked~label[for=tab-3]~.content th {
+      background-color: #C35F83;
+      color: white;
+    }
+
+    [type=radio]:checked~label[for=tab-4]~.content th {
+      background-color: #64A9BF;
+      color: white;
+    }
+
+
+    /*LIGNES*/
+    [type=radio]:checked~label[for=tab-1]~.content th {
+      border: 2px solid #7F5FC3;
+    }
+    [type=radio]:checked~label[for=tab-1]~.content td {
+      border: 2px solid #7F5FC3;
+    }
+
+
+    [type=radio]:checked~label[for=tab-2]~.content th {
+      border: 2px solid #FCCA4A;
+    }
+    [type=radio]:checked~label[for=tab-2]~.content td {
+      border: 2px solid #FCCA4A;
+    }
+
+    [type=radio]:checked~label[for=tab-3]~.content th {
+      border: 2px solid #C35F83;
+    }
+    [type=radio]:checked~label[for=tab-3]~.content td {
+      border: 2px solid #C35F83;
+    }
+
+    [type=radio]:checked~label[for=tab-4]~.content th {
+      border: 2px solid #64A9BF;
+    }
+    [type=radio]:checked~label[for=tab-4]~.content td {
+      border: 2px solid #64A9BF;
+    }
+
+
+
+  /* Changement couleur liens hover */
+  [type=radio]:checked~label[for=tab-1]~.content a:hover {
+    color: #7F5FC3;
+  }
+  [type=radio]:checked~label[for=tab-2]~.content a:hover {
+    color: #FCCA4A;
+  }
+
+  [type=radio]:checked~label[for=tab-3]~.content a:hover {
+    color: #C35F83;
+  }
+
+  [type=radio]:checked~label[for=tab-4]~.content a:hover {
+    color: #64A9BF;
+  }

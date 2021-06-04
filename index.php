@@ -18,7 +18,14 @@
 <body>
 
 
-    
+    <nav>
+    <a href="#" class="logo">MMi Airlines</a>
+    <ul>
+    <li> <a href="hublot.html">Poursuite d'études</a>  </li>
+    <li><a href="BUT.html">BUT MMI</a></li>
+    <li><a href="a_propos.html">L'équipage</a></li>
+    </ul>
+    </nav>
 
     
     <header class="bigheader">
@@ -44,7 +51,7 @@
         <section>
 
             <div class="container">
-                <div class="boardingPass">
+                <a href="hublot.html"><div class="boardingPass">
                     <div class="littleheader lh1">
 
                         <h1>Poursuite <br> d'études</h1>
@@ -87,7 +94,7 @@
                     </div>
 
 
-                </div>
+                </div></a>
             </div>
 
         </section>
@@ -97,7 +104,7 @@
         <section>
 
             <div class="container">
-                <div class="boardingPass">
+            <a href="BUT.html"><div class="boardingPass">
                     <div class="littleheader lh2">
 
                         <h1>BUT<br>MMI</h1>
@@ -139,7 +146,7 @@
 
 
                 </div>
-            </div>
+            </div> </a>
 
         </section>
 
@@ -148,7 +155,7 @@
         <section>
 
             <div class="container">
-                <div class="boardingPass">
+            <a href="a_propos.html"> <div class="boardingPass">
                     <div class="littleheader lh3">
 
                         <h1>L'équipage </h1>
@@ -193,7 +200,7 @@
 
 
                 </div>
-            </div>
+            </div> </a>
 
         </section>
 
@@ -202,7 +209,7 @@
         <section>
 
             <div class="container">
-                <div class="boardingPass">
+            <a href="allformations.html"><div class="boardingPass">
                     <div class="littleheader lh4">
 
                         <h1>Guide <br> touristique</h1>
@@ -244,7 +251,7 @@
 
 
                 </div>
-            </div>
+            </div> </a>
 
         </section>
     </main>
