@@ -82,8 +82,12 @@ while($data = $req -> fetch()){
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
  <p class="ligne"></p>
- <iframe width="350" height="250" src='.$data['url_video'].' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
 
+if(isset('.$data['url_video'].') AND !empty('.$data['url_video'].')){
+    <iframe width="350" height="250" src='.$data['url_video'].' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+}elseif(empty('.$data['url_video'].')){
+      echo"A découvrir plus tard !";
+}
 <div class="timbre"></div>
 </main>';
 $i++;
