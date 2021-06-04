@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="medias/js/domaine_developpement.js"></script>
+    <script src="medias/js/domaine.js"></script>
     <title>domaine_développement</title>
 </head>
 
