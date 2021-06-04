@@ -86,7 +86,7 @@ while($data = $req -> fetch()){
 
  if(isset($data['url_video']) AND !empty($data['url_video'])){
    echo '<iframe width="350" height="250" src="'.$data['url_video'].'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>'; 
-   //<iframe width="560" height="315" src="https://www.youtube.com/embed/WEwjPrMyaD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 }elseif(empty($data['url_video'])){
     echo '<div class="sans_video">A découvrir plus tard!</div>';
 }

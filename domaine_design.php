@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="medias/js/domaine_design.js"></script>
+    <script src="medias/js/domaine.js"></script>
     <title>domaine_design</title>
 </head>
 
@@ -62,7 +62,7 @@ $i=0;
 // On crée une liste non numérotée avec les résultats
 while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
- echo '<main class="card cat1 c'.$data['id_intitule'].' '.$i.'">
+ echo '<main class="card cat1 c'.$data['id_intitule'].' lien'.$i.'">
  <div class="exit"></div>
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
@@ -74,9 +74,19 @@ while($data = $req -> fetch()){
  <p class="eta">Etablissements</p>
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
- <p>'.$data['url_formation'].'</p>
- <div class="ligne"></div>
-<div class="timbre"></div>
+ <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
+
+ <p class="ligne"></p>';
+
+ if(isset($data['url_video']) AND !empty($data['url_video'])){
+   echo '<iframe width="350" height="250" src="'.$data['url_video'].'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>'; 
+
+}elseif(empty($data['url_video'])){
+    echo '<div class="sans_video">A découvrir plus tard!</div>';
+}
+
+echo '<div class="timbre"><img src="medias/img/timbre/timbre-dev.svg" alt=" ">
+</div>
 </main>';
 $i++;
 }
@@ -115,9 +125,9 @@ echo('</section>');
  // On crée une liste non numérotée avec les résultats
  while($data = $req -> fetch()){
   // On affiche chaque résultat sous forme d'un item de la liste
-  echo '<main class="card cat2 c'.$data['id_intitule'].' '.$i.'"> 
+  echo '<main class="card cat1 c'.$data['id_intitule'].' lien'.$i.'">
   <div class="exit"></div>
-  <h3>'.$data['nom_formation'].'</h3> 
+  <h3>'.$data['nom_formation'].'</h3>
   <p class="truc">Enseignements</p>
   <p>'.$data['enseignements'].'</p>
   <p class="type">Type</p>
@@ -127,9 +137,19 @@ echo('</section>');
   <p class="eta">Etablissements</p>
   <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
   <p class="url">URL</p>
-  <p>'.$data['url_formation'].'</p>
-  <div class="ligne"></div>
- <div class="timbre"></div>
+  <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
+ 
+  <p class="ligne"></p>';
+ 
+  if(isset($data['url_video']) AND !empty($data['url_video'])){
+    echo '<iframe width="350" height="250" src="'.$data['url_video'].'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>'; 
+ 
+ }elseif(empty($data['url_video'])){
+     echo '<div class="sans_video">A découvrir plus tard!</div>';
+ }
+ 
+ echo '<div class="timbre"><img src="medias/img/timbre/timbre-dev.svg" alt=" ">
+ </div>
  </main>';
  $i++;
  }
