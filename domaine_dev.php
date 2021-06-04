@@ -37,12 +37,12 @@
         <div class="intitule">
             <h2>Licences pros</h2>
             <ul>
-                <li cat="1" lien="0"> Data Mining</li> 
-                <li cat="1" lien="1">Développement Web </li>
-                <li cat="1" lien="2">DIWA Développeur et Intégrateur de 
+                <li data-cat="1" data-lien="0"> Data Mining</li> 
+                <li data-cat="1" data-lien="1">Développement Web </li>
+                <li data-cat="1" data-lien="2">DIWA Développeur et Intégrateur de 
 Web Application</li>
-                <li cat="1" lien="3">Projet web et mobile</li>
-                <li cat="1" lien="4">Métiers de l’informatique : conception
+                <li data-cat="1" data-lien="3">Projet web et mobile</li>
+                <li data-cat="1" data-lien="4">Métiers de l’informatique : conception
                 </li> 
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
@@ -68,7 +68,7 @@ $i=0;
 // On crée une liste non numérotée avec les résultats
 while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
- echo '<main class="card cat1 c'.$data['id_intitule'].' '.$i.'">
+ echo '<main class="card cat1 c'.$data['id_intitule'].' lien'.$i.'">
  <div class="exit"></div>
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
@@ -80,13 +80,15 @@ while($data = $req -> fetch()){
  <p class="eta">Etablissements</p>
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
- <p>'.$data['url_formation'].'</p>
+ <p><a href="'.$data['url_formation'].'">url</a></p>
+
  <p class="ligne"></p>';
 
  if(isset($data['url_video']) AND !empty($data['url_video'])){
-   echo' <iframe width="350" height="250" src='.$data['url_video'].' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>';
+   echo '<iframe width="350" height="250" src="'.$data['url_video'].'" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>'; 
+   //<iframe width="560" height="315" src="https://www.youtube.com/embed/WEwjPrMyaD4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 }elseif(empty($data['url_video'])){
-    echo'<div class="sans_video">A découvrir plus tard!</div>';
+    echo '<div class="sans_video">A découvrir plus tard!</div>';
 }
 
 echo '<div class="timbre"></div>
@@ -106,11 +108,11 @@ echo('</section>');
         <div class="intitule">
             <h2>Bachelors</h2>
             <ul>
-                <li cat="2"lien="0">  Développement web option architecte big data</li>
-                <li cat="2" lien="1">Développement web</li> 
-                <li cat="2" lien="2">Développeur web option Développeur d’application mobiles</li>
-                <li cat="2" lien="3">Développeur web</li>
-                <li cat="2" lien="4">Développeur web et mobile</li>
+                <li data-cat="2" data-lien="0">  Développement web option architecte big data</li>
+                <li data-cat="2" data-lien="1">Développement web</li> 
+                <li data-cat="2" data-lien="2">Développeur web option Développeur d’application mobiles</li>
+                <li data-cat="2" data-lien="3">Développeur web</li>
+                <li data-cat="2" data-lien="4">Développeur web et mobile</li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
         </div> 
@@ -131,7 +133,7 @@ echo('</section>');
  // On crée une liste non numérotée avec les résultats
  while($data = $req -> fetch()){
   // On affiche chaque résultat sous forme d'un item de la liste
-  echo '<main class="card cat2 c'.$data['id_intitule'].' '.$i.'"> 
+  echo '<main class="card cat2 c'.$data['id_intitule'].' lien'.$i.'"> 
   <div class="exit"></div>
   <h3>'.$data['nom_formation'].'</h3> 
   <p class="truc">Enseignements</p>
@@ -170,13 +172,13 @@ echo('</section>');
         <div class="intitule">
             <h2>Cycles d'ingénieur</h2>
             <ul>
-                <li cat="3"lien="0">  Cycle d’ingénieur : Logiciels et Systèmes d’information
+                <li data-cat="3" data-lien="0">  Cycle d’ingénieur : Logiciels et Systèmes d’information
 </li>
-                <li cat="3"lien="1">Informatique réseau</li>
-                <li cat="3"lien="2">Informatique</li>
-                <li cat="3"lien="3">Informatique et systèmes d'information
+                <li data-cat="3" data-lien="1">Informatique réseau</li>
+                <li data-cat="3" data-lien="2">Informatique</li>
+                <li data-cat="3" data-lien="3">Informatique et systèmes d'information
 </li>
-                <li cat="3"lien="4">Réseaux et télécommunications</li>
+                <li data-cat="3" data-lien="4">Réseaux et télécommunications</li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
         </div>
@@ -199,7 +201,7 @@ $i=0;
 // On crée une liste non numérotée avec les résultats
 while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
- echo '<main class="card cat3 c'.$data['id_intitule'].' '.$i.'">
+ echo '<main class="card cat3 c'.$data['id_intitule'].' lien'.$i.'">
  <div class="exit"></div>
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
@@ -234,11 +236,11 @@ echo('</section>');
         <div class="intitule">
             <h2>Masters</h2>
             <ul>
-                <li cat="4"lien="0">Ingénieurie des systèmes complexes</li>
-                <li cat="4"lien="1">Calcule haute performnce, simulation</li>
-                <li cat="4"lien="2">Création numérique</li>
-                <li cat="4"lien="3">Ergonomie</li>
-                <li cat="4"lien="4">Ergonomie</li>
+                <li data-cat="4" data-lien="0">Ingénieurie des systèmes complexes</li>
+                <li data-cat="4" data-lien="1">Calcule haute performnce, simulation</li>
+                <li data-cat="4" data-lien="2">Création numérique</li>
+                <li data-cat="4" data-lien="3">Ergonomie</li>
+                <li data-cat="4" data-lien="4">Ergonomie</li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
         </div>
@@ -262,7 +264,7 @@ $i=0;
 // On crée une liste non numérotée avec les résultats
 while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
- echo '<main class="card cat3 c'.$data['id_intitule'].' '.$i.'">
+ echo '<main class="card cat4 c'.$data['id_intitule'].' lien'.$i.'">
  <div class="exit"></div>
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
@@ -297,11 +299,11 @@ echo('</section>');
         <div class="intitule">
             <h2>Mastères</h2>
             <ul>
-                <li cat="5"lien="1">CTO et Tech Lead</li>
-                <li cat="5"lien="2">Développement "mobile factory"</li>
-                <li cat="5"lien="3">Expert informatique - Parcours Développement Web ou Logiciel</li>
-                <li cat="5"lien="4">Data et Intelligence Artificielle</li>
-                <li cat="5"lien="5">Ergonomie</li>
+                <li data-cat="5" data-lien="1">CTO et Tech Lead</li>
+                <li data-cat="5" data-lien="2">Développement "mobile factory"</li>
+                <li data-cat="5" data-lien="3">Expert informatique - Parcours Développement Web ou Logiciel</li>
+                <li data-cat="5" data-lien="4">Data et Intelligence Artificielle</li>
+                <li data-cat="5" data-lien="5">Ergonomie</li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
         </div>
@@ -325,7 +327,7 @@ $i=0;
 // On crée une liste non numérotée avec les résultats
 while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
- echo '<main class="card cat3 c'.$data['id_intitule'].' '.$i.'">
+ echo '<main class="card cat5 c'.$data['id_intitule'].' lien'.$i.'">
  <div class="exit"></div>
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
