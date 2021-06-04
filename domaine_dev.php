@@ -330,6 +330,11 @@ echo('</section>');
 </body>
 
 </html>
+
+
+
+
+
 <!-- if ('.$data['url_video'].'=null){ 
     echo"à découvrir plus tard";
    }else{ 
