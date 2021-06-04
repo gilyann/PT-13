@@ -324,6 +324,20 @@ main :nth-child(12) {
 .video {
     border: black solid;
     position: absolute;
-    left: 40vw;
+    left: 38vw;
     bottom: 30vh;
+}
+
+.sans_video {
+    position: absolute;
+    left: 37vw;
+    bottom: 30vh;
+    border: black solid;
+    padding-top: 78px;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    height: 15vh;
+    padding-left: 50px;
+    padding-right: 50px;
 }

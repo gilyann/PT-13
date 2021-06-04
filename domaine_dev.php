@@ -81,14 +81,15 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
- <p class="ligne"></p>
+ <p class="ligne"></p>';
 
-if(isset('.$data['url_video'].') AND !empty('.$data['url_video'].')){
-    <iframe width="350" height="250" src='.$data['url_video'].' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
-}elseif(empty('.$data['url_video'].')){
-      echo"A découvrir plus tard !";
+ if(isset($data['url_video']) AND !empty($data['url_video'])){
+   echo' <iframe width="350" height="250" src='.$data['url_video'].' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>';
+}elseif(empty($data['url_video'])){
+    echo'<div class="sans_video">A découvrir plus tard!</div>';
 }
-<div class="timbre"></div>
+
+echo '<div class="timbre"></div>
 </main>';
 $i++;
 }
@@ -97,9 +98,9 @@ echo('</section>');
 ?>
 
 
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/1oDcd3cg_gk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
+    <!-- '' -->
+<!-- <iframe width="350" height="250" src="https://www.youtube.com/watch?v=8xTWTOnOQeM&t=591s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen  class="video"></iframe> -->
 
  <section class="tdf bachelors">
         <div class="intitule">
@@ -143,9 +144,15 @@ echo('</section>');
   <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
   <p class="url">URL</p>
   <p>'.$data['url_formation'].'</p>
-  <p class="ligne"></p>
-       <iframe width="350" height="250" src='.$data['url_video'].' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>;
- <div class="timbre"></div>
+  <p class="ligne"></p>';
+
+  if(isset($data['url_video']) AND !empty($data['url_video'])){
+    echo' <iframe width="350" height="250" src='.$data['url_video'].' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>';
+ }elseif(empty($data['url_video'])){
+    echo'<div class="sans_video">A découvrir plus tard !</div>';
+ }
+ 
+ echo '<div class="timbre"></div>
  </main>';
  $i++;
  }
@@ -205,8 +212,15 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
- <p class="ligne"></p>
-<div class="timbre"></div>
+ <p class="ligne"></p>';
+
+ if(isset($data['url_video']) AND !empty($data['url_video'])){
+   echo' <iframe width="350" height="250" src='.$data['url_video'].' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>';
+}elseif(empty($data['url_video'])){
+    echo'<div class="sans_video">A découvrir plus tard !</div>';
+}
+
+echo '<div class="timbre"></div>
 </main>';
 $i++;
 }
@@ -261,8 +275,15 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
- <p class="ligne"></p>
-<div class="timbre"></div>
+ <p class="ligne"></p>';
+
+ if(isset($data['url_video']) AND !empty($data['url_video'])){
+   echo' <iframe width="350" height="250" src='.$data['url_video'].' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>';
+}elseif(empty($data['url_video'])){
+    echo'<div class="sans_video">A découvrir plus tard !</div>';
+}
+
+echo '<div class="timbre"></div>
 </main>';
 $i++;
 }
@@ -317,8 +338,15 @@ while($data = $req -> fetch()){
  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p>'.$data['url_formation'].'</p>
- <p class="ligne"></p>
-<div class="timbre"></div>
+ <p class="ligne"></p>';
+
+ if(isset($data['url_video']) AND !empty($data['url_video'])){
+   echo'<iframe width="350" height="250" src='.$data['url_video'].' title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>';
+}elseif(empty($data['url_video'])){
+      echo'<div class="sans_video">A découvrir plus tard !</div>';
+}
+
+echo '<div class="timbre"></div>
 </main>';
 $i++;
 }
