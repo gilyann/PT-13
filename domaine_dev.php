@@ -91,7 +91,8 @@ while($data = $req -> fetch()){
     echo '<div class="sans_video">A découvrir plus tard!</div>';
 }
 
-echo '<div class="timbre"></div>
+echo '<div class="timbre"><img src="medias/img/timbre/timbre-dev.svg" alt=" ">
+</div>
 </main>';
 $i++;
 }
@@ -151,7 +152,7 @@ echo('</section>');
     echo'<div class="sans_video">A découvrir plus tard !</div>';
  }
  
- echo '<div class="timbre"></div>
+ echo '<div class="timbre"><img src="medias/img/timbre/timbre-dev.svg" alt=" "></div>
  </main>';
  $i++;
  }
@@ -219,7 +220,7 @@ while($data = $req -> fetch()){
     echo'<div class="sans_video">A découvrir plus tard !</div>';
 }
 
-echo '<div class="timbre"></div>
+echo '<div class="timbre"><img src="medias/img/timbre/timbre-dev.svg" alt=" "></div>
 </main>';
 $i++;
 }
@@ -234,7 +235,7 @@ echo('</section>');
             <h2>Masters</h2>
             <ul>
                 <li data-cat="4" data-lien="0">Ingénieurie des systèmes complexes</li>
-                <li data-cat="4" data-lien="1">Calcule haute performnce, simulation</li>
+                <li data-cat="4" data-lien="1">Calcule haute performance, simulation</li>
                 <li data-cat="4" data-lien="2">Création numérique</li>
                 <li data-cat="4" data-lien="3">Ergonomie</li>
                 <li data-cat="4" data-lien="4">Ergonomie</li>
@@ -282,7 +283,7 @@ while($data = $req -> fetch()){
     echo'<div class="sans_video">A découvrir plus tard !</div>';
 }
 
-echo '<div class="timbre"></div>
+echo '<div class="timbre"><img src="medias/img/timbre/timbre-dev.svg" alt=" "></div>
 </main>';
 $i++;
 }
