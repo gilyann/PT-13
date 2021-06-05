@@ -44,7 +44,7 @@ Web Application</li>
 
           <?php
 
-$link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+$link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=gpadre_db', 'root', '', array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule, url_video
@@ -107,7 +107,7 @@ echo('</section>');
         </div> 
 
   <?php
-  $link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+  $link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=gpadre_db', 'root', '', array
   (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
   // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
   $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule, url_video
@@ -175,7 +175,7 @@ echo('</section>');
 
 
         <?php
-$link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+$link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=gpadre_db', 'root', '', array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
@@ -238,7 +238,7 @@ echo('</section>');
 
         <?php
 
-$link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+$link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=gpadre_db', 'root', '', array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
@@ -301,7 +301,7 @@ echo('</section>');
 
         <?php
 
-$link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+$link = new PDO('mysql:host=sqletud.u-pem.fr;dbname=gpadre_db', 'root', '', array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
