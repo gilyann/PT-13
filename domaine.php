@@ -36,7 +36,7 @@
                 <li cat="1" lien="4">Techniques du son et de l'image parcours Métiers du Motion et du sound design
                 </li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div> 
 
 
@@ -101,7 +101,7 @@ echo('</section>');
                 <li cat="2" lien="3">Chef opérateur son</li>
                 <li cat="2" lien="4">Cinéma Animation 3D</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div> 
 
   <?php
@@ -165,7 +165,7 @@ echo '<div class="timbre"><img src="medias/img/timbre/timbre-audio.svg" alt=" ">
                 <li cat="3"lien="3">Réalisation et création</li>
                 <li cat="3"lien="4">Cinéma et audiovisuel</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div>
 
 
