@@ -16,16 +16,7 @@
 </head>
 
 <body>
-    <nav>
-        <div class="left">
-            <img src="medias/img/LOGOBLEU.svg" alt=" " class="logo">
-        </div>
-        <div class="right">
-            <a href="#" class="etude">Poursuite d'études</a>
-            <a href="#" class="but">BUT MMI</a>
-            <a href="#">À propos</a>
-        </div>
-    </nav>
+<?php include 'nav.php' ?>
 
     <header>
         <p>Bienvenue dans le domaine de la</p>

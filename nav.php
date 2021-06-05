@@ -6,6 +6,6 @@ echo("<nav>
 <li><a href='BUT.html'>BUT MMI</a></li>
 <li><a href='a_propos.html'>L'équipage</a></li>
 </ul>
-</nav> <script src='index.js'></script>"); 
+</nav> "); 
 
 ?>

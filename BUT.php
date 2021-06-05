@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="nav.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="BUT.css">
@@ -14,17 +15,9 @@
 </head>
 
 <body>
-    <nav>
-        <div class="left">
-            <img src="medias/img/LOGOBLEU.svg" alt=" ">
-        </div>
-        <div class="right">
-            <a href="#">Poursuite d'étude</a>
-            <a href="#">But MMI</a>
-            <a href="#">A propos</a>
-        </div>
-    </nav>
- 
+
+
+<?php include 'nav.php' ?>
 
 
     <div class="panneau">
@@ -76,7 +69,7 @@
     <div class="table center">
         <div class="monitor-wrapper center">
             <div class="monitor center">
-                <p>Découvre le BUT MMI ...</p> 
+                <p>Découvre le BUT MMI ...</p>
             </div>
         </div>
     </div>
