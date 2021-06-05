@@ -19,7 +19,7 @@
 
 
     <nav>
-    <a href="#" class="logo">MMi Airlines</a>
+    <a href="index.php" class="logo">MMi Airlines</a>
     <ul>
     <li> <a href="hublot.html">Poursuite d'études</a>  </li>
     <li><a href="BUT.html">BUT MMI</a></li>
@@ -265,13 +265,13 @@
 
                 <div class="formairport">
                     <div class="formdeparting">
-                        <h1>MMI</h1>
-                        <p>BUT MMI</p>
+                        <h1>TOI</h1>
+                        <p>toi</p>
                     </div>
                     <img class="plane" src="medias/img/plane.svg" alt="">
                     <div class="formarriving">
-                        <h1>ETU</h1>
-                        <p>poursuite d'études</p>
+                        <h1>MMI</h1>
+                        <p>MMi Airlines</p>
                     </div>
                 </div>
 
@@ -293,7 +293,7 @@
 
                     <div class="groupform message">
                         <label for="msg">Message :</label>
-                        <textarea id="msg" name="user_message" rows="8" cols="50" placeholder="Laissez moi un message!" class="text"></textarea>
+                        <textarea id="msg" name="user_message" rows="8" cols="50"  class="text"></textarea>
 
                     </div>
                     <div>

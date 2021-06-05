@@ -44,22 +44,27 @@ nav {
     flex-direction: row;
 }
 
-.gilyann {
+.Chara {
     display: flex;
     flex-direction: column;
     width: 25%;
     height: 50%;
     text-align: center;
     margin-top: 100px;
+
 }
+
 
 .perso img {
     border: black solid;
-    width: 57vh;
+    width: 59vh;
     height: 55vh;
     margin-top: 20px;
-    margin-left: -15px;
+    margin-left: -30px;
+
 }
+
+
 
 .perso h2 {
     background-color: #D6D6D6;

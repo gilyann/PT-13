@@ -6,10 +6,18 @@ $(document).ready(function () {
     // console.log("Salut!")
     // })
 
-    window.addEventListener("scroll", function () {
-        var header = document.querySelector("nav");
-        this.navigator.classList.toggle("sticky", window.scrollY > 0);
+    $(function () {
 
+        var nav = document.querySelector('nav'); // Identify target
 
+        window.addEventListener('scroll', function (event) { // To listen for event
+            event.preventDefault();
+
+            if (window.scrollY <= 150) { // Just an example
+                nav.style.backgroundColor = '#000'; // or default color
+            } else {
+                nav.style.backgroundColor = 'transparent';
+            }
+        })
     })
 })
