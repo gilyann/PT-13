@@ -28,6 +28,7 @@ $(document).ready(function () {
 
 
    $('.cache').on('click', function () {
+      document.location.href="domaine_dev.php"
       $(this).parent().animate({'width': (parseInt($('.hublot').css('width')) + 6*WIDTH ) + 'px','margin-left':-1.6*WIDTH + 'px'});
       $('.fiche').hide();
       $('.arrow-right').hide();
@@ -36,3 +37,6 @@ $(document).ready(function () {
       console.log("hello")
    })
 })
+// $('.cache').on('click', function(){
+   
+// })
