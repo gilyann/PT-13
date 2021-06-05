@@ -42,6 +42,7 @@ nav {
 .personnage {
     display: flex;
     flex-direction: row;
+
 }
 
 .chara {
@@ -51,7 +52,6 @@ nav {
     height: 50%;
     text-align: center;
     margin-top: 100px;
-
 }
 
 
@@ -109,6 +109,6 @@ nav {
 @media screen and (max-width:1200) {
     .chara {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 }
