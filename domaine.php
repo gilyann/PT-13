@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="domaine_audiovisuel.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,16 +17,7 @@
 </head>
 
 <body>
-    <nav>
-        <div class="left">
-            <img src="medias/img/LOGOBLEU.svg" alt=" " class="logo">
-        </div>
-        <div class="right">
-            <a href="#" class="etude">Poursuite d'études</a>
-            <a href="#" class="but">BUT MMI</a>
-            <a href="#">À propos</a>
-        </div>
-    </nav>
+<?php include 'nav.php' ?>
 
     <header>
         <p>Bienvenue dans le domaine de</p>

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="nav.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -18,14 +19,7 @@
 <body>
 
 
-    <nav>
-    <a href="index.php" class="logo">MMi Airlines</a>
-    <ul>
-    <li> <a href="hublot.html">Poursuite d'études</a>  </li>
-    <li><a href="BUT.html">BUT MMI</a></li>
-    <li><a href="a_propos.html">L'équipage</a></li>
-    </ul>
-    </nav>
+    <?php include 'nav.php' ?>
 
     
     <header class="bigheader">
@@ -77,9 +71,7 @@
                     <div class="details">
                         <div class="date detail">
                             <h4>DATE</h4>
-                            <h3><script>
-        document.write(new Date().toLocaleDateString());
-    </script></h3>
+                            <h3></h3>
                         </div>
                         <div class="gate detail">
                             <h4>GATE</h4>
@@ -128,9 +120,7 @@
                     <div class="details">
                         <div class="date detail">
                             <h4>DATE</h4>
-                            <h3><script>
-        document.write(new Date().toLocaleDateString());
-    </script></h3>
+                            <h3></h3>
                         </div>
                         <div class="gate detail">
                             <h4>GATE</h4>
@@ -181,9 +171,7 @@
                         <div class="date detail">
                             <h4>DATE</h4>
                             <h3>
-                            <script>
-        document.write(new Date().toLocaleDateString());
-    </script> </h3>
+                             </h3>
    
                         </div>
                         <div class="gate detail">
@@ -233,9 +221,7 @@
                     <div class="details">
                         <div class="date detail">
                             <h4>DATE</h4>
-                            <h3><script>
-        document.write(new Date().toLocaleDateString());
-    </script></h3>
+                            <h3></h3>
                         </div>
                         <div class="gate detail">
                             <h4>GATE</h4>

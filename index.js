@@ -1,23 +1,30 @@
 $(document).ready(function () {
-    new Date().toLocaleDateString() = "*/**/****"
+
+
+
+
+    d = new Date()
+    let month = String(d.getMonth() + 1);
+    let day = String(d.getDate());
+    const year = String(d.getFullYear());
+
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+
+    $('.date h3').text(`${day}/${month}/${year}`)
 
 
     // $('.littleheader.lh4').on('click',function(){
     // console.log("Salut!")
     // })
 
-    $(function () {
 
-        var nav = document.querySelector('nav'); // Identify target
+    window.addEventListener('scroll', function (event) {
 
-        window.addEventListener('scroll', function (event) { // To listen for event
-            event.preventDefault();
-
-            if (window.scrollY <= 150) { // Just an example
-                nav.style.backgroundColor = '#000'; // or default color
-            } else {
-                nav.style.backgroundColor = 'transparent';
-            }
-        })
+        if (window.scrollY <= 150) {
+            $('nav').css('backgroundColor', 'transparent')
+        } else {
+            $('nav').css('backgroundColor', 'white')
+        }
     })
 })
