@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="index.js"></script>
+
     <title>Page accueil</title>
 </head>
 
@@ -96,7 +96,7 @@
         <section>
 
             <div class="container">
-            <a href="BUT.html"><div class="boardingPass">
+            <a href="BUT.php"><div class="boardingPass">
                     <div class="littleheader lh2">
 
                         <h1>BUT<br>MMI</h1>
@@ -294,7 +294,8 @@
 
     </div>
 
-
+    <script src='index.js'></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>

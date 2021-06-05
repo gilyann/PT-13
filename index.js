@@ -1,8 +1,5 @@
 $(document).ready(function () {
 
-
-
-
     d = new Date()
     let month = String(d.getMonth() + 1);
     let day = String(d.getDate());
@@ -21,10 +18,19 @@ $(document).ready(function () {
 
     window.addEventListener('scroll', function (event) {
 
-        if (window.scrollY <= 150) {
-            $('nav').css('backgroundColor', 'transparent')
+        if (window.scrollY <= 200) {
+            $('nav').css({
+                'backgroundColor': 'transparent',
+                'box-shadow': 'none'
+            })
+            $('nav a').css('color', 'white')
+
         } else {
-            $('nav').css('backgroundColor', 'white')
+            $('nav').css({
+                'backgroundColor': '#FAF8F8',
+                'box-shadow': '1px 1px 12px #ACACAC'
+            })
+            $('nav a').css('color', '#2FA1D1')
         }
     })
 })
