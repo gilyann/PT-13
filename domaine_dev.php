@@ -36,7 +36,7 @@ Web Application</li>
                 <li data-cat="1" data-lien="4">Métiers de l’informatique : conception
                 </li> 
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div> 
 
     
@@ -103,7 +103,7 @@ echo('</section>');
                 <li data-cat="2" data-lien="3">Développeur web</li>
                 <li data-cat="2" data-lien="4">Développeur web et mobile</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div> 
 
   <?php
@@ -169,7 +169,7 @@ echo('</section>');
 </li>
                 <li data-cat="3" data-lien="4">Réseaux et télécommunications</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div>
 
 
@@ -231,7 +231,7 @@ echo('</section>');
                 <li data-cat="4" data-lien="3">Ergonomie</li>
                 <li data-cat="4" data-lien="4">Ergonomie</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div>
 
 
@@ -294,7 +294,7 @@ echo('</section>');
                 <li data-cat="5" data-lien="4">Data et Intelligence Artificielle</li>
                 <li data-cat="5" data-lien="5">Ergonomie</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div>
 
 
