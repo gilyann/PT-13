@@ -40,7 +40,7 @@ body {
 }
 
 .domaine.un {
-    background-image: url("medias/img/background-dev.png");
+    background-image: url("medias/img/bgdev.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,16 +48,16 @@ body {
 
 .domaine.deux {
     left: 100vw;
-    background-image: url("medias/img/bg-communication.svg");
+    background-image: url("medias/img/bgcom.svg");
 }
 
 .domaine.trois {
     left: 200vw;
-    background-image: url("medias/img/bg-design.svg");
+    background-image: url("medias/img/bgdesign.svg");
 }
 
 .domaine.quatre {
-    background-image: url("medias/img/bg-audiovisuel.svg");
+    background-image: url("medias/img/bgaudiovisuel.svg");
     left: 300vw;
 }
 
