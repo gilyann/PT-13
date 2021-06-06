@@ -51,6 +51,6 @@ if(isset($_POST["name"]) & isset($_POST["email"]) & isset($_POST["msg"]) ){
 }
 ?>
 
-  <a href="../index.php">Retour à l'accueil</a>
+  <a href="index.php">Retour à l'accueil</a>
 </body>
 </html>
