@@ -5,36 +5,31 @@
 }
 
 * {
-
     margin: 0;
     padding: 0;
-
 }
 
 body {
     font-family: 'Nunito Sans', sans-serif;
-    background-image: url(medias/img/zoneair.png);
+    /* background-image: url(medias/img/zoneair.png); */
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
 }
 
-nav {
-
-    background-color: #FAF8F8;
-    box-shadow: 1px 1px 12px #ACACAC;
+.big-container {
+    border: red solid;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1 000;
 }
 
 nav .logo {
-
     color: #2FA1D1;
-
 }
 
 nav ul li a {
-
     color: #2FA1D1;
-
 }
 
 .panneau li {
@@ -45,25 +40,24 @@ nav ul li a {
 
 .panneau {
     border: #d4e5ff solid 15px;
-    width: 80vw;
+    width: 90vw;
     height: 65vh;
     margin: auto;
     background-color: #222C4F;
     color: white;
-    margin-top: 270px;
+    margin-top: 500px;
     border-radius: 10px;
     max-width: 1200px;
     min-width: 1024px;
 }
 
 .content {
-
     margin-top: 50px;
     width: 90%;
     text-align: left;
     left: 70px;
     position: relative;
-
+    margin-top: 100px;
 }
 
 h1 {
@@ -75,18 +69,11 @@ h1 {
     font-family: 'Raleway', sans-serif;
 }
 
-
-
-
 .right {
     /* border: solid black; */
     width: 60vw;
     padding-top: 20px;
 }
-
-
-
-
 
 img {
     margin-left: -1000px;
