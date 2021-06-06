@@ -47,8 +47,6 @@ if(isset($_POST["name"]) & isset($_POST["email"]) & isset($_POST["msg"]) ){
   // On affiche l'adresse inscrite en évitant une injection de code JS
   echo "<h1 style='margin: auto;'>Merci pour votre message, j'espère que votre voyage ce passe bien !</h1>";
 }
-
-}
 ?>
 
   <a href="index.php">Retour à l'accueil</a>
