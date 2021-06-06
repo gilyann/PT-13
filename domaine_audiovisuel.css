@@ -101,6 +101,12 @@ h2 {
     font-family: 'Raleway', sans-serif;
 }
 
+nav li {
+
+    margin-top: 0px;
+
+}
+
 li {
     margin-top: 50px;
     cursor: pointer;
