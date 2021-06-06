@@ -8,7 +8,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     overflow-x: hidden;
-    background-image: url(medias/img/background-audiovisuel.png);
+    background-image: url(medias/img/bg-communication.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
