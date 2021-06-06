@@ -24,7 +24,8 @@ body {
 }
 
 nav {
-    background-color: white;
+    background-color: #F8F8F8;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.075);
 }
 
 nav .logo {
