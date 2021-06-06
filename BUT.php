@@ -15,15 +15,12 @@
 </head>
 
 <body>
-
-
+<div class="big-container">
 <?php include 'nav.php' ?>
 
 
     <div class="panneau">
         <div class="content">
-
-
             <ul>
                 <li>
                     Le BUT Métiers du multimédia et de l’internet (ex. DUT) est une formation post-bac
@@ -69,12 +66,12 @@
     <div class="table center">
         <div class="monitor-wrapper center">
             <div class="monitor center">
-                <p>Découvre le BUT MMI ...</p>
+                <p>Découvre le BUT MMI 123...</p>
             </div>
         </div>
     </div>
     <!-- partial -->
-
+    </div>
 </body>
 
 </html>

@@ -16,6 +16,7 @@
 
 <?php include 'nav.php' ?>
 
+<div class="big-container">
     <section class="personnage">
         <div class="chara gilyann">
             <div class="perso">
@@ -108,7 +109,7 @@
             Un grand merci à @1jour1école pour leur aide !
         </p>
     </section>
-
+    </div>
 </body>
 
 </html>
