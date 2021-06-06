@@ -352,12 +352,3 @@ echo('</section>');
 
 </html>
 
-
-
-
-
-<!-- if ('.$data['url_video'].'=null){ 
-    echo"à découvrir plus tard";
-   }else{ 
-    echo  
-   }-->

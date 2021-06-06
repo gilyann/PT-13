@@ -1,10 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
-    // $('main').hide();
 
-
-    //Licence pro//
 
     $(function () {
 
