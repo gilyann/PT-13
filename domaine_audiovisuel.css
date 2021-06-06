@@ -1,10 +1,5 @@
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
 body {
+    background-color: rgb(120, 194, 194);
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     overflow-x: hidden;
@@ -12,6 +7,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
 
 .etude {
     margin-right: 80px;
@@ -24,18 +21,19 @@ body {
 header {
     height: 100vh;
     width: 100vw;
+    margin-bottom: 100px;
+    margin: 0;
 }
 
 header :nth-child(3) {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-top: 100px;
     text-align: center;
     color: white;
 }
 
 header h1 {
-    margin-top: 3.55%;
-    font-weight: 800;
-    margin-bottom: 0;
+    margin-top: -20px;
 }
 
 header :first-child {
@@ -55,8 +53,6 @@ h1 {
     margin-left: 0;
     margin-right: 0;
     height: 100vh;
-    width: 100vw;
-    /* border: black solid; */
 }
 
 .intitule {
@@ -64,29 +60,31 @@ h1 {
     width: 35vw;
     left: 4vw;
     height: 98vh;
-    /* border: black solid; */
 
 }
 
 main {
     color: white;
     position: absolute;
+    width: 50vw;
+    height: 78vh;
     text-align: left;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin-left: 0;
     margin-right: 0;
-    right: 4vw;
+    right: 1vw;
     display: none;
     opacity: 0;
-    margin-top: 7%;
-    height: 80vh;
-    width: 57vw;
-    padding-left: 0;
+    margin-top: 60px;
+    height: 90vh;
+    width: 63vw;
+    padding-left: 10px;
     background: rgba(255, 255, 255, 0.50);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(12.0px);
     -webkit-backdrop-filter: blur(8.0px);
+    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -95,21 +93,12 @@ main.active {
     opacity: 1;
 }
 
-.info-detail {
-    width: 60%;
-    height: 100%;
-    margin-left: 3%;
-}
-
 h2 {
-    position: relative;
-    font-size: 4rem;
-    font-weight: 900;
-    padding-left: 18%;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 80px;
     color: #DC93FF;
     font-family: 'Raleway', sans-serif;
-    padding-top: 25%;
-
 }
 
 nav li {
@@ -119,67 +108,54 @@ nav li {
 }
 
 li {
-    margin-top: 3%;
+    margin-top: 50px;
     cursor: pointer;
     text-decoration: underline;
-    font-size: 1.25rem;
-    font-weight: 600;
+    font-size: 1.5rem;
     color: white;
-    margin-bottom: 5%;
-    margin-left: 60px;
+    margin-bottom: 10px;
     list-style-type: none;
     text-decoration: none;
 }
 
 li:hover {
-    color: #DC93FF;
-}
-
-nav li {
-    margin-top: 0;
-
+    color: #f73549d2;
 }
 
 .lien {
     text-decoration: none;
-    background-color: #DC93FF;
-    border-radius: 40px;
+    background-color: #f73549d2;
+    border-radius: 20px;
     text-align: center;
     padding: 15px;
-    padding-left: 20px;
-    padding-right: 20px;
     position: relative;
-    top: 10px;
-    left: 20%;
+    top: 30px;
+    left: 150px;
     transition: 0.8s ease-in-out;
     margin-top: 10px;
-    margin-right: 20%;
     color: white;
-    font-size: 1.25rem;
 }
 
 .lien:hover {
-    color: #DC93FF;
+    color: #f73549d2;
     background-color: white;
+
 }
 
 h3 {
-    position: relative;
-    font-size: 1.45rem;
-    color: #7e4d94;
-    width: 100%;
-    font-weight: 900;
-    bottom: 30px;
-    left: 100px;
-    font-weight: 900;
+    font-size: 1.9rem;
+    color: #f73549d2;
+    margin-left: 80px;
+    margin-top: 10px;
+    width: 50vw;
 }
 
 .truc {
+    margin-left: 40px;
     font-size: 1.3rem;
-    background: linear-gradient(transparent 40%, #DC93FF);
+    background: linear-gradient(transparent 40%, #f73549d2);
     width: 150px;
-    font-weight: 800;
-    /* transform: skew(5deg); */
+    transform: skew(5deg);
 }
 
 main :nth-child(4) {
@@ -188,14 +164,12 @@ main :nth-child(4) {
 }
 
 .type {
-    position: relative;
+    margin-left: 40px;
     font-size: 1.3rem;
-    background: linear-gradient(transparent 40%, #DC93FF);
-    /* transform: skew(5deg); */
-    max-width: 60px;
-    top: 10px;
-    font-weight: 800;
-
+    margin-top: 50px;
+    background: linear-gradient(transparent 40%, #f73549d2);
+    transform: skew(5deg);
+    width: 50px;
 }
 
 main :nth-child(6) {
@@ -206,20 +180,12 @@ main :nth-child(6) {
 
 .deb {
     position: relative;
-    bottom: 80px;
-    left: 90px;
     font-size: 1.3rem;
-    max-width: 110px;
-    background: linear-gradient(transparent 30%, #DC93FF);
-    font-weight: 800;
-    /* transform: skew(5deg); */
-}
-
-.deb2 {
-    position: relative;
-    bottom: 90px;
-    left: 130px;
-    max-width: 300px;
+    top: -90px;
+    left: 190px;
+    width: 110px;
+    background: linear-gradient(transparent 30%, #f73549d2);
+    transform: skew(5deg);
 }
 
 main :nth-child(8) {
@@ -230,21 +196,13 @@ main :nth-child(8) {
 }
 
 .eta {
-    position: relative;
+    margin-left: 40px;
     font-size: 1.3rem;
-    max-width: 10vw;
-    background: linear-gradient(transparent 30%, #DC93FF);
-    /* transform: skew(5deg); */
-    margin-top: 40px;
-    margin-left: -200px;
-    font-weight: 800;
+    margin-top: -80px;
+    width: 10vw;
+    background: linear-gradient(transparent 30%, #f73549d2);
+    transform: skew(5deg);
 }
-
-.etabli {
-    position: relative;
-    bottom: 120px;
-}
-
 
 main :nth-child(10) {
     margin-top: -10px;
@@ -253,16 +211,13 @@ main :nth-child(10) {
 }
 
 .url {
-    position: relative;
+    margin-left: 40px;
     font-size: 1.3rem;
-    background: linear-gradient(transparent 30%, #DC93FF);
-    max-width: 50px;
-    /* transform: skew(5deg); */
-    bottom: 100px;
-    left: -30px;
-    font-weight: 800;
+    margin-top: 20px;
+    background: linear-gradient(transparent 30%, #f73549d2);
+    width: 50px;
+    transform: skew(5deg);
 }
-
 
 main :nth-child(12) {
     margin-top: -10px;
@@ -270,16 +225,15 @@ main :nth-child(12) {
 }
 
 .exit {
-    position: relative;
     border-radius: 50%;
     height: 35px;
     width: 35px;
     pointer-events: visible;
     position: relative;
-    left: 20px;
+    left: 10px;
+    top: 10px;
     opacity: 0.5;
     cursor: pointer;
-    top: 40px;
 }
 
 .exit:hover {
@@ -304,24 +258,25 @@ main :nth-child(12) {
     transform: rotate(-45deg);
 }
 
-p.ligne {
+.ligne {
     background-color: white;
-    height: 55vh;
+    height: 60vh;
     width: 2px;
     position: absolute;
-    left: 36vw;
-    bottom: 2vh;
+    left: 35vw;
+    bottom: 15vh;
 }
 
 .video {
     position: absolute;
     left: 38vw;
+    bottom: 30vh;
 }
 
 .sans_video {
     position: absolute;
-    left: 36.5vw;
-    bottom: 15vh;
+    left: 37vw;
+    bottom: 30vh;
     border: black solid;
     padding-top: 78px;
     padding-bottom: 100px;
@@ -329,33 +284,28 @@ p.ligne {
     color: black;
     font-size: 1.5rem;
     height: 15vh;
-    width: 20vw;
-    padding-left: 35px;
-    padding-right: 35px;
-    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .link {
-    position: relative;
     width: 30px;
     height: 30px;
-    bottom: 110px;
-
+    margin-top: 10px;
 }
 
 .link_text {
-    position: relative;
+    margin-bottom: 50px;
     font-size: 1.5rem;
-    bottom: 110px;
 
 }
 
 .timbre img {
-    width: 30%;
-    height: 30%;
+    width: 15%;
+    height: 15%;
     position: absolute;
-    left: 73%;
-    bottom: 65%;
+    left: 85%;
+    bottom: 80%;
 }
 
 @media screen and (max-width:1300px) {
