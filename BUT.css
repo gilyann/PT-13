@@ -47,7 +47,7 @@ nav ul li a {
 .panneau {
     border: #d4e5ff solid 15px;
     width: 70%;
-    margin: auto;
+    margin: 0 auto;
     background-color: #050321;
     color: white;
     margin-top: 240px;
