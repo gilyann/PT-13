@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
- 
+
 
     $(function () {
 
@@ -36,5 +36,24 @@ $(function () {
         $(".c2").removeClass("active")
 
 
+    })
+
+
+    window.addEventListener('scroll', function (event) {
+
+        if (window.scrollY <= 50) {
+            $('nav').css({
+                'backgroundColor': 'transparent',
+                'box-shadow': 'none'
+            })
+            $('nav a').css('color', 'white')
+
+        } else {
+            $('nav').css({
+                'backgroundColor': '#7f5fc386',
+                'box-shadow': '1px 1px 12px #7f5fc386'
+            })
+            $('nav a').css('color', 'white')
+        }
     })
 })
