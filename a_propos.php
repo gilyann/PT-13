@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="a_propos.css">
+    <link rel="icon" type="image/png" href="medias/img/plane.png" />
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="a_propos.css">
     <title>L'équipage</title>
 </head>
 
@@ -91,7 +92,7 @@
                 </a>
             </div>
             <div class="rond">
-                <a href="#" class="interactif">
+                <a href="https://etudiant.u-pem.fr/~jvial02/cv-interactif/" class="interactif">
                     <img src="medias/img/desktop_1.svg" alt="cv interactif Julianne Vial">
                 </a>
             </div>

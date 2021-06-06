@@ -37,4 +37,22 @@ $(function () {
 
 
     })
+
+    window.addEventListener('scroll', function (event) {
+
+        if (window.scrollY <= 50) {
+            $('nav').css({
+                'backgroundColor': 'transparent',
+                'box-shadow': 'none'
+            })
+            $('nav a').css('color', 'white')
+
+        } else {
+            $('nav').css({
+                'backgroundColor': '#c35f8485',
+                'box-shadow': '1px 1px 12px #c35f8485'
+            })
+            $('nav a').css('color', 'white')
+        }
+    })
 })

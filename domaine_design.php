@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="domaine_design.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="domaine_design.css">
+<link rel="icon" type="image/png" href="medias/img/plane.png" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="medias/js/domaine_design.js"></script>
     <title>domaine_design</title>
@@ -105,6 +107,7 @@ echo('</section>');
         </div> 
 
   <?php
+  $link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
   (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
   $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
   FROM  intitule_formation, rel_domaine_int_form 

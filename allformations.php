@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="allformations.css">
+    <link rel="icon" type="image/png" href="medias/img/plane.png" />
+    <title>Guide touristique</title>
+
 </head>
 
 <body>
@@ -265,7 +267,6 @@ $i=0;
 
 while($data = $req -> fetch()){
     echo  '<tr><td>'.$data['nom_formation'].'</td>
-    <td>'.$data['nom_formation'].'</td>
     <td>
         <ul>
             <li>'.$data['enseignements'].'</li>
@@ -322,7 +323,6 @@ $i=0;
 
 while($data = $req -> fetch()){                         
     echo  '<tr><td>'.$data['nom_formation'].'</td>
-    <td>'.$data['nom_formation'].'</td>
     <td>
         <ul>
             <li>'.$data['enseignements'].'</li>
@@ -381,7 +381,6 @@ $i=0;
 
 while($data = $req -> fetch()){                                
     echo  '<tr><td>'.$data['nom_formation'].'</td>
-    <td>'.$data['nom_formation'].'</td>
     <td>
         <ul>
             <li>'.$data['enseignements'].'</li>
@@ -439,7 +438,6 @@ $i=0;
 
 while($data = $req -> fetch()){
     echo  '<tr><td>'.$data['nom_formation'].'</td>
-    <td>'.$data['nom_formation'].'</td>
     <td>
         <ul>
             <li>'.$data['enseignements'].'</li>

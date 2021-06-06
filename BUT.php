@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="nav.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&family=VT323&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="medias/img/plane.png" />
     <link rel="stylesheet" href="BUT.css">
     <title>BUT</title>
 </head>
