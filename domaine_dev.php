@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="nav.css">
 <link rel="stylesheet" href="domaine_dev.css">
+<link rel="icon" type="image/png" href="medias/img/plane.png" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="medias/js/domaine.js"></script>
     <title>domaine_développement</title>
