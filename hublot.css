@@ -108,16 +108,10 @@ body {
     cursor: pointer;
 }
 
-/*.domaine2 img{
-    width: 35vw;
-}*/
 
-/*voir pour le display flex*/
-/*justify space-arround pour un menu*/
 
 .fiche {
     position: absolute;
-    /* border: 2px solid black; */
     top: 50vh;
     right: 5vw;
     height: 50%;
@@ -186,7 +180,6 @@ nav a:hover {
 }
 
 .cache {
-    background-color: red;
     position: absolute;
     top: 14vh;
     left: 14vw;

@@ -62,7 +62,7 @@
 
         </div>
     </div>
-    <!-- partial:index.partial.html -->
+
     <div class="table center">
         <div class="monitor-wrapper center">
             <div class="monitor center">
@@ -70,7 +70,7 @@
             </div>
         </div>
     </div>
-    <!-- partial -->
+
     </div>
 </body>
 

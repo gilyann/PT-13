@@ -1,4 +1,3 @@
-/* *, */
 *::before,
 *::after {
     box-sizing: border-box;
@@ -9,7 +8,6 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     overflow-x: hidden;
-    /* overflow-y: hidden; */
     background-image: url(medias/img/background-dev.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -71,7 +69,6 @@ nav a:hover {
 }
 
 header {
-    /* border: solid 1px white; */
     height: 100vh;
     width: 100vw;
     margin-bottom: 100px;
@@ -103,7 +100,6 @@ h1 {
 }
 
 .tdf {
-    /* border: solid 1px blue; */
     margin-left: 0;
     margin-right: 0;
     height: 100vh;
@@ -111,24 +107,20 @@ h1 {
 }
 
 .intitule {
-    /* border: solid 10px pink; */
     display: inline-block;
     width: 35vw;
-    /* margin-right: 150px; */
     left: 4vw;
     height: 98vh;
 
 }
 
 main {
-    /* border: solid 1px black; */
     color: white;
     position: absolute;
     width: 50vw;
     height: 78vh;
     text-align: left;
     background-color: rgb(255, 255, 255);
-    /* filter: blur(1px); */
     border-radius: 20px;
     margin-left: 0;
     margin-right: 0;
@@ -156,7 +148,7 @@ h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-top: 80px;
-    color: #f73549d2;
+    color: #83D8FD;
     font-family: 'Raleway', sans-serif;
 }
 

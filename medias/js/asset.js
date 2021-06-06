@@ -6,7 +6,7 @@ $(document).ready(function () {
    var WIDTH = window.innerWidth;
 
    var numberimage = 1;
-   //les différents slides possibles 
+
    $('.arrow-right').on('click', function () {
       $('.domaine-slide').animate({
          'left': (parseInt($('.domaine-slide').css('left')) - WIDTH) + 'px'
@@ -36,7 +36,17 @@ $(document).ready(function () {
       $('.cache').hide();
       console.log("hello")
    })
+
+   $('.un .cache').on('click', function(){
+      document.location.href="domaine_dev.php"
+   })
+   $('.deux .cache').on('click', function(){
+      document.location.href="domaine_communication.php"
+   })
+   $('.trois .cache').on('click', function(){
+      document.location.href="domaine_design.php"
+   })
+   $('.quatre .cache').on('click', function(){
+      document.location.href="domaine.php"
+   })
 })
-// $('.cache').on('click', function(){
-   
-// })

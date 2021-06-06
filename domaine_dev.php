@@ -20,7 +20,7 @@
 
     <header>
         <p>Bienvenue dans le domaine du</p>
-        <h1>DEVELOPPEMENT</h1>
+        <h1>DÉVELOPPEMENT</h1>
         <p>En visitant les différentes attractions, tu découvriras les différents types d'études possibles !</p>
     </header>
 
@@ -102,7 +102,7 @@ echo('</section>');
             <ul>
                 <li data-cat="2" data-lien="0">  Développement web option architecte big data</li>
                 <li data-cat="2" data-lien="1">Développement web</li> 
-                <li data-cat="2" data-lien="2">Développeur web option Développeur d’application mobiles</li>
+                <li data-cat="2" data-lien="5">Game Design & Programming</li>
                 <li data-cat="2" data-lien="3">Développeur web</li>
                 <li data-cat="2" data-lien="4">Développeur web et mobile</li>
             </ul>
@@ -166,7 +166,7 @@ echo('</section>');
             <ul>
                 <li data-cat="3" data-lien="0">  Cycle d’ingénieur : Logiciels et Systèmes d’information
 </li>
-                <li data-cat="3" data-lien="1">Informatique réseau</li>
+                <li data-cat="3" data-lien="5">Systèmes d'information</li>
                 <li data-cat="3" data-lien="2">Informatique</li>
                 <li data-cat="3" data-lien="3">Informatique et systèmes d'information
 </li>
@@ -231,7 +231,7 @@ echo('</section>');
                 <li data-cat="4" data-lien="0">Ingénieurie des systèmes complexes</li>
                 <li data-cat="4" data-lien="1">Calcule haute performance, simulation</li>
                 <li data-cat="4" data-lien="2">Création numérique</li>
-                <li data-cat="4" data-lien="3">Ergonomie</li>
+                <li data-cat="4" data-lien="5">Informatique</li>
                 <li data-cat="4" data-lien="4">Ergonomie</li>
             </ul>
             <a href="allformations.php" class="lien">Voir toutes les formations</a>
@@ -291,11 +291,11 @@ echo('</section>');
         <div class="intitule">
             <h2>Mastères</h2>
             <ul>
-                <li data-cat="5" data-lien="1">CTO et Tech Lead</li>
-                <li data-cat="5" data-lien="2">Développement "mobile factory"</li>
-                <li data-cat="5" data-lien="3">Expert informatique - Parcours Développement Web ou Logiciel</li>
-                <li data-cat="5" data-lien="4">Data et Intelligence Artificielle</li>
-                <li data-cat="5" data-lien="5">Ergonomie</li>
+                <li data-cat="5" data-lien="0">Architecture des logiciels</li>
+                <li data-cat="5" data-lien="1">Développement "mobile factory"</li>
+                <li data-cat="5" data-lien="2">Expert informatique - Parcours Développement Web ou Logiciel</li>
+                <li data-cat="5" data-lien="3">Data et Intelligence Artificielle</li>
+                <li data-cat="5" data-lien="4">CTO & Tech Lead</li>
             </ul>
             <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div>
@@ -352,12 +352,3 @@ echo('</section>');
 
 </html>
 
-
-
-
-
-<!-- if ('.$data['url_video'].'=null){ 
-    echo"à découvrir plus tard";
-   }else{ 
-    echo  
-   }-->

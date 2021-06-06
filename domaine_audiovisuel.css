@@ -1,12 +1,9 @@
-/* *, */
-
 body {
     background-color: rgb(120, 194, 194);
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     overflow-x: hidden;
-    /* overflow-y: hidden; */
-    background-image: url(medias/img/background-audiovisuel.png);
+    background-image: url(medias/img/bg-audiovisuel.svg);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -22,7 +19,6 @@ body {
 }
 
 header {
-    /* border: solid 1px white; */
     height: 100vh;
     width: 100vw;
     margin-bottom: 100px;
@@ -54,31 +50,26 @@ h1 {
 }
 
 .tdf {
-    /* border: solid 1px blue; */
     margin-left: 0;
     margin-right: 0;
     height: 100vh;
 }
 
 .intitule {
-    /* border: solid 10px pink; */
     display: inline-block;
     width: 35vw;
-    /* margin-right: 150px; */
     left: 4vw;
     height: 98vh;
 
 }
 
 main {
-    /* border: solid 1px black; */
     color: white;
     position: absolute;
     width: 50vw;
     height: 78vh;
     text-align: left;
     background-color: rgb(255, 255, 255);
-    /* filter: blur(1px); */
     border-radius: 20px;
     margin-left: 0;
     margin-right: 0;
@@ -106,7 +97,7 @@ h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-top: 80px;
-    color: #f73549d2;
+    color: #DC93FF;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -229,7 +220,6 @@ main :nth-child(12) {
 
 .exit {
     border-radius: 50%;
-    /* background-color: red; */
     height: 35px;
     width: 35px;
     pointer-events: visible;
@@ -283,6 +273,7 @@ main :nth-child(12) {
     bottom: 30vh;
     border: black solid;
     padding-top: 78px;
+    padding-bottom: 100px;
     background-color: rgba(255, 255, 255, 0.267);
     color: black;
     font-size: 1.5rem;

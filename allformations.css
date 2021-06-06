@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -23,7 +29,7 @@ body {
   font-weight: 400;
 }
 
-/*INTRO*/
+
 section {
   text-align: center;
   color: #767777;
@@ -35,7 +41,7 @@ section h1 {
   color: #2FA1D1;
 }
 
-/* MENU-TAB */
+
 #menu-tab {
   color: #767777;
   width: 95vw;
@@ -43,7 +49,7 @@ section h1 {
 }
 
 
-/* ONGLETS */
+
 
 .tabs {
   position: relative;
@@ -67,7 +73,7 @@ section h1 {
   display: none;
 }
 
-/*COULEUR ONGLETS*/
+
 
 .tab label[for=tab-1] {
   background-color: #7F5FC3;
@@ -85,7 +91,7 @@ section h1 {
   background-color: #64A9BF;
 }
 
-/* CONTENU ONGLET */
+
 
 .content {
   position: absolute;
@@ -118,7 +124,7 @@ hr {
   border: 2px solid;
 }
 
-/*TABLEAU*/
+
 table {
   border-radius: 20px;
   border-collapse: collapse;
@@ -144,7 +150,7 @@ ul {
 }
 
 
-/* ONGLET ACTIF */
+
 
 [type=radio]:checked~label {
   z-index: 2;
@@ -160,7 +166,7 @@ ul {
 }
 
 
-/*Changement couleur CONTENT (bordure) au clic*/
+
 [type=radio]:checked~label[for=tab-1]~.content {
   border: 6px solid #7F5FC3;
 }
@@ -179,7 +185,7 @@ ul {
 
 
 
-/* Changement couleur h1 */
+
 [type=radio]:checked~label[for=tab-2]~.content h1 {
   color: #FCCA4A;
 }
@@ -194,7 +200,7 @@ ul {
 
 
 
-/* Changement couleur du hr */
+
 [type=radio]:checked~label[for=tab-1]~.content hr {
   color: #7F5FC3;
 }
@@ -213,8 +219,7 @@ ul {
 
 
 
-/*Changement de couleur du TABLEAU */
-/*HEADER*/
+
 [type=radio]:checked~label[for=tab-1]~.content th {
   background-color: #7F5FC3;
   color: white;
@@ -236,7 +241,7 @@ ul {
 }
 
 
-/*LIGNES*/
+
 [type=radio]:checked~label[for=tab-1]~.content th {
   border: 2px solid #7F5FC3;
 }
@@ -272,7 +277,7 @@ ul {
 
 
 
-/* Changement couleur liens hover */
+
 [type=radio]:checked~label[for=tab-1]~.content a:hover {
   color: #7F5FC3;
 }
