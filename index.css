@@ -7,7 +7,6 @@
 body {
     background: #FAF8F8;
     text-align: center;
-    min-width: 300px;
     font-family: sans-serif;
     color: #292925;
     margin: 0;
@@ -22,19 +21,20 @@ body {
     background: url(medias/img/avion.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .bigheader h2 {
     font-size: 9rem;
-    margin-top: -15px;
-    padding-top: 30vh;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15vh;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: -20px;
 }
 
 .bigheader p {
     font-size: 3rem;
-    padding-top: -30vh;
+    padding-bottom: 30vh;
     font-style: italic;
     letter-spacing: 12px;
     color: #025E73;
@@ -44,19 +44,16 @@ body {
 /* low header présentation + illustration */
 .low-header {
     display: flex;
-    width: 100vw;
-    height: 100vh;
-    height: 730px;
-    margin-bottom: 150px;
-    margin-top: 5%;
+    width: 90vw;
+    height: 90vh;
+    margin: 0 auto;;
 }
 
 .presentation {
-    width: 45%;
+    width: 100%;
     height: 500px;
-    margin-left: 10%;
-    margin-top: 170px;
     font-size: 2rem;
+    margin: 7%;
 }
 
 .presentation h1 {
@@ -74,12 +71,13 @@ body {
 }
 
 .ptt-image {
-    width: 70%;
+    width: 100%;
     height: 100%;
 }
 
 .ptt-image img {
-    width: 70%;
+    width: 80%;
+    margin: 10%;
 }
 
 
@@ -113,7 +111,7 @@ section .container {
 }
 
 .date h3 {
-    margin-left: 30px;
+    margin-left: 10px;
 }
 
 .lh1 {
@@ -514,7 +512,7 @@ input:focus~.bar:after {
 
 #buttonenvoi {
     border: #025E73 solid;
-    background-color: #FAF8F8;
+    background-color: #3B9BB1;
     border-radius: 30px;
     width: 18vw;
     position: relative;
@@ -524,7 +522,7 @@ input:focus~.bar:after {
 }
 
 input[type="submit"] {
-    color: #025E73;
+    color: white;
 }
 
 #buttonenvoi:hover {
@@ -547,7 +545,7 @@ color: white;
     margin-left: 15px;
     width: 900px;
     height: 150px;
-    background-color: #3B9BB1;
+    border: #025E73 solid;
     border-radius: 20px;
     outline: none;
     padding-left: 15px ;
@@ -558,7 +556,7 @@ textarea {
     resize: none;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 1.125rem;
-    color: white;
+    color: black;
 }
 
 label {
@@ -597,12 +595,6 @@ label {
 
     .presentation p {
         margin-left: -150px;
-    }
-
-    .ptt-image {
-        height: 450px;
-        margin-top: 50px;
-        margin-left: 50px;
     }
 
     .low-header {
