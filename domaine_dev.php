@@ -66,15 +66,16 @@ while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
  echo '<main class="card cat1 c'.$data['id_intitule'].' lien'.$i.'">
  <div class="exit"></div>
+ <div class="info-detail">
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
  <p>'.$data['enseignements'].'</p>
  <p class="type">Type</p>
  <p>'.$data['alternance_initiale'].'</p>
  <p class="deb">Débouchés</p>
- <p>'.$data['debouches']. '</p>
+ <p class="deb2">'.$data['debouches']. '</p>
  <p class="eta">Etablissements</p>
- <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+ <p class="etabli">'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
 
@@ -112,7 +113,7 @@ echo('</section>');
         </div> 
 
   <?php
-  $link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
+    $link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
   (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
   // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
   $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule, url_video
@@ -129,15 +130,16 @@ echo('</section>');
   // On affiche chaque résultat sous forme d'un item de la liste
   echo '<main class="card cat2 c'.$data['id_intitule'].' lien'.$i.'"> 
   <div class="exit"></div>
+  <div class="info-detail">
   <h3>'.$data['nom_formation'].'</h3> 
   <p class="truc">Enseignements</p>
   <p>'.$data['enseignements'].'</p>
   <p class="type">Type</p>
   <p>'.$data['alternance_initiale'].'</p>
   <p class="deb">Débouchés</p>
-  <p>'.$data['debouches']. '</p>
+  <p class="deb2">'.$data['debouches']. '</p>
   <p class="eta">Etablissements</p>
-  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+  <p class="etabli">'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
   <p class="url">URL</p>
  <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
   <p class="ligne"></p>';
@@ -180,7 +182,7 @@ echo('</section>');
 
 
         <?php
-$link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
+    $link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
@@ -197,15 +199,16 @@ while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
  echo '<main class="card cat3 c'.$data['id_intitule'].' lien'.$i.'">
  <div class="exit"></div>
+ <div class="info-detail">
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
  <p>'.$data['enseignements'].'</p>
  <p class="type">Type</p>
  <p>'.$data['alternance_initiale'].'</p>
  <p class="deb">Débouchés</p>
- <p>'.$data['debouches']. '</p>
+ <p class="deb2">'.$data['debouches']. '</p>
  <p class="eta">Etablissements</p>
- <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+ <p class="etabli">'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
  <p class="ligne"></p>';
@@ -260,15 +263,16 @@ while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
  echo '<main class="card cat4 c'.$data['id_intitule'].' lien'.$i.'">
  <div class="exit"></div>
+ <div class="info-detail">
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
  <p>'.$data['enseignements'].'</p>
  <p class="type">Type</p>
  <p>'.$data['alternance_initiale'].'</p>
  <p class="deb">Débouchés</p>
- <p>'.$data['debouches']. '</p>
+ <p class="deb2">'.$data['debouches']. '</p>
  <p class="eta">Etablissements</p>
- <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+ <p class="etabli">'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
  <p class="ligne"></p>';
@@ -305,7 +309,7 @@ echo('</section>');
 
 
         <?php
-$link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
+    $link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
@@ -322,15 +326,16 @@ while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
  echo '<main class="card cat5 c'.$data['id_intitule'].' lien'.$i.'">
  <div class="exit"></div>
+ <div class="info-detail">
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
  <p>'.$data['enseignements'].'</p>
  <p class="type">Type</p>
  <p>'.$data['alternance_initiale'].'</p>
  <p class="deb">Débouchés</p>
- <p>'.$data['debouches']. '</p>
+ <p class="deb2">'.$data['debouches']. '</p>
  <p class="eta">Etablissements</p>
- <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+ <p class="etabli">'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
  <p class="ligne"></p>';
