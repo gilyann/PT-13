@@ -18,7 +18,6 @@ body {
 /* header pour illustration */
 
 .bigheader {
-    /* border: 1px solid green; */
     height: 105vh;
     background: url(medias/img/avion.svg);
     background-repeat: no-repeat;
@@ -26,7 +25,6 @@ body {
 }
 
 .bigheader h2 {
-    /* border: solid black; */
     font-size: 9rem;
     margin-top: -15px;
     padding-top: 30vh;
@@ -37,25 +35,25 @@ body {
 .bigheader p {
     font-size: 3rem;
     padding-top: -30vh;
+    font-style: italic;
+    letter-spacing: 12px;
+    color: #025E73;
 }
 
 
 /* low header présentation + illustration */
 .low-header {
-    /* border: 1px solid blue; */
     display: flex;
     width: 100vw;
     height: 100vh;
-    /* border: red solid; */
     height: 730px;
     margin-bottom: 150px;
     margin-top: 5%;
 }
 
 .presentation {
-    /* border: 1px solid brown; */
     width: 45%;
-    height: 600px;
+    height: 500px;
     margin-left: 10%;
     margin-top: 170px;
     font-size: 2rem;
@@ -69,14 +67,13 @@ body {
 }
 
 .presentation p {
-    text-align: justify;
-    font-size: 1.25rem;
+    text-align: left;
+    font-size: 1.56rem;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 35px;
 }
 
 .ptt-image {
-    /* border: 1px solid brown; */
     width: 70%;
     height: 100%;
 }
@@ -87,25 +84,20 @@ body {
 
 
 /* Main des 4 cartes */
-main {
-    /* border: 1px solid black; */
-    margin-left: 7%;
-    margin-right: 100px;
-    width: 1300px;
 
+main {
+    margin: 0 auto;
+    width: 1300px;
 }
 
 section {
-    /* border: 1px solid black; */
     height: 730px;
     width: 450px;
     display: inline-block;
     margin: 50px;
     vertical-align: top;
-    border-radius: 30px 30px 30px 30px;
+    border-radius: 30px;
 }
-
-
 
 section .container {
     max-width: 100%;
@@ -114,7 +106,6 @@ section .container {
     cursor: pointer;
 }
 
-
 .container:hover {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.541);
     transform: scale(1.01);
@@ -122,100 +113,34 @@ section .container {
 }
 
 .date h3 {
-    /* border: solid black; */
     margin-left: 30px;
 }
 
-/* Formulaire prototype */
-.formulaire {
-    /* border: 1px solid black; */
-    height: 700px;
-    margin-left: 250px;
-    margin-right: 250px;
-    margin-bottom: 50px;
-    margin-top: 50px;
-}
-
-
-
-
-/* ajout visuel header*/
-
-
-
-
-/* ajout code carte */
-
-
-
-
-
-.container {
-    margin: 0 auto;
-    background-color: #FFFFFF;
-    border-radius: 30px 30px 30px 30px;
-    transition-duration: 0.5s;
-    /* border: solid black; */
-    height: 680px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
-}
-
-
-.littleheader {
-
-    text-align: center;
-    padding: 15px;
-    letter-spacing: 1px;
-    border-radius: 30px 30px 0px 0px;
-
-}
-
-.formheader {
-
-    text-align: center;
-    background-color: #025E73;
-    padding-bottom: 30px;
-    border-radius: 30px 30px 0px 0px;
-}
-
-.formheader h1 {
-
-    color: white;
-    letter-spacing: 1px;
-
-}
-
 .lh1 {
-
     background: #038C7F;
-
 }
 
 .lh1 h1 {
-
     padding-top: 15px;
     color: white;
     font-size: 40px;
-
 }
 
 p {
-    font-size: 12px;
+    font-size: 1.125rem;
     margin: 5px 0px -10px 0px;
     letter-spacing: 1px;
 }
 
 .description {
-
-    height: 140px;
-    width: 370px;
-
+    height: 150px;
+    width: 420px;
 }
 
 .description p {
     color: #025E73;
-    font-size: 15px;
-    padding-left: 20px;
+    font-size: 1.125rem;
+    padding-left: 30px;
     padding-right: 20px;
     text-align: left;
     position: relative;
@@ -225,16 +150,15 @@ p {
 .description h4 {
     color: #676767;
     font-size: 17px;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-top: 25px;
     text-align: left;
     position: relative;
     left: 40px;
 }
 
 h1 {
-    font-size: 40px;
-    font-family: 'Lato', sans-serif;
+    font-size: 2.81rem;
     color: #000000;
     padding: 5px 0px 5px 0px;
     margin: 5px;
@@ -243,7 +167,6 @@ h1 {
 h2 {
     font-size: 24px;
     color: #FFFFFF;
-    font-family: 'Lato', sans-serif;
 }
 
 .container .boardingPass {
@@ -262,8 +185,11 @@ h2 {
     padding-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 10px;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-left: 6px;
+    margin-right: 6px;
 }
-
 
 .departing,
 .arriving {
@@ -283,119 +209,88 @@ h2 {
     padding-top: 10px;
 }
 
-
 .plane {
-
-    width: 50px;
+    width: 80px;
     transform: rotate(45deg);
-
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-
 .arriving h1 {
-
     color: #025E73;
+    width: 100px;
 }
 
 .arriving p {
-
     color: #025E73;
 }
 
 .departing h1 {
-
     color: #025E73;
-
 }
 
 .departing p {
-
     color: #025E73;
+}
 
+.small-t {
+    margin-top: 18px;
 }
 
 .number h4 {
-
     color: #676767;
     left: 25px;
     position: relative;
-
 }
 
-
-
 .date h4 {
-
     color: #676767;
     position: relative;
     left: -15px;
 }
 
 .gate h4 {
-
     color: #676767;
-
 }
-
-
-/*fin première carte*/
 
 /*deuxième carte*/
 
 .lh2 {
-
-
     background-color: #A60311;
-
 }
 
 .lh2 h1 {
-
     padding-top: 15px;
     color: white;
     font-size: 40px;
-
 }
 
 /*troisième carte*/
 
 .lh3 {
-
     background-color: #2FA1D1;
     padding: 40px;
-
 }
 
 .lh3 h1 {
-
     padding-top: 10px;
     color: white;
     font-size: 40px;
-
 }
 
 /*quatrième carte*/
 
 .lh4 {
-
-
     background-color: #F1C44F;
-
 }
 
 .lh4 h1 {
-
-    padding-top: 15px;
+    padding-top: 8px;
     color: white;
     font-size: 40px;
-
 }
 
-
-
 input {
-
-
     outline: none;
     z-index: 1;
     position: relative;
@@ -404,21 +299,59 @@ input {
     height: 60px;
     border: 0;
     color: #212121;
-
 }
 
-/*Formulaire*/
 
-.formulaire .container {
+/* Formulaire*/
+.formulaire {
+    width: 1000px;
+    margin: 0 auto;
+    height: 700px;
+    margin-top: 10%;
+    margin-bottom: 7% ;
+}
 
-
+.container {
     max-width: 100%;
-
-
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+    height: 700px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, .35);
 }
 
+.littleheader {
+    text-align: center;
+    padding: 15px;
+    letter-spacing: 1px;
+    border-radius: 30px 30px 0px 0px;
+}
+.littleheader h1 {
+    font-weight: 900;
+}
 
+.lh3 {
+    padding-bottom: 7%;
+}
 
+.lh3 h1 {
+    margin-top: 10%;
+}
+
+.formheader {
+    text-align: center;
+    background-color: #025E73;
+    padding-bottom: 30px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.formheader h1 {
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+}
 
 /* contenu formulaire*/
 
@@ -429,17 +362,14 @@ input {
     display: block;
     background: #FFF;
     padding: 10px 50px 0px;
-    border-radius: 30px 30px 30px 30px;
-
+    border-radius: 30px;
+    padding-bottom: 30px;
 }
-
-
 
 .groupform {
     position: relative;
     margin-bottom: 30px;
     width: 500px;
-    /* border: green solid; */
 }
 
 input {
@@ -448,13 +378,13 @@ input {
     display: block;
     width: 300px;
     border: none;
-    border-bottom: 1px solid #757575;
+    border-bottom: 2px solid #025E73;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 input:focus {
     outline: none;
 }
-
 
 label {
     color: #999;
@@ -468,20 +398,18 @@ label {
     -moz-transition: 0.2s ease all;
 }
 
-
-
 input:focus~label,
 input:valid~label {
     top: -20px;
     font-size: 14px;
-    color: #5264AE;
+    color: #999;
 }
-
 
 .bar {
     position: relative;
     display: block;
     width: 300px;
+    background: #025E73;
 }
 
 .bar:before,
@@ -491,7 +419,7 @@ input:valid~label {
     width: 0;
     bottom: 1px;
     position: absolute;
-    background: #5264AE;
+    background: #025E73;
     transition: 0.2s ease all;
     -moz-transition: 0.2s ease all;
 }
@@ -504,12 +432,10 @@ input:valid~label {
     right: 50%;
 }
 
-
 input:focus~.bar:before,
 input:focus~.bar:after {
     width: 50%;
 }
-
 
 .highlight {
     position: absolute;
@@ -521,87 +447,126 @@ input:focus~.bar:after {
     opacity: 0.5;
 }
 
-
-
 .formairport {
 
     display: flex;
     z-index: 1;
     flex-direction: row;
-    /* border: black solid; */
+    /* border: #025E73 dotted 7px; */
+    border-radius: 5px;
     margin-top: 20px;
-    width: 300px;
+    width: 500px;
+    height: 150px;
     text-align: left;
     float: right;
+    font-family: 'Nunito Sans', sans-serif;
+}
 
+.lil-img {
+    position: relative;
+    top: 20px;
+    height: 50%;
+}
 
+.formatairport h1 {
+    color: #025E73;
+    margin-top: 50px;
+    font-size: 1.875rem;
 }
 
 .formdeparting {
-
     position: relative;
     margin: 0 auto;
     padding: 0px;
 }
 
 .formdeparting p {
-
     text-align: center;
-
+    color: #025E73;
+    font-size: 1.125rem;
 }
 
 .formarriving {
-
     position: relative;
     margin: 0 auto;
     padding: 0px;
+    color: #025E73;
+    font-size: 1.125rem;
+}
+
+.formarriving p {
+    text-align: center;
+    color: #025E73;
+    font-size: 1.125rem;
+}
+
+.formarriving h1 {
+    text-align: center;
+    color: #025E73;
+    font-weight: 900;
+}
+
+.formdeparting h1 {
+    text-align: center;
+    color: #025E73;
+    font-weight: 900;
 }
 
 #buttonenvoi {
-
-    background-color: #025E73;
+    border: #025E73 solid;
+    background-color: #FAF8F8;
     border-radius: 30px;
     width: 18vw;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin:0 auto;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.56rem;
 }
 
 input[type="submit"] {
+    color: #025E73;
+}
 
-    color: white;
-
+#buttonenvoi:hover {
+background-color: #025E73;
+color: white;
 }
 
 .message {
-
     margin-left: -15px;
-
 }
-
 
 .message label {
 
     margin-top: -10px;
     margin-left: 10px;
-
 }
 
-
 .text {
-    /* border: pink solid; */
-    margin-top: 40px;
+    margin-top: 55px;
     margin-left: 15px;
-    width: 730px;
+    width: 900px;
+    height: 150px;
+    background-color: #3B9BB1;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 15px ;
+    padding-top: 15px;
 }
 
 textarea {
     resize: none;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.125rem;
+    color: white;
 }
 
-
-
-
+label {
+    font-size: 1.56rem;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 900;
+    color: #676767;
+}
 
 
 @media screen and (max-width:1300px) {
