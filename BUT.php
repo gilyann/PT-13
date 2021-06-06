@@ -15,10 +15,10 @@
 </head>
 
 <body>
-<div class="big-container">
+
 <?php include 'nav.php' ?>
 
-
+<div class="big-container">
     <div class="panneau">
         <div class="content">
             <ul>
@@ -66,7 +66,7 @@
     <div class="table center">
         <div class="monitor-wrapper center">
             <div class="monitor center">
-                <p>Découvre le BUT MMI 123...</p>
+                <p>Découvre le BUT MMI...</p>
             </div>
         </div>
     </div>
