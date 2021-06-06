@@ -33,6 +33,8 @@ if(isset($_POST["name"]) & isset($_POST["email"]) & isset($_POST["msg"]) ){
                         'msg' => $_POST["msg"]));
                         if (isset($_POST['email']) && isset($_POST['name']) && isset($_POST['msg'])) {
 
+                          $retour = mail('gpadre@etud.u-pem.fr', $_POST['name'], $_POST['msg']);
+     
                       }
 
   // $req = null;
