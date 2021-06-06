@@ -1,22 +1,16 @@
-*::before,
-*::after {
+*,
+*::after,
+*::before {
     box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(120, 194, 194);
     font-family: 'Nunito Sans', sans-serif;
     margin: 0;
     overflow-x: hidden;
     background-image: url(medias/img/bg-design.svg);
     background-size: cover;
     background-repeat: no-repeat;
-}
-
-
-.logo {
-    width: 40%;
-    height: 40%;
 }
 
 .etude {
@@ -30,19 +24,18 @@ body {
 header {
     height: 100vh;
     width: 100vw;
-    margin-bottom: 100px;
-    margin: 0;
 }
 
 header :nth-child(3) {
-    font-size: 2rem;
-    margin-top: 100px;
+    font-size: 2.5rem;
     text-align: center;
     color: white;
 }
 
 header h1 {
-    margin-top: -20px;
+    margin-top: 3.55%;
+    font-weight: 800;
+    margin-bottom: 0;
 }
 
 header :first-child {
@@ -62,6 +55,8 @@ h1 {
     margin-left: 0;
     margin-right: 0;
     height: 100vh;
+    width: 100vw;
+    /* border: black solid; */
 }
 
 .intitule {
@@ -69,31 +64,29 @@ h1 {
     width: 35vw;
     left: 4vw;
     height: 98vh;
+    /* border: black solid; */
 
 }
 
 main {
     color: white;
     position: absolute;
-    width: 50vw;
-    height: 78vh;
     text-align: left;
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin-left: 0;
     margin-right: 0;
-    right: 1vw;
+    right: 4vw;
     display: none;
-    opacity: 0.3;
-    margin-top: 60px;
-    height: 90vh;
-    width: 63vw;
-    padding-left: 10px;
+    opacity: 0;
+    margin-top: 7%;
+    height: 80vh;
+    width: 57vw;
+    padding-left: 0;
     background: rgba(255, 255, 255, 0.50);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(12.0px);
     -webkit-backdrop-filter: blur(8.0px);
-    border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
 }
 
@@ -102,70 +95,85 @@ main.active {
     opacity: 1;
 }
 
+.info-detail {
+    width: 60%;
+    height: 100%;
+    margin-left: 3%;
+}
+
 h2 {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 80px;
-    color: #E36371;
+    position: relative;
+    font-size: 4rem;
+    font-weight: 900;
+    padding-left: 18%;
+    color: #C35F83;
     font-family: 'Raleway', sans-serif;
+    padding-top: 25%;
+
 }
 
 li {
-    margin-top: 50px;
+    margin-top: 3%;
     cursor: pointer;
     text-decoration: underline;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
     color: white;
-    margin-bottom: 10px;
+    margin-bottom: 5%;
+    margin-left: 60px;
     list-style-type: none;
     text-decoration: none;
 }
 
 li:hover {
-    color: #f73549d2;
+    color: #C35F83;
 }
 
 nav li {
-
-    margin-top: 0px;
+    margin: 0;
 
 }
 
 .lien {
     text-decoration: none;
-    background-color: #f73549d2;
-    border-radius: 20px;
+    background-color: #C35F83;
+    border-radius: 40px;
     text-align: center;
     padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     position: relative;
-    top: 90px;
-    left: 150px;
+    top: 10px;
+    left: 20%;
     transition: 0.8s ease-in-out;
     margin-top: 10px;
+    margin-right: 20%;
     color: white;
+    font-size: 1.25rem;
 }
 
 .lien:hover {
-    color: #f73549d2;
+    color: #C35F83;
     background-color: white;
-
 }
 
 h3 {
-    font-size: 1.9rem;
-    color: #f73549d2;
-    margin-left: 80px;
-    margin-top: 10px;
-    width: 50vw;
+    position: relative;
+    font-size: 1.45rem;
+    color:#a85171;
+    width: 100%;
+    font-weight: 900;
+    bottom: 30px;
+    left: 100px;
+    font-weight: 900;
 }
 
 .truc {
-    margin-left: 40px;
     font-size: 1.3rem;
-    background: linear-gradient(transparent 40%, #f73549d2);
+    background: linear-gradient(transparent 40%, #C35F83);
     width: 150px;
-    transform: skew(5deg);
-    margin-top: -10px;
+    font-weight: 800;
+    /* transform: skew(5deg); */
 }
 
 main :nth-child(4) {
@@ -174,12 +182,14 @@ main :nth-child(4) {
 }
 
 .type {
-    margin-left: 40px;
+    position: relative;
     font-size: 1.3rem;
-    margin-top: 50px;
-    background: linear-gradient(transparent 40%, #f73549d2);
-    transform: skew(5deg);
-    width: 50px;
+    background: linear-gradient(transparent 40%, #C35F83);
+    /* transform: skew(5deg); */
+    max-width: 60px;
+    top: 10px;
+    font-weight: 800;
+
 }
 
 main :nth-child(6) {
@@ -190,12 +200,20 @@ main :nth-child(6) {
 
 .deb {
     position: relative;
+    bottom: 80px;
+    left: 90px;
     font-size: 1.3rem;
-    top: -90px;
-    left: 190px;
-    width: 110px;
-    background: linear-gradient(transparent 30%, #f73549d2);
-    transform: skew(5deg);
+    max-width: 110px;
+    background: linear-gradient(transparent 30%, #C35F83);
+    font-weight: 800;
+    /* transform: skew(5deg); */
+}
+
+.deb2 {
+    position: relative;
+    bottom: 90px;
+    left: 130px;
+    max-width: 300px;
 }
 
 main :nth-child(8) {
@@ -206,13 +224,21 @@ main :nth-child(8) {
 }
 
 .eta {
-    margin-left: 40px;
+    position: relative;
     font-size: 1.3rem;
-    margin-top: -80px;
-    width: 10vw;
-    background: linear-gradient(transparent 30%, #f73549d2);
-    transform: skew(5deg);
+    max-width: 10vw;
+    background: linear-gradient(transparent 30%,#C35F83);
+    /* transform: skew(5deg); */
+    margin-top: 40px;
+    margin-left: -200px;
+    font-weight: 800;
 }
+
+.etabli {
+    position: relative;
+    bottom: 120px;
+}
+
 
 main :nth-child(10) {
     margin-top: -10px;
@@ -221,13 +247,20 @@ main :nth-child(10) {
 }
 
 .url {
-    margin-left: 40px;
+    position: relative;
     font-size: 1.3rem;
-    margin-top: 50px;
-    background: linear-gradient(transparent 30%, #f73549d2);
-    width: 50px;
-    transform: skew(5deg);
+    background: linear-gradient(transparent 30%, #C35F83);
+    max-width: 50px;
+    /* transform: skew(5deg); */
+    bottom: 100px;
+    left: -30px;
+    font-weight: 800;
 }
+
+p {
+    color: #ac8a96;
+}
+
 
 main :nth-child(12) {
     margin-top: -10px;
@@ -235,15 +268,16 @@ main :nth-child(12) {
 }
 
 .exit {
+    position: relative;
     border-radius: 50%;
     height: 35px;
     width: 35px;
     pointer-events: visible;
     position: relative;
-    left: 10px;
-    top: 10px;
+    left: 20px;
     opacity: 0.5;
     cursor: pointer;
+    top: 40px;
 }
 
 .exit:hover {
@@ -268,52 +302,58 @@ main :nth-child(12) {
     transform: rotate(-45deg);
 }
 
-.ligne {
+p.ligne {
     background-color: white;
-    height: 60vh;
+    height: 55vh;
     width: 2px;
     position: absolute;
-    left: 35vw;
-    bottom: 15vh;
+    left: 36vw;
+    bottom: 2vh;
 }
 
 .video {
     position: absolute;
     left: 38vw;
-    bottom: 30vh;
 }
 
 .sans_video {
     position: absolute;
-    left: 37vw;
-    bottom: 30vh;
+    left: 36.5vw;
+    bottom: 15vh;
     border: black solid;
     padding-top: 78px;
+    padding-bottom: 100px;
     background-color: rgba(255, 255, 255, 0.267);
     color: black;
     font-size: 1.5rem;
     height: 15vh;
-    padding-left: 50px;
-    padding-right: 50px;
+    width: 20vw;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-align: center;
 }
 
 .link {
+    position: relative;
     width: 30px;
     height: 30px;
-    margin-top: 10px;
+    bottom: 110px;
+
 }
 
 .link_text {
-    margin-bottom: 50px;
+    position: relative;
     font-size: 1.5rem;
+    bottom: 110px;
+
 }
 
 .timbre img {
-    width: 15%;
-    height: 15%;
+    width: 30%;
+    height: 30%;
     position: absolute;
-    left: 85%;
-    bottom: 80%;
+    left: 73%;
+    bottom: 65%;
 }
 
 @media screen and (max-width:1300px) {
