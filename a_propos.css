@@ -131,11 +131,17 @@ span {
 .rond {
     background-color: #2581a8;
     border-radius: 100%;
-    width: 30%;
-    height: 70%;
+    width: 100px;
+    height: 100px;
     margin-top: 5%;
     margin-left: 2%;
     margin-right: 2%;
+}
+
+.rond img {
+
+    max-width: 100%;
+
 }
 
 .lien img {
