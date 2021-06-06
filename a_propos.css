@@ -67,30 +67,34 @@ nav ul li a {
     padding-bottom: 0;
 }
 
-.lucas {
-    width: 30vw;
-    margin-bottom: 0;
+
+
+
+
+
+
+.Claire {
+    max-width: 100%;
 }
 
-.lucas img {
-    width: 27vw;
-}
-
-.julianne img {
-    width: 23vw;
-}
-
-.Claire img {
-    width: 25vw;
-}
-
-.gilyann img {
-    width: 25vw;
+.gilyann {
+    max-width: 100%;
 }
 
 .julianne {
-    width: 90%;
-    margin-left: 10%;
+    max-width: 100%;
+}
+
+.lucas {
+
+    max-width: 100%;
+
+}
+
+.claire {
+
+    max-width: 100%;
+
 }
 
 .beige {
@@ -107,6 +111,7 @@ h2 {
     margin-top: 0;
     margin-bottom: 0;
     height: 110px;
+
 }
 
 span {
@@ -124,7 +129,7 @@ span {
 }
 
 .rond {
-    background-color: #C4C4C4;
+    background-color: #2581a8;
     border-radius: 100%;
     width: 30%;
     height: 70%;
