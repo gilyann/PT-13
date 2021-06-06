@@ -34,18 +34,11 @@ if(isset($_POST["name"]) & isset($_POST["email"]) & isset($_POST["msg"]) ){
                         if (isset($_POST['email']) && isset($_POST['name']) && isset($_POST['msg'])) {
 
                           $retour = mail('gpadre@etud.u-pem.fr', $_POST['name'], $_POST['msg']);
-      
-                          if($retour){
-                              echo '<script>alert("Message Envoyé !")</script>';
-                          }
-                          else{
-                              echo '<script>alert("Une erreur est survenue :(")</script>';
-                          }
-                      }
+
 
   // $req = null;
   // On affiche l'adresse inscrite en évitant une injection de code JS
-  echo "<h1 style='margin: auto;'>Merci pour votre message, j'espère que votre voyage ce passe bien !</h1>";
+  echo "<h1 style='margin: auto;'>Merci pour votre message, j'espère que votre voyage se passe bien !</h1>";
 }
 ?>
 
