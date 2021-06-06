@@ -106,7 +106,7 @@ h2 {
     font-size: 2.5rem;
     text-align: center;
     margin-top: 80px;
-    color: #f73549d2;
+    color: #DC93FF;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -283,6 +283,7 @@ main :nth-child(12) {
     bottom: 30vh;
     border: black solid;
     padding-top: 78px;
+    padding-bottom: 100px;
     background-color: rgba(255, 255, 255, 0.267);
     color: black;
     font-size: 1.5rem;

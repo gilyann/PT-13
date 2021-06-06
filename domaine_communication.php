@@ -100,7 +100,7 @@ echo('</section>');
                 <li cat="2"lien="0">Chargé de projet digital</li>
                 <li cat="2" lien="1">Chef de projet Digital</li> 
                 <li cat="2" lien="3">Communication digitale et e-business</li>
-                <li cat="2" lien="4">E-business </li>
+                <li cat="2" lien="6">Marketing digital</li>
                 <li cat="2" lien="5">Marketing & Communication Digitale</li>
             </ul>
             <a href="#" class="lien">Voir toutes les formations</a>
