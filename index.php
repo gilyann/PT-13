@@ -241,7 +241,7 @@
                         <p>MMi Airlines</p>
                     </div>
                 </div>
-                <form method="Post">
+                <form method="Post" action="envoi.php">
                     <div class="groupform">
                         <input type="text" name="name" id="name" required>
                         <span class="highlight"></span>
@@ -264,50 +264,7 @@
                 </form>
             </div>
         </div>
-    </div>
-
-
-    <?php
-$host = "sqletud.u-pem.fr";
-$dbname = "gpadre_db";
-$username = "gpadre";
-$password = "tabouret";
-
-try {
-    $link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
-    (PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
-}
-
-catch (Exception $e) {
-    die('Erreur : '.$e->getMessage());
-}
-// pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
- 
-if(isset($_POST["name"]) & isset($_POST["email"]) & isset($_POST["msg"]) ){
-  $sql = "INSERT INTO contact_airlines(name, email, msg) VALUES (:name, :email, :msg)";
-  // On prépare la requête avant l'envoi :
-  $req = $link -> prepare($sql);
-  // On exécute la requête en insérant la valeur transmise en POST
-  $req -> execute(array('name' => $_POST["name"], 
-                        'email' => $_POST["email"], 
-                        'msg' => $_POST["msg"]));
-                        if (isset($_POST['email']) && isset($_POST['name']) && isset($_POST['msg'])) {
-
-                          $retour = mail('gpadre@etud.u-pem.fr', $_POST['name'], $_POST['msg']);
-      
-                          if($retour){
-                              echo '<script>alert("Message Envoyé !")</script>';
-                          }
-                          else{
-                              echo '<script>alert("Une erreur est survenue :(")</script>';
-                          }
-                      }
-
-
-}
-?>
-
-    
+    </div>    
 </body>
 
 </html>
