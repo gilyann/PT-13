@@ -105,6 +105,7 @@ echo('</section>');
         </div> 
 
   <?php
+  $link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
   (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
   $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
   FROM  intitule_formation, rel_domaine_int_form 
