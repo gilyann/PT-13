@@ -8,21 +8,24 @@
     <link rel="stylesheet" href="domaine_audiovisuel.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="medias/js/domaine_audiovisuel.js"></script>
     <title>domaine_audiovisuel</title>
 </head>
 
 <body>
+    
 <?php include 'nav.php' ?>
 
     <header>
         <p>Bienvenue dans le domaine de</p>
         <h1>L'AUDIOVISUEL</h1>
-        <p>En visitant les différentes attractions, tu découvriras les différents types d'études possibles !</p>
+        <p>En visitant les différentes attractions, tu découvriras les <br>différents types d'études possibles !</p>
     </header>
 
     <section class="tdf lp">
@@ -41,10 +44,11 @@
 
 
           <?php
-$host="sqletud.u-pem.fr";
-$dbname="gpadre_db";
-$username="gpadre";
-$password="tabouret";
+        $host = "sqletud.u-pem.fr";
+        $dbname = "gpadre_db";
+        $username = "gpadre";
+        $password = "tabouret";
+        
 $link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
@@ -62,15 +66,16 @@ while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
  echo '<main class="card cat1 c'.$data['id_intitule'].' '.$i.'">
  <div class="exit"></div>
+ <div class="info-detail">
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
  <p>'.$data['enseignements'].'</p>
  <p class="type">Type</p>
  <p>'.$data['alternance_initiale'].'</p>
  <p class="deb">Débouchés</p>
- <p>'.$data['debouches']. '</p>
+ <p class="deb2">'.$data['debouches']. '</p>
  <p class="eta">Etablissements</p>
- <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+ <p class="etabli">'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
  <p class="ligne"></p>';
@@ -108,8 +113,7 @@ echo('</section>');
         </div> 
 
   <?php
-$link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
-  (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
+    $link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
   $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
   FROM  intitule_formation, rel_domaine_int_form 
   WHERE id_domaine =3
@@ -124,15 +128,16 @@ $link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, a
   // On affiche chaque résultat sous forme d'un item de la liste
   echo '<main class="card cat2 c'.$data['id_intitule'].' '.$i.'"> 
   <div class="exit"></div>
+  <div class="info-detail">
   <h3>'.$data['nom_formation'].'</h3> 
   <p class="truc">Enseignements</p>
   <p>'.$data['enseignements'].'</p>
   <p class="type">Type</p>
   <p>'.$data['alternance_initiale'].'</p>
   <p class="deb">Débouchés</p>
-  <p>'.$data['debouches']. '</p>
+  <p class="deb2">'.$data['debouches']. '</p>
   <p class="eta">Etablissements</p>
-  <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+  <p class="etabli">'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
   <p class="url">URL</p>
   <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
   <p class="ligne"></p>';
@@ -176,7 +181,6 @@ echo '<div class="timbre"><img src="medias/img/timbre/timbre-audio.svg" alt=" ">
         <?php
 
 $link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
-(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule,url_video
 FROM  intitule_formation, rel_domaine_int_form 
@@ -192,15 +196,16 @@ while($data = $req -> fetch()){
  // On affiche chaque résultat sous forme d'un item de la liste
  echo '<main class="card cat3 c'.$data['id_intitule'].' '.$i.'">
  <div class="exit"></div>
+ <div class="info-detail">
  <h3>'.$data['nom_formation'].'</h3>
  <p class="truc">Enseignements</p>
  <p>'.$data['enseignements'].'</p>
  <p class="type">Type</p>
  <p>'.$data['alternance_initiale'].'</p>
  <p class="deb">Débouchés</p>
- <p>'.$data['debouches']. '</p>
+ <p class="deb2">'.$data['debouches']. '</p>
  <p class="eta">Etablissements</p>
- <p>'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
+ <p class="etabli">'.$data['nom_etablissement'].' - '.$data['ville'].' ('.$data['code_postal'].')</p> 
  <p class="url">URL</p>
  <p><img src="medias/img/link_1.svg" alt=" " class="link"><a href="'.$data['url_formation'].'" class="link_text">Découvrez la formation !</a></p>
  <p class="ligne"></p>';
