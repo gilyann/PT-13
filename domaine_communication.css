@@ -13,40 +13,7 @@ body {
     background-repeat: no-repeat;
 }
 
-nav {
-    z-index: 200;
-    width: 50vw;
-    height: 5vh;
-    position: fixed;
-    top: 1vh;
-    left: 47vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    font-size: 1.5rem;
-}
 
-.right {
-    padding-top: 20px;
-    margin-left: 50px;
-
-}
-
-nav a {
-    text-decoration: none;
-    color: #2FA1D1;
-    transition: 0.8s ease-in-out;
-
-
-}
-
-nav a:hover {
-    border-radius: 20px;
-    background-color: #2fa1d1;
-    color: white;
-    padding: 10px;
-
-}
 
 .left {
     position: fixed;
@@ -148,6 +115,12 @@ h2 {
     margin-top: 80px;
     color: #FFD66C;
     font-family: 'Raleway', sans-serif;
+}
+
+nav li {
+
+    margin-top: 0px;
+
 }
 
 li {
