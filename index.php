@@ -8,20 +8,17 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="nav.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-
     <title>Page accueil</title>
 </head>
 
 <body>
 
-
     <?php include 'nav.php' ?>
 
-    
     <header class="bigheader">
         <h2>MMI Airlines</h2>
         <p>Envole toi vers ton avenir</p>
@@ -145,11 +142,9 @@
         <section>
 
             <div class="container">
-            <a href="a_propos.html"> <div class="boardingPass">
+            <a href="a_propos.php"> <div class="boardingPass">
                     <div class="littleheader lh3">
-
                         <h1>L'équipage </h1>
-
                     </div>
                     <div class="airports">
                         <div class="departing">
@@ -197,11 +192,9 @@
         <section>
 
             <div class="container">
-            <a href="allformations.html"><div class="boardingPass">
+            <a href="allformations.php"><div class="boardingPass">
                     <div class="littleheader lh4">
-
                         <h1>Guide <br> touristique</h1>
-
                     </div>
                     <div class="airports">
                         <div class="departing">

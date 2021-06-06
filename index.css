@@ -1,3 +1,9 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 body {
     background: #FAF8F8;
     text-align: center;
@@ -6,13 +12,8 @@ body {
     color: #292925;
     margin: 0;
     font-family: 'Nunito Sans', sans-serif;
+    overflow-x: hidden;
 }
-
-
-
-
-
-
 
 /* header pour illustration */
 
@@ -22,7 +23,6 @@ body {
     background: url(medias/img/avion.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: -20px;
 }
 
 .bigheader h2 {
@@ -44,19 +44,19 @@ body {
 .low-header {
     /* border: 1px solid blue; */
     display: flex;
+    width: 100vw;
+    height: 100vh;
+    /* border: red solid; */
     height: 730px;
     margin-bottom: 150px;
-    margin-top: -50px;
-
-
-
+    margin-top: 5%;
 }
 
 .presentation {
     /* border: 1px solid brown; */
     width: 45%;
     height: 600px;
-    margin-left: 100px;
+    margin-left: 10%;
     margin-top: 170px;
     font-size: 2rem;
 }
@@ -66,7 +66,6 @@ body {
     color: #2FA1D1;
     text-align: left;
     font-family: 'Raleway', sans-serif;
-    margin-top: 110px;
 }
 
 .presentation p {
@@ -77,20 +76,15 @@ body {
 }
 
 .ptt-image {
-    /* border: 1px solid brown;*/
-    width: 50vw;
-    height: 560px;
-    margin-right: 100px;
-    margin-top: 170px;
-    padding-left: 100px;
+    /* border: 1px solid brown; */
+    width: 70%;
+    height: 100%;
 }
 
 .ptt-image img {
-
-    /* max-width: 100%; */
-    width: 100%;
-
+    width: 70%;
 }
+
 
 /* Main des 4 cartes */
 main {
@@ -109,36 +103,28 @@ section {
     margin: 50px;
     vertical-align: top;
     border-radius: 30px 30px 30px 30px;
-
 }
 
 
 
 section .container {
-
     max-width: 100%;
     min-height: 100%;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.021);
     cursor: pointer;
-
 }
 
 
 .container:hover {
-
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.541);
     transform: scale(1.01);
     transition-duration: 1s;
-
 }
 
 .date h3 {
     /* border: solid black; */
     margin-left: 30px;
 }
-
-
-
 
 /* Formulaire prototype */
 .formulaire {
