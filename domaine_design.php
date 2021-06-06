@@ -32,13 +32,17 @@
                 <li cat="1" lien="1">Métiers du jeu vidéo</li>
                 <li cat="1" lien="3">Techniques de l'image et du son spécialité Infographie et webdesign</li>
             </ul>
-            <a href="allformations.php" class="lien">Voir toutes les formations</a>
+            <a href="#" class="lien">Voir toutes les formations</a>
         </div> 
 
 
           <?php
 
-$link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+$host="sqletud.u-pem.fr";
+$dbname="gpadre_db";
+$username="gpadre";
+$password="tabouret";
+$link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
@@ -97,11 +101,10 @@ echo('</section>');
                 <li cat="2" lien="5">Création et design</li>
                 <li cat="2" lien="4">Concepteur Jeu vidéo</li>
             </ul>
-            <a href="allformations.php" class="lien">Voir toutes les formations</a>
+            <a href="#" class="lien">Voir toutes les formations</a>
         </div> 
 
   <?php
-  $link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
   (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
   $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
   FROM  intitule_formation, rel_domaine_int_form 
@@ -160,14 +163,14 @@ echo('</section>');
                 <li cat="3"lien="2">Optique, image, vision, multimédia parcours systèmes distribués et technologies de la <br>
                     Data Science</li>
             </ul>
-            <a href="allformations.php" class="lien">Voir toutes les formations</a>
+            <a href="#" class="lien">Voir toutes les formations</a>
         </div>
 
 
 
         <?php
 
-$link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+$link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
@@ -220,13 +223,13 @@ echo('</section>');
                 <li cat="4"lien="0">Formation IMAC</li>
                 <li cat="4"lien="1">Programme Grande École</li>
             </ul>
-            <a href="allformations.php" class="lien">Voir toutes les formations</a>
+            <a href="#" class="lien">Voir toutes les formations</a>
         </div>
 
 
 
         <?php
-$link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+$link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
@@ -283,13 +286,13 @@ echo('</section>');
                 <li cat="5"lien="3">Interactivité et UX design</li>
                 <li cat="5"lien="4">Marketing Digital & UX</li>
             </ul>
-            <a href="allformations.php" class="lien">Voir toutes les formations</a>
+            <a href="#" class="lien">Voir toutes les formations</a>
         </div>
 
 
         <?php
 
-$link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+$link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
