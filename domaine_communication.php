@@ -34,13 +34,17 @@
                 <li cat="1" lien="4">Métiers de la communication : événementiel</li>
                 <li cat="1" lien="5">Publicité</li>
             </ul>
-            <a href="allformations.php" class="lien">Voir toutes les formations</a>
+            <a href="#" class="lien">Voir toutes les formations</a>
         </div> 
 
 
           <?php
 
-$link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+$host="sqletud.u-pem.fr";
+$dbname="gpadre_db";
+$username="gpadre";
+$password="tabouret";
+$link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
@@ -99,7 +103,7 @@ echo('</section>');
                 <li cat="2" lien="4">E-business </li>
                 <li cat="2" lien="5">Marketing & Communication Digitale</li>
             </ul>
-            <a href="allformations.php" class="lien">Voir toutes les formations</a>
+            <a href="#" class="lien">Voir toutes les formations</a>
         </div> 
 
   <?php
@@ -162,14 +166,13 @@ Enseignements</li>
                 <li cat="3"lien="4">Culture et communication</li>
                 <li cat="3"lien="6">Direction de projets ou établissements culturels</li>
             </ul>
-            <a href="allformations.php" class="lien">Voir toutes les formations</a>
+            <a href="#" class="lien">Voir toutes les formations</a>
         </div>
 
 
 
         <?php
-
-$link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+$link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
@@ -222,11 +225,11 @@ echo('</section>');
                 <li cat="4"lien="0">Formation IMAC</li>
                 <li cat="4"lien="1">Programme grande école</li>
             </ul>
-            <a href="allformations.php" class="lien">Voir toutes les formations</a>
+            <a href="#" class="lien">Voir toutes les formations</a>
         </div>
         <?php
 
-$link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+$link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
@@ -282,11 +285,11 @@ echo('</section>');
                 <li cat="5"lien="3">Communication & culture</li>
                 <li cat="5"lien="4">Communication et stratégie social média</li>
             </ul>
-            <a href="allformations.php" class="lien">Voir toutes les formations</a>
+            <a href="#" class="lien">Voir toutes les formations</a>
         </div>
         <?php
-
-$link = new PDO('mysql:host=localhost;dbname=mmi-airline', 'root', '', array
+        
+$link = new PDO ("mysql:host={$host};dbname={$dbname};", $username, $password, array
 (PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
 // pour le serveur de l'UPEM, remplacer localhost par sqletud.u-pem.fr
 $sql = "SELECT nom_formation, enseignements, alternance_initiale, debouches, nom_etablissement, ville, code_postal, url_formation, intitule_formation.id_intitule
