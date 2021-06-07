@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="allformations.css">
     <link rel="icon" type="image/png" href="medias/img/plane.png" />
     <title>Guide touristique</title>
@@ -100,7 +101,7 @@ echo  '<tr><td>'.$data['nom_formation'].'</td>
 </div>
                 
 <br>
-                    <div id="bachelor-audio">
+                    <div id="bachelors-audio">
                     <h1>Bachelor</h1>
      <table>
      <tr>

@@ -36,7 +36,7 @@
                 <li cat="1" lien="4">Métiers de la communication : événementiel</li>
                 <li cat="1" lien="5">Publicité</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div> 
 
 
@@ -106,7 +106,7 @@ echo('</section>');
                 <li cat="2" lien="6">Marketing digital</li>
                 <li cat="2" lien="5">Marketing & Communication Digitale</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div> 
 
   <?php
@@ -170,7 +170,7 @@ Enseignements</li>
                 <li cat="3"lien="4">Culture et communication</li>
                 <li cat="3"lien="6">Direction de projets ou établissements culturels</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div>
 
 
@@ -230,7 +230,7 @@ echo('</section>');
                 <li cat="4"lien="0">Formation IMAC</li>
                 <li cat="4"lien="1">Programme grande école</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div>
         <?php
 
@@ -291,7 +291,7 @@ echo('</section>');
                 <li cat="5"lien="3">Communication & culture</li>
                 <li cat="5"lien="4">Communication et stratégie social média</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div>
         <?php
         

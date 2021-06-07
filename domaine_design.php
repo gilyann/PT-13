@@ -34,7 +34,7 @@
                 <li cat="1" lien="1">Métiers du jeu vidéo</li>
                 <li cat="1" lien="3">Techniques de l'image et du son spécialité Infographie et webdesign</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div> 
 
 
@@ -104,7 +104,7 @@ echo('</section>');
                 <li cat="2" lien="5">Création et design</li>
                 <li cat="2" lien="4">Concepteur Jeu vidéo</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div> 
 
   <?php
@@ -168,7 +168,7 @@ echo('</section>');
                 <li cat="3"lien="2">Optique, image, vision, multimédia parcours systèmes distribués et technologies de la <br>
                     Data Science</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div>
 
 
@@ -229,7 +229,7 @@ echo('</section>');
                 <li cat="4"lien="0">Formation IMAC</li>
                 <li cat="4"lien="1">Programme Grande École</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div>
 
 
@@ -293,7 +293,7 @@ echo('</section>');
                 <li cat="5"lien="3">Interactivité et UX design</li>
                 <li cat="5"lien="4">Marketing Digital & UX</li>
             </ul>
-            <a href="#" class="lien">Voir toutes les formations</a>
+            <a href="allformations.php" class="lien">Voir toutes les formations</a>
         </div>
 
 
