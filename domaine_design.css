@@ -49,6 +49,7 @@ h1 {
     text-align: center;
     font-size: 9.375rem;
     color: white;
+    font-weight: 800;
 }
 
 .tdf {
@@ -258,7 +259,7 @@ main :nth-child(10) {
 }
 
 p {
-    color: #ac8a96;
+    color: white;
 }
 
 
