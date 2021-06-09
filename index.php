@@ -149,7 +149,7 @@
                             <img class="plane" src="medias/img/plane.svg" alt="">
                             <div class="arriving">
                                 <h1>MDE</h1>
-                                <p>Membres <br>de l'équipe</p>
+                                <p>membres <br>de l'équipe</p>
                             </div>
                         </div>
                         <div class="description">

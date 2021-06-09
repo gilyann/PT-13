@@ -512,7 +512,7 @@ input:focus~.bar:after {
 
 #buttonenvoi {
     border: #025E73 solid;
-    background-color: #3B9BB1;
+    background-color: #025E73;
     border-radius: 30px;
     width: 18vw;
     position: relative;
@@ -525,8 +525,8 @@ input[type="submit"] {
     color: white;
 }
 
-#buttonenvoi:hover {
-background-color: #025E73;
+#buttonenvoi:focus {
+background-color: #3B9BB1;
 color: white;
 }
 
