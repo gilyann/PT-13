@@ -25,21 +25,29 @@
 
 body {
   background-color: #FAF8F8;
-  font-family: 'Nunito Sans';
+  font-family: 'Nunito Sans', sans-serif;
   font-weight: 400;
-  font-family: "Nunito Sans";
+
 }
 
 
 section {
   text-align: center;
   color: #767777;
+  margin-top: 200px;
 }
 
 section h1 {
-  font-family: 'Raleway';
-  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 5rem;
   color: #2FA1D1;
+}
+
+section p {
+
+  margin-top: 35px;
+  font-size: 1.8rem;
+
 }
 
 
@@ -92,6 +100,19 @@ section h1 {
   background-color: #64A9BF;
 }
 
+nav {
+  background-color: #F8F8F8;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.075);
+}
+
+nav .logo {
+  color: #2FA1D1;
+}
+
+nav ul li a {
+  color: #2FA1D1;
+
+}
 
 
 .content {
@@ -117,7 +138,7 @@ section h1 {
 
 .content h1 {
   color: #7F5FC3;
-  font-family: 'Raleway';
+  font-family: 'Raleway', sans-serif;
 }
 
 hr {
@@ -132,6 +153,14 @@ table {
   text-align: center;
 }
 
+label {
+
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 900;
+
+
+}
+
 table,
 td {
   padding: 30px;
@@ -140,6 +169,8 @@ td {
 table,
 th {
   padding: 5px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
 }
 
 ul {

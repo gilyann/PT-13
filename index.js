@@ -18,7 +18,7 @@ $(document).ready(function () {
 
     window.addEventListener('scroll', function (event) {
 
-        if (window.scrollY <= 200) {
+        if (window.scrollY <= 5) {
             $('nav').css({
                 'backgroundColor': 'transparent',
                 'box-shadow': 'none'
